@@ -29,6 +29,8 @@ import tempfile
 from setuptools import setup
 
 if sys.platform == 'win32':
+    import ctypes
+    import struct
     # workaround for
     # Error: Namespace packages not yet supported: Skipping package 'pywintypes'
     import importlib
@@ -102,15 +104,49 @@ args = {}
 if 'py2exe' in sys.argv:
     # see multiple issues such as https://github.com/bleachbit/bleachbit/issues/1000
     APP_DESCRIPTION = 'BleachBit software cleaner'
+    APP_COPYRIGHT = 'Copyright (C) 2008-2025 Andrew Ziem'
 
-    # Common metadata for both GUI and console executables
+    # Define VS_VERSIONINFO structure for Windows version info resource
+    class VS_VERSIONINFO(ctypes.Structure):
+        _fields_ = [
+            ("wLength", ctypes.c_ushort),
+            ("wValueLength", ctypes.c_ushort),
+            ("wType", ctypes.c_ushort),
+            ("szKey", ctypes.c_wchar * 16),  # "VS_VERSION_INFO"
+            ("padding1", ctypes.c_char * 2),
+            ("Value", ctypes.c_uint * 4),     # VS_FIXEDFILEINFO
+            ("padding2", ctypes.c_char * 2),
+            ("Children", ctypes.c_uint * 2)   # StringFileInfo and VarFileInfo
+        ]
+
+    version_info = {
+        "CompanyName": APP_NAME,
+        "ProductName": APP_NAME,
+        "FileVersion": bleachbit.APP_VERSION,
+        "ProductVersion": bleachbit.APP_VERSION,
+        "FileDescription": APP_DESCRIPTION,
+        "LegalCopyright": APP_COPYRIGHT
+    }
+
+    version_data = (
+        # wValueLength (4 bytes for dwFileVersionMS/dwFileVersionLS)
+        b'\x04\x00' +
+        # dwSignature, dwStrucVersion, dwFileFlags
+        struct.pack('<IHH', 0, 0, 0) +
+        b''.join(b'%s\x00%s\x00' % (k.encode('utf-16le'), str(v).encode('utf-16le')) for k,
+                 v in version_info.items())
+    )
+
     common_metadata = {
         'product_name': APP_NAME,
         'description': APP_DESCRIPTION,
         'version': bleachbit.APP_VERSION,
         'icon_resources': [(1, 'windows/bleachbit.ico')],
         'company_name': APP_NAME,
-        'copyright': 'Copyright (C) 2008-2025 Andrew Ziem'
+        'copyright': APP_COPYRIGHT,
+        'other_resources': [
+            (16, 1, version_data)
+        ]
     }
 
     # GUI executable
@@ -195,7 +231,6 @@ if 'py2exe' in sys.argv:
     }
 
     # check for 32-bit
-    import struct
     bits = 8 * struct.calcsize('P')
     assert 32 == bits
 
