@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-01-27 08:54-0700\n"
-"PO-Revision-Date: 2026-01-24 09:01+0000\n"
-"Last-Translator: bovirus <roberto.boriotti@canon.it>\n"
+"PO-Revision-Date: 2026-02-08 19:09+0000\n"
+"Last-Translator: nikypalma <dott.nicolapalma@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/bleachbit/main/"
 "it/>\n"
 "Language: it\n"
@@ -737,13 +737,11 @@ msgstr "Elimina l'elenco dei siti web visitati"
 #. Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations
 #: ../cleaners/transmission.xml
 msgid "Blocklists"
-msgstr "Elenco indirizzi IP da bloccare"
+msgstr "Liste di blocco indirizzi"
 
 #: ../cleaners/transmission.xml
 msgid "Blocklists will need update to work."
-msgstr ""
-"Per funzionare l'elenco degli indirizzi IP da bloccare deve essere "
-"aggiornato."
+msgstr "Per funzionare le liste bloccate dovranno essere aggiornate."
 
 #: ../cleaners/transmission.xml
 msgid "Torrents"
@@ -837,20 +835,15 @@ msgstr ""
 "Modalità scura predefinita, che visualizza i file non necessari trovati"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:ALREADY_INSTALLED"
-#| msgid ""
-#| "${prodname} is already installed.$\\r$\\nClick 'OK' to uninstall the old "
-#| "version before upgrading, or click 'Cancel' to abort the upgrade."
 msgctxt "nsis:ALREADY_INSTALLED"
 msgid ""
 "${prodname} is already installed.\n"
 "Click 'OK' to uninstall the old version before upgrading, or click 'Cancel' "
 "to abort the upgrade."
 msgstr ""
-"${prodname} è già installato.$\\r$\\nSeleziona 'OK' per disinstallare la "
-"vecchia versione prima dell'aggiornamento o seleziona 'Annulla' per "
-"interrompere l'aggiornamento."
+"${prodname} è già installato. \n"
+"Seleziona 'OK' per disinstallare la vecchia versione prima "
+"dell'aggiornamento o seleziona 'Annulla' per interrompere l'aggiornamento."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -877,7 +870,7 @@ msgid ""
 "window may appear."
 msgstr ""
 "Il passaggio successivo è la creazione della cache dei caratteri, durante il "
-"quale potresti vedere una finestra nera."
+"quale potrebbe apparire una finestra nera della console."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -887,7 +880,8 @@ msgstr ""
 msgctxt "nsis:MULTIPRINT2"
 msgid ""
 "It usually finishes in one minute, but sometimes it takes up to ten minutes."
-msgstr "Di solito termina in un minuto, ma a volte ci vogliono dieci minuti."
+msgstr ""
+"Di solito termina in un minuto, ma a volte ci vogliono fino a dieci minuti."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -900,8 +894,8 @@ msgid ""
 "You need to log in with an account that is a member of the administrators "
 "group to continue."
 msgstr ""
-"Per continuare è necessario accedere con un account membro del gruppo "
-"amministratori."
+"Per continuare è necessario accedere con un account che sia membro del "
+"gruppo amministratori."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ADMIN_CREDENTIALS_REQUIRED"
@@ -914,9 +908,7 @@ msgstr "Richieste credenziali amministratore."
 #| msgid "Administrator credentials required for uninstall."
 msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
-msgstr ""
-"Per la pulizia dei file di Windows Update sono necessari i privilegi di "
-"amministratore."
+msgstr "Per disinstallare sono necessarie le credenziali di amministratore."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
@@ -968,19 +960,15 @@ msgstr ""
 msgctxt "nsis:MULTIUSER_INSTALLED_CURRENT_USER"
 msgid "Version {VERSION} is installed for the current user in \"{FOLDER}\"."
 msgstr ""
-"Il programma versione {VERSION} è stato installato per l'utente attuale "
-"nella cartella \"{FOLDER}\"."
+"La versione {VERSION} è installata in \"{FOLDER}\" per l'utente corrente."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_INSTALL_HEADER"
-#| msgid ""
-#| "Select whether to install $(^NameDA) for all users or for current user."
 msgctxt "nsis:MULTIUSER_INSTALL_HEADER"
 msgid ""
 "Select whether to install $(^NameDA) for all users or for the current user."
 msgstr ""
-"Scegli se installare $(^NameDA) per tutti gli utenti o per l'utente attuale."
+"Selezionare se installare $(^NameDA) per tutti gli utenti o per l'utente "
+"corrente."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALL_PAGE_SUBTITLE"
@@ -1015,7 +1003,7 @@ msgstr "Nuova installazione per tutti gli utenti."
 #| msgid "Fresh install for current user."
 msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_CURRENT_USER"
 msgid "Fresh installation for the current user."
-msgstr "Nuova installazione per l'utente attuale."
+msgstr "Nuova installazione per l'utente corrente."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_NOT_INSTALLED"
@@ -1047,7 +1035,7 @@ msgid ""
 "current user."
 msgstr ""
 "Disinstalla la versione {OLD_VERSION} e installa la versione {VERSION} per "
-"l'utente attuale."
+"l'utente corrente."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_ALL_USERS"
@@ -1060,7 +1048,7 @@ msgstr "Reinstalla la versione {VERSION} per tutti gli utenti."
 #| msgid "Reinstall version {VERSION} for current user."
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_CURRENT_USER"
 msgid "Reinstall version {VERSION} for the current user."
-msgstr "Reinstalla la versione {VERSION} per l'utente attuale."
+msgstr "Reinstalla la versione {VERSION} per l'utente corrente."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -1068,21 +1056,18 @@ msgstr "Reinstalla la versione {VERSION} per l'utente attuale."
 #| msgid "You need to run this program as administrator."
 msgctxt "nsis:MULTIUSER_RUN_AS_ADMIN"
 msgid "You need to run this program as an administrator."
-msgstr "È necessario eseguire questo programma come amministratore."
+msgstr ""
+"È necessario eseguire questo programma con i privilegi di amministratore."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_UNINSTALL_HEADER"
-#| msgid ""
-#| "$(^NameDA) is installed both for all users and for current user.$\\r$"
-#| "\\nSelect which installation to remove."
 msgctxt "nsis:MULTIUSER_UNINSTALL_HEADER"
 msgid ""
 "$(^NameDA) is installed both for all users and for the current user.\n"
 "Select which installation to remove."
 msgstr ""
-"$(^NameDA) è installato sia per tutti gli utenti che per l'utente attuale.$"
-"\\r$\\nSeleziona quale installazione rimuovere."
+"$(^NameDA) viene installato sia per tutti gli utenti che per l'utente "
+"corrente.\n"
+"Seleziona quale installazione rimuovere."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_UNINSTALL_PAGE_SUBTITLE"
@@ -1098,8 +1083,8 @@ msgctxt "nsis:SECTION_CORE_DESCRIPTION"
 msgid ""
 "These are the basic files needed for ${prodname} to function (required)."
 msgstr ""
-"Questi sono i file di base necessari per il funzionamento di ${prodname} "
-"(obbligatori)."
+"Questi sono i file di base necessari (obbligatori) per il funzionamento di $"
+"{prodname}."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_CORE_NAME"
@@ -1107,12 +1092,9 @@ msgid "Core files (required)"
 msgstr "File principali (richiesti)"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_DESKTOP_DESCRIPTION"
-#| msgid "Create the shortcut on desktop."
 msgctxt "nsis:SECTION_DESKTOP_DESCRIPTION"
 msgid "Create a shortcut on the desktop."
-msgstr "Crea il collegamento sul desktop."
+msgstr "Crea un collegamento sul desktop."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_DESKTOP_NAME"
@@ -1129,7 +1111,7 @@ msgctxt "nsis:SECTION_INTEGRATE_SHRED_DESCRIPTION"
 msgid ""
 "Add an option to delete files from the file context menu in Windows Explorer."
 msgstr ""
-"Aggiungi un'opzione per eliminare i file dal menu contestuale file di "
+"Aggiungi un'opzione per eliminare i file dal menu contestuale dei file in "
 "Esplora risorse."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
@@ -1143,7 +1125,7 @@ msgstr "Integra Sovrascrivi"
 #| msgid "Create the shortcut on Quick Launch."
 msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
 msgid "Create a shortcut on the Quick Launch bar."
-msgstr "Crea collegamento in Avvio veloce."
+msgstr "Crea un collegamento sulla barra di avvio veloce."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -1151,7 +1133,7 @@ msgstr "Crea collegamento in Avvio veloce."
 #| msgid "Quick launch"
 msgctxt "nsis:SECTION_QUICK_LAUNCH_NAME"
 msgid "Quick Launch"
-msgstr "Avvio veloce"
+msgstr "Avvio rapido"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
@@ -1159,7 +1141,7 @@ msgstr "Avvio veloce"
 #| msgid "Create shortcuts to ${prodname} on -"
 msgctxt "nsis:SECTION_SHORTCUTS_DESCRIPTION"
 msgid "Create shortcuts to ${prodname}"
-msgstr "Crea collegamento ${prodname} in -"
+msgstr "Crea collegamenti a ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_SHORTCUTS_NAME"
@@ -1172,7 +1154,7 @@ msgstr "Collegamenti"
 #| msgid "Create the shortcut in Start menu."
 msgctxt "nsis:SECTION_START_MENU_DESCRIPTION"
 msgid "Create a shortcut in the Start menu."
-msgstr "Crea il collegamento nel menu Start."
+msgstr "Crea un collegamento nel menu Start."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_START_MENU_NAME"
@@ -1180,10 +1162,13 @@ msgid "Start menu"
 msgstr "Menu Start"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
+#, fuzzy
 msgctxt "nsis:SECTION_TRANSLATIONS_DESCRIPTION"
 msgid ""
 "Install language files to use ${prodname} in your preferred local language."
 msgstr ""
+"Installa i file di lingua per utilizzare ${prodname} nella tua lingua locale "
+"preferita."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_TRANSLATIONS_NAME"
@@ -1196,7 +1181,7 @@ msgstr "Traduzioni"
 #| msgid "Add uninstall program."
 msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
 msgid "Add an uninstall program."
-msgstr "Aggiungi programma di disinstallazione."
+msgstr "Aggiungi un programma di disinstallazione."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_UNINSTALL_NAME"
@@ -1214,7 +1199,7 @@ msgstr "Terminale debug ${proname}"
 #| msgid "${prodname} No UAC."
 msgctxt "nsis:SHORTCUT_NO_UAC"
 msgid "${prodname} (No UAC)."
-msgstr "Nessuna UAC ${prodname}."
+msgstr "${prodname} (nessun UAC)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHRED_SHELL_MENU"
@@ -1237,11 +1222,11 @@ msgid ""
 "including any files (such as custom cleaners) that you may have added or "
 "changed."
 msgstr ""
-"${prodname} verrà disinstallato dalla seguente cartella.$\\r$\\nPer avviare "
-"la disinstallazione seleziona Disinstalla .$\\r$\\nATTENZIONE: il programma "
-"di disinstallazione rimuove completamente la cartella di installazione "
-"inclusi eventuali file (come i programmi di pulizia personalizzati) che "
-"potresti aver aggiunto o modificato."
+"${prodname} verrà disinstallato dalla seguente cartella.\n"
+"Per avviare la disinstallazione seleziona Disinstalla.\n"
+"ATTENZIONE: Il programma di disinstallazione rimuove completamente la "
+"directory di installazione, inclusi qualsiasi file (ad esempio i pulitori "
+"personalizzati) che potresti aver aggiunto o modificato."
 
 #. TRANSLATORS: Multi-value variables are explained
 #. in the online documentation. Basically, they are like
