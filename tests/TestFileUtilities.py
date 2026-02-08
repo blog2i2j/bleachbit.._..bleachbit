@@ -66,7 +66,7 @@ from bleachbit.General import gc_collect, run_external
 from bleachbit.Options import init_configuration, options
 from bleachbit import logger
 from tests import common
-from tests.TestWindows import WindowsLinksMixIn
+
 
 if 'nt' == os.name:
     # pylint: disable=import-error
@@ -76,6 +76,9 @@ if 'nt' == os.name:
     import win32file
 
     from bleachbit import Windows
+    from tests.TestWindows import WindowsLinksMixIn
+else:
+    WindowsLinksMixIn = object
 
 
 def ini_helper(self, execute):

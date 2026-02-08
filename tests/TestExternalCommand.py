@@ -124,8 +124,6 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
         common.put_env('LANGUAGE', 'en')
         super(ExternalCommandTestCase, ExternalCommandTestCase).setUpClass()
         cls.environment_changed = False
-        # Avoid pop-up windows.
-        options.set('first_start', False, commit=False)
         # This should not be needed because of using CLI arg --no-delete-confirmation.
         options.set('delete_confirmation', False, commit=True)
         if 'BLEACHBIT_TEST_OPTIONS_DIR' not in os.environ:
@@ -187,7 +185,7 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
         """Build the command string like the context menu command"""
         shred_command_string = (
             # Disable confirmation for automated tests.
-            f'{sys.executable} bleachbit.py --no-delete-confirmation '
+            f'{sys.executable} bleachbit.py --no-delete-confirmation --no-first-start '
             f'--context-menu "{file_to_shred}"'  # The pathname must be last.
         )
         return shred_command_string

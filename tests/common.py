@@ -75,6 +75,8 @@ class BleachbitTestCase(unittest.TestCase):
         cls.tempdir = tempfile.mkdtemp(prefix=cls.__name__)
         if 'BLEACHBIT_TEST_OPTIONS_DIR' not in os.environ:
             cls._patch_options_paths()
+        bleachbit.Options.options.reset_overrides()
+        bleachbit.Options.options.set_override("first_start", False)
 
     @classmethod
     def _patch_options_paths(cls):
@@ -97,6 +99,7 @@ class BleachbitTestCase(unittest.TestCase):
         * Remove the temporary directory.
         * Restore options paths.
         """
+        bleachbit.Options.options.reset_overrides()
         gc_collect()
         # On Windows, a file may be temporarily locked, so retry.
         for attempt in range(5):

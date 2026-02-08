@@ -57,8 +57,6 @@ class GUITestCase(common.BleachbitTestCase):
         cls.old_language = common.get_env('LANGUAGE')
         common.put_env('LANGUAGE', 'en')
         super(GUITestCase, GUITestCase).setUpClass()
-        options.set('first_start', False)
-        options.set('check_online_updates', False)  # avoid pop-up window
         options.get_tree = types.MethodType(
             lambda self, parent, child: False, options)
         try:
