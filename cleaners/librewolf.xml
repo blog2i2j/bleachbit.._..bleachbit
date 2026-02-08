@@ -21,20 +21,20 @@
 
 -->
 <cleaner id="librewolf">
-  <label>librewolf</label>
+  <label>LibreWolf</label>
   <description>Web browser</description>
   <running type="exe" os="unix">librewolf</running>
   <running type="exe" os="unix">librewolf-bin</running>
   <running type="pathname">~/.librewolf/*.default/lock</running>
   <running type="pathname">~/.librewolf/*.default/lock</running>
   <var name="base">
-    <value os="windows">%AppData%\Librewolf</value>
+    <value os="windows">%AppData%\librewolf</value>
     <value os="linux">~/.librewolf</value>
     <value os="freebsd">~/.librewolf</value>
     <value os="openbsd">~/.librewolf</value>
   </var>
   <var name="profile">
-    <value search="glob" os="windows">%AppData%\Librewolf\Profiles\*</value>
+    <value search="glob" os="windows">%AppData%\librewolf\Profiles\*</value>
     <value search="glob" os="linux">~/.librewolf/*</value>
     <value search="glob" os="freebsd">~/.librewolf/*</value>
     <value search="glob" os="openbsd">~/.librewolf/*</value>
@@ -53,9 +53,9 @@ This Linux path is whitelisted under the System - Cache cleaner, so it is not
 redundant. Also, this Linux path contains the cache2 and OfflineCache directories.
 -->
     <action command="delete" search="walk.all" path="~/.cache/librewolf/"/>
-    <action command="delete" search="walk.all" path="%LocalAppData%\Librewolf\Profiles\*\cache2"/>
-    <action command="delete" search="walk.all" path="%LocalAppData%\Librewolf\Profiles\*\jumpListCache"/>
-    <action command="delete" search="walk.all" path="%LocalAppData%\LibrewolfProfiles\*\OfflineCache"/>
+    <action command="delete" search="walk.all" path="%LocalAppData%\librewolf\Profiles\*\cache2"/>
+    <action command="delete" search="walk.all" path="%LocalAppData%\librewolf\Profiles\*\jumpListCache"/>
+    <action command="delete" search="walk.all" path="%LocalAppData%\librewolf\Profiles\*\OfflineCache"/>
     <!--
 This file no longer exists in Firefox <=62
 
@@ -96,7 +96,7 @@ https://wiki.mozilla.org/Privacy/Reviews/Necko
     <label>Passwords</label>
     <description>A database of usernames and passwords as well as a list of sites that should not store passwords</description>
     <warning>This option will delete your saved passwords.</warning>
-    <!-- http://kb.mozillazine.org/Password_Manager -->
+    <!-- https://kb.mozillazine.org/Password_Manager -->
     <action command="delete" search="file" path="$$profile$$/signons.txt"/>
     <action command="delete" search="file" path="$$profile$$/signons2.txt"/>
     <action command="delete" search="file" path="$$profile$$/signons3.txt"/>
