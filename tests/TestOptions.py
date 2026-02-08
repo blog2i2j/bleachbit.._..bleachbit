@@ -287,7 +287,7 @@ class OptionsTestCase(common.BleachbitTestCase):
         self.assertNotIn(('bleachbit', 'shred'), o2.overrides)
 
         # Clean up
-        o.overrides.clear()
+        o.reset_overrides()
 
     def test_override_with_sections(self):
         """Test overrides work with different sections"""
@@ -309,6 +309,6 @@ class OptionsTestCase(common.BleachbitTestCase):
             o2.get('test_key', section='test_section'), 'original_value')
 
         # Clean up
-        o.overrides.clear()
+        o.reset_overrides()
         if o.config.has_section('test_section'):
             o.config.remove_section('test_section')

@@ -245,6 +245,9 @@ def parse_cmd_line(argv=None):
     parser.add_option("--no-check-online-updates", action="store_false",
                       dest="check_online_updates",
                       help=optparse.SUPPRESS_HELP)
+    parser.add_option("--no-first-start", action="store_false",
+                      dest="first_start",
+                      help=optparse.SUPPRESS_HELP)
 
     if 'nt' == os.name:
         uac_help = _("do not prompt for administrator privileges")
@@ -253,9 +256,6 @@ def parse_cmd_line(argv=None):
         parser.add_option('--uac-sid-token', help=optparse.SUPPRESS_HELP)
         parser.add_option("--update-winapp2", action="store_true",
                           help=_("update winapp2.ini, if a new version is available"))
-
-
-
 
     # added for testing py2exe build
     # https://github.com/bleachbit/bleachbit/commit/befe244efee9b2d4859c6b6c31f8bedfd4d85aad#diff-b578cd35e15095f69822ebe497bf8691da1b587d6cc5f5ec252ff4f186dbed56
@@ -269,6 +269,7 @@ def parse_cmd_line(argv=None):
         setattr(parser.values, 'exit', True)
         setattr(parser.values, 'load_cleaners', False)
         setattr(parser.values, 'check_online_updates', False)
+        setattr(parser.values, 'first_start', False)
     parser.add_option("--context-menu", action="callback", callback=expand_context_menu_option,
                       help=optparse.SUPPRESS_HELP)
 
@@ -282,7 +283,8 @@ def process_cmd_line():
 
     parser, options, args, excludes = parse_cmd_line()
 
-    for opt in ('delete_confirmation', 'load_cleaners', 'check_online_updates'):
+    for opt in ('delete_confirmation', 'load_cleaners',
+                'check_online_updates', 'first_start'):
         if hasattr(options, opt) and getattr(options, opt) is not None:
             Options.options.set_override(opt, getattr(options, opt))
 

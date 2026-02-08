@@ -343,6 +343,10 @@ class Options:
                 return True
         return False
 
+    def reset_overrides(self):
+        """Clear all overrides"""
+        self.overrides.clear()
+
     def restore(self):
         """Restore saved options from disk"""
         try:
