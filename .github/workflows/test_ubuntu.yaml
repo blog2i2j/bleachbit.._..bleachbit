@@ -97,8 +97,10 @@ jobs:
           dbus-run-session -- bash -c '/usr/lib/notification-daemon/notification-daemon & sleep 2 && xvfb-run -a bash -c "make tests && make tests-with-sudo"'
         fi
 
+    # appveyor-artifacts does not work with Python 3.13, and running once
+    # is enough.
     - name: Combine Linux and Windows coverage, upload to Coveralls
-      if: matrix.python-version == '3.13'
+      if: matrix.python-version == '3.9'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
