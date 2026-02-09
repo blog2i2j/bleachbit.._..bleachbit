@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-01-27 08:54-0700\n"
-"PO-Revision-Date: 2026-02-08 19:09+0000\n"
-"Last-Translator: nikypalma <dott.nicolapalma@gmail.com>\n"
+"PO-Revision-Date: 2026-02-10 20:09+0000\n"
+"Last-Translator: bovirus <roberto.boriotti@canon.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/bleachbit/main/"
 "it/>\n"
 "Language: it\n"
@@ -71,7 +71,7 @@ msgstr "Cronologia"
 #: ../cleaners/internet_explorer.xml ../cleaners/winrar.xml
 #: ../cleaners/amule.xml ../bleachbit/Cleaner.py
 msgid "Delete the usage history"
-msgstr "Elimina cronologia d'uso"
+msgstr "Elimina cronologia uso"
 
 #: ../cleaners/realplayer.xml ../cleaners/miro.xml ../cleaners/audacious.xml
 #: ../cleaners/yahoo_messenger.xml ../cleaners/easytag.xml
@@ -93,7 +93,7 @@ msgstr "Registri"
 #: ../cleaners/screenlets.xml ../cleaners/gftp.xml ../cleaners/amule.xml
 #: ../cleaners/vuze.xml ../bleachbit/Cleaner.py
 msgid "Delete the logs"
-msgstr "Elimina i file dei egistri"
+msgstr "Elimina file registri"
 
 #: ../cleaners/xine.xml ../cleaners/miro.xml ../cleaners/silverlight.xml
 #: ../cleaners/flash.xml
@@ -154,7 +154,7 @@ msgstr "Documenti recenti"
 #: ../cleaners/winamp.xml ../cleaners/winzip.xml ../cleaners/teamviewer.xml
 #: ../cleaners/vlc.xml
 msgid "Delete the most recently used list"
-msgstr "Elimina l'elenco dei documenti recenti"
+msgstr "Elimina l'elenco documenti recenti"
 
 #: ../cleaners/dnf.xml ../cleaners/yum.xml ../cleaners/pacman.xml
 #: ../cleaners/apt.xml ../cleaners/snap.xml
@@ -213,7 +213,7 @@ msgstr "File di backup"
 #: ../cleaners/firefox.xml ../cleaners/deepscan.xml ../cleaners/amule.xml
 #: ../cleaners/vuze.xml
 msgid "Delete the backup files"
-msgstr "Elimina i file dei backup"
+msgstr "Elimina file backup"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -279,7 +279,7 @@ msgid ""
 "not store passwords"
 msgstr ""
 "Un database di nomi utente e password nonché un elenco di siti che non "
-"devono memorizzare le password"
+"devono memorizzare password"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
 #: ../cleaners/zen.xml ../cleaners/chromium.xml ../cleaners/thunderbird.xml
@@ -322,7 +322,7 @@ msgstr "Cronologia indirizzi web"
 #: ../cleaners/zen.xml ../cleaners/konqueror.xml ../cleaners/palemoon.xml
 #: ../cleaners/firefox.xml ../cleaners/internet_explorer.xml
 msgid "List of visited web pages"
-msgstr "Elenco dei siti web visitati"
+msgstr "Elenco siti web visitati"
 
 #. TRANSLATORS: Vacuum is a verb.  The term is jargon
 #. from the SQLite database.  Microsoft Access uses
@@ -377,7 +377,7 @@ msgstr "File registri debug"
 #: ../cleaners/secondlife_viewer.xml ../cleaners/easytag.xml
 #: ../cleaners/x11.xml ../cleaners/gl-117.xml
 msgid "Delete the debug logs"
-msgstr "Elimina i file dei registri di debug"
+msgstr "Elimina file registri debug"
 
 #: ../cleaners/bash.xml
 msgid "Shell"
@@ -385,7 +385,7 @@ msgstr "Shell"
 
 #: ../cleaners/bash.xml ../cleaners/sqlite3.xml ../cleaners/octave.xml
 msgid "Delete the command history"
-msgstr "Elimina la cronologia dei comandi"
+msgstr "Elimina cronologia comandi"
 
 #: ../cleaners/bash.xml ../cleaners/google_earth.xml ../cleaners/wine.xml
 #: ../cleaners/silverlight.xml ../cleaners/windows_defender.xml
@@ -423,7 +423,7 @@ msgstr "Elaboratore testi"
 #: ../cleaners/gwenview.xml ../cleaners/adobe_reader.xml ../cleaners/gedit.xml
 #: ../cleaners/kde.xml ../bleachbit/Cleaner.py
 msgid "Delete the list of recently used documents"
-msgstr "Elimina l'elenco dei documenti più recenti"
+msgstr "Elimina elenco documenti recenti"
 
 #: ../cleaners/secondlife_viewer.xml ../cleaners/warzone2100.xml
 #: ../cleaners/nexuiz.xml ../cleaners/hippo_opensim_viewer.xml
@@ -610,7 +610,7 @@ msgid ""
 "This option will reset pinned locations in Quick Access to their defaults."
 msgstr ""
 "Questa opzione consente di ripristinare ai valori predefiniti i percorsi "
-"assegnati in Accesso Rapido."
+"assegnati in accesso rapido."
 
 #: ../cleaners/windows_explorer.xml
 msgid "Shellbags"
@@ -728,11 +728,11 @@ msgstr "Cronologia download"
 
 #: ../cleaners/seamonkey.xml
 msgid "List of files downloaded"
-msgstr "Elenco dei file scaricati"
+msgstr "Elenco file scaricati"
 
 #: ../cleaners/seamonkey.xml
 msgid "Delete the list of visited web pages"
-msgstr "Elimina l'elenco dei siti web visitati"
+msgstr "Elimina elenco siti web visitati"
 
 #. Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations
 #: ../cleaners/transmission.xml
@@ -741,7 +741,7 @@ msgstr "Liste di blocco indirizzi"
 
 #: ../cleaners/transmission.xml
 msgid "Blocklists will need update to work."
-msgstr "Per funzionare le liste bloccate dovranno essere aggiornate."
+msgstr "Per funzionare gli elenchi bloccati dovranno essere aggiornati."
 
 #: ../cleaners/transmission.xml
 msgid "Torrents"
@@ -761,7 +761,7 @@ msgstr "Elimina il file"
 
 #: ../cleaners/tremulous.xml
 msgid "Delete the list of game servers"
-msgstr "Elimina l'elenco dei server dei giochi"
+msgstr "Elimina elenco server giochi"
 
 #: ../cleaners/teamviewer.xml
 msgid "Remote control software"
@@ -846,9 +846,6 @@ msgstr ""
 "dell'aggiornamento o seleziona 'Annulla' per interrompere l'aggiornamento."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:BLEACHBIT_MUI_FINISHPAGE_LINK"
-#| msgid "Visit the ${prodname} web site"
 msgctxt "nsis:BLEACHBIT_MUI_FINISHPAGE_LINK"
 msgid "Visit the ${prodname} website"
 msgstr "Visita il sito web di ${prodname}"
@@ -859,11 +856,6 @@ msgid "${prodname} ${VERSION} Setup"
 msgstr "Installazione di ${prodname} ${VERSION}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIPRINT1"
-#| msgid ""
-#| "The next step is building font cache, during which you may see a black "
-#| "window."
 msgctxt "nsis:MULTIPRINT1"
 msgid ""
 "The next step is building the font cache, during which a black console "
@@ -873,10 +865,6 @@ msgstr ""
 "quale potrebbe apparire una finestra nera della console."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIPRINT2"
-#| msgid ""
-#| "It usually finishes in one minute, but sometimes it takes ten minutes."
 msgctxt "nsis:MULTIPRINT2"
 msgid ""
 "It usually finishes in one minute, but sometimes it takes up to ten minutes."
@@ -884,11 +872,6 @@ msgstr ""
 "Di solito termina in un minuto, ma a volte ci vogliono fino a dieci minuti."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_ADMIN_ACCOUNT_LOGIN_REQUIRED"
-#| msgid ""
-#| "You need to login with an account that is a member of the administrators "
-#| "group to continue."
 msgctxt "nsis:MULTIUSER_ADMIN_ACCOUNT_LOGIN_REQUIRED"
 msgid ""
 "You need to log in with an account that is a member of the administrators "
@@ -903,9 +886,6 @@ msgid "Administrator credentials required."
 msgstr "Richieste credenziali amministratore."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
-#| msgid "Administrator credentials required for uninstall."
 msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr "Per disinstallare sono necessarie le credenziali di amministratore."
@@ -954,21 +934,18 @@ msgstr ""
 "nella cartella \"{FOLDER}\"."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_INSTALLED_CURRENT_USER"
-#| msgid "Version {VERSION} is installed for current user in \"{FOLDER}\"."
 msgctxt "nsis:MULTIUSER_INSTALLED_CURRENT_USER"
 msgid "Version {VERSION} is installed for the current user in \"{FOLDER}\"."
 msgstr ""
-"La versione {VERSION} è installata in \"{FOLDER}\" per l'utente corrente."
+"La versione {VERSION} è installata in \"{FOLDER}\" per l'utente attuale."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALL_HEADER"
 msgid ""
 "Select whether to install $(^NameDA) for all users or for the current user."
 msgstr ""
-"Selezionare se installare $(^NameDA) per tutti gli utenti o per l'utente "
-"corrente."
+"Seleziona se installare $(^NameDA) per tutti gli utenti o per l'utente "
+"attuale."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALL_PAGE_SUBTITLE"
@@ -976,12 +953,9 @@ msgid "Choose for which users to install $(^NameDA)."
 msgstr "Scegli per quali utenti installare $(^NameDA)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_INVALID_PARAMS"
-#| msgid "Invalid combination of paramaters."
 msgctxt "nsis:MULTIUSER_INVALID_PARAMS"
 msgid "Invalid combination of parameters."
-msgstr "Combinazione di parametri non valida."
+msgstr "Combinazione parametri non valida."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_LOGON_SERVICE_NOT_RUNNING"
@@ -990,20 +964,14 @@ msgstr ""
 "Impossibile elevare, il servizio di accesso secondario non è in esecuzione."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_ALL_USERS"
-#| msgid "Fresh install for all users."
 msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_ALL_USERS"
 msgid "Fresh installation for all users."
 msgstr "Nuova installazione per tutti gli utenti."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_CURRENT_USER"
-#| msgid "Fresh install for current user."
 msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_CURRENT_USER"
 msgid "Fresh installation for the current user."
-msgstr "Nuova installazione per l'utente corrente."
+msgstr "Nuova installazione per l'utente attuale."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_NOT_INSTALLED"
@@ -1024,18 +992,13 @@ msgstr ""
 "tutti gli utenti."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_REINSTALL_DIFF_VERSION_CURRENT_USER"
-#| msgid ""
-#| "Uninstall version {OLD_VERSION} and install version {VERSION} for current "
-#| "user."
 msgctxt "nsis:MULTIUSER_REINSTALL_DIFF_VERSION_CURRENT_USER"
 msgid ""
 "Uninstall version {OLD_VERSION} and install version {VERSION} for the "
 "current user."
 msgstr ""
 "Disinstalla la versione {OLD_VERSION} e installa la versione {VERSION} per "
-"l'utente corrente."
+"l'utente attuale."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_ALL_USERS"
@@ -1043,17 +1006,11 @@ msgid "Reinstall version {VERSION} for all users."
 msgstr "Reinstalla la versione {VERSION} per tutti gli utenti."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_CURRENT_USER"
-#| msgid "Reinstall version {VERSION} for current user."
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_CURRENT_USER"
 msgid "Reinstall version {VERSION} for the current user."
-msgstr "Reinstalla la versione {VERSION} per l'utente corrente."
+msgstr "Reinstalla la versione {VERSION} per l'utente attuale."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:MULTIUSER_RUN_AS_ADMIN"
-#| msgid "You need to run this program as administrator."
 msgctxt "nsis:MULTIUSER_RUN_AS_ADMIN"
 msgid "You need to run this program as an administrator."
 msgstr ""
@@ -1065,8 +1022,8 @@ msgid ""
 "$(^NameDA) is installed both for all users and for the current user.\n"
 "Select which installation to remove."
 msgstr ""
-"$(^NameDA) viene installato sia per tutti gli utenti che per l'utente "
-"corrente.\n"
+"$(^NameDA) verrà installato sia per tutti gli utenti che per l'utente "
+"attuale.\n"
 "Seleziona quale installazione rimuovere."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
@@ -1075,16 +1032,11 @@ msgid "Choose for which users to remove $(^NameDA)."
 msgstr "Scegli per quali utenti rimuovere $(^NameDA)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_CORE_DESCRIPTION"
-#| msgid ""
-#| "This are the basic files needed for ${prodname} to function (required)."
 msgctxt "nsis:SECTION_CORE_DESCRIPTION"
 msgid ""
 "These are the basic files needed for ${prodname} to function (required)."
 msgstr ""
-"Questi sono i file di base necessari (obbligatori) per il funzionamento di $"
-"{prodname}."
+"Questi sono i file di base (obbligatori) per il funzionamento di ${prodname}."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_CORE_NAME"
@@ -1102,11 +1054,6 @@ msgid "Desktop"
 msgstr "Desktop"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_INTEGRATE_SHRED_DESCRIPTION"
-#| msgid ""
-#| "Add an option to delete files from the file context menu in Windows "
-#| "explorer."
 msgctxt "nsis:SECTION_INTEGRATE_SHRED_DESCRIPTION"
 msgid ""
 "Add an option to delete files from the file context menu in Windows Explorer."
@@ -1120,25 +1067,16 @@ msgid "Integrate Shred"
 msgstr "Integra Sovrascrivi"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
-#| msgid "Create the shortcut on Quick Launch."
 msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
 msgid "Create a shortcut on the Quick Launch bar."
-msgstr "Crea un collegamento sulla barra di avvio veloce."
+msgstr "Crea un collegamento nella barra di avvio veloce."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_QUICK_LAUNCH_NAME"
-#| msgid "Quick launch"
 msgctxt "nsis:SECTION_QUICK_LAUNCH_NAME"
 msgid "Quick Launch"
 msgstr "Avvio rapido"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_SHORTCUTS_DESCRIPTION"
-#| msgid "Create shortcuts to ${prodname} on -"
 msgctxt "nsis:SECTION_SHORTCUTS_DESCRIPTION"
 msgid "Create shortcuts to ${prodname}"
 msgstr "Crea collegamenti a ${prodname}"
@@ -1149,12 +1087,9 @@ msgid "Shortcuts"
 msgstr "Collegamenti"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_START_MENU_DESCRIPTION"
-#| msgid "Create the shortcut in Start menu."
 msgctxt "nsis:SECTION_START_MENU_DESCRIPTION"
 msgid "Create a shortcut in the Start menu."
-msgstr "Crea un collegamento nel menu Start."
+msgstr "Crea collegamento nel menu Start."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_START_MENU_NAME"
@@ -1162,13 +1097,11 @@ msgid "Start menu"
 msgstr "Menu Start"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
 msgctxt "nsis:SECTION_TRANSLATIONS_DESCRIPTION"
 msgid ""
 "Install language files to use ${prodname} in your preferred local language."
 msgstr ""
-"Installa i file di lingua per utilizzare ${prodname} nella tua lingua locale "
-"preferita."
+"Installa i file lingua per usare ${prodname} nella lingua locale preferita."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_TRANSLATIONS_NAME"
@@ -1176,12 +1109,9 @@ msgid "Translations"
 msgstr "Traduzioni"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
-#| msgid "Add uninstall program."
 msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
 msgid "Add an uninstall program."
-msgstr "Aggiungi un programma di disinstallazione."
+msgstr "Aggiungi programma di disinstallazione."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_UNINSTALL_NAME"
@@ -1194,9 +1124,6 @@ msgid "${prodname} Debugging Terminal"
 msgstr "Terminale debug ${proname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:SHORTCUT_NO_UAC"
-#| msgid "${prodname} No UAC."
 msgctxt "nsis:SHORTCUT_NO_UAC"
 msgid "${prodname} (No UAC)."
 msgstr "${prodname} (nessun UAC)."
@@ -1207,13 +1134,6 @@ msgid "Shred with ${prodname}"
 msgstr "Sovrascrivi con ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgctxt "nsis:UNINSTALL_TEXT"
-#| msgid ""
-#| "${prodname} will be uninstalled from the following folder.$\\r$\\nClick "
-#| "Uninstall to start the uninstallation.$\\r$\\nWARNING: The uninstaller "
-#| "completely removes the installation directory including any files (such "
-#| "as custom cleaners) that you may have added or changed."
 msgctxt "nsis:UNINSTALL_TEXT"
 msgid ""
 "${prodname} will be uninstalled from the following folder.\n"
@@ -1223,10 +1143,10 @@ msgid ""
 "changed."
 msgstr ""
 "${prodname} verrà disinstallato dalla seguente cartella.\n"
-"Per avviare la disinstallazione seleziona Disinstalla.\n"
-"ATTENZIONE: Il programma di disinstallazione rimuove completamente la "
-"directory di installazione, inclusi qualsiasi file (ad esempio i pulitori "
-"personalizzati) che potresti aver aggiunto o modificato."
+"Per avviare la disinstallazione seleziona 'Disinstalla'.\n"
+"ATTENZIONE: il programma di disinstallazione rimuove completamente la "
+"cartella di installazione, inclusi qualsiasi file (ad esempio i pulitori "
+"personalizzati) che potrebbero essere stati aggiunti o modificati."
 
 #. TRANSLATORS: Multi-value variables are explained
 #. in the online documentation. Basically, they are like
@@ -1712,7 +1632,7 @@ msgid ""
 msgstr ""
 "Questa funzione cancella tutte le impostazioni di BleachBit e quindi chiude "
 "l'applicazione. Usala per nascondere l'uso di BleachBit o per ripristinare "
-"le sue impostazioni. Al successivo avvio di BleachBit, le impostazioni "
+"le relative impostazioni. Al successivo avvio di BleachBit, le impostazioni "
 "verranno inizializzate ai valori predefiniti."
 
 #: ../bleachbit/GuiBasic.py
@@ -1938,7 +1858,7 @@ msgstr "Nascondi i pulitori non rilevanti"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Overwrite contents of files to prevent recovery"
-msgstr "Sovrascrivi il contenuto dei file per impedire il recupero"
+msgstr "Sovrascrivi contenuto file per impedirne il recupero"
 
 #: ../bleachbit/GuiPreferences.py
 msgid ""
@@ -2208,8 +2128,8 @@ msgid ""
 "Run BleachBit with administrator privileges to improve the accuracy of "
 "overwriting the contents of files."
 msgstr ""
-"Esegui BleachBit con i privilegi di amministratore per migliorare la "
-"precisione nel sovrascrivere il contenuto dei file."
+"Per migliorare la precisione nel sovrascrivere il contenuto dei file esegui "
+"BleachBit con i privilegi di amministratore."
 
 #: ../bleachbit/GUI.py
 msgid ""
@@ -2246,7 +2166,7 @@ msgstr "Gestisci cookie"
 #: ../bleachbit/GUI.py
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr ""
-"Anteprima dei file nelle operazioni selezionate (nessun file verrà eliminato)"
+"Anteprima file nelle operazioni selezionate (nessun file verrà eliminato)"
 
 #: ../bleachbit/GUI.py
 msgid "Clean files in the selected operations"
@@ -2312,8 +2232,7 @@ msgstr "Impostazione del valore nice %d per questo processo."
 #: ../bleachbit/Memory.py
 #, python-brace-format
 msgid "Dropping privileges of process ID {pid} to user ID {uid}."
-msgstr ""
-"Riduzione dei privilegi del processo con ID {pid} per l'utente con ID {uid}."
+msgstr "Riduzione privilegi processo con ID {pid} per l'utente con ID {uid}."
 
 #. TRANSLATORS: The variable is a quantity like 5kB
 #: ../bleachbit/Memory.py
