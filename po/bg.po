@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BleachBit\n"
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-01-27 08:54-0700\n"
-"PO-Revision-Date: 2026-02-06 03:01+0000\n"
+"PO-Revision-Date: 2026-02-10 20:09+0000\n"
 "Last-Translator: 109247019824 <109247019824@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -1060,7 +1060,7 @@ msgstr ""
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_INTEGRATE_SHRED_NAME"
 msgid "Integrate Shred"
-msgstr ""
+msgstr "Съчетаване на Shred"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
@@ -1097,40 +1097,37 @@ msgctxt "nsis:SECTION_TRANSLATIONS_DESCRIPTION"
 msgid ""
 "Install language files to use ${prodname} in your preferred local language."
 msgstr ""
+"Инсталиране на езикови файлове, така че ползвате ${prodname} на желан език."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Localizations"
 msgctxt "nsis:SECTION_TRANSLATIONS_NAME"
 msgid "Translations"
-msgstr "Локализации"
+msgstr "Преводи"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
 msgid "Add an uninstall program."
-msgstr ""
+msgstr "Добавяне на приложение за деинсталиране."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Update uninstallers"
 msgctxt "nsis:SECTION_UNINSTALL_NAME"
 msgid "Uninstall"
-msgstr "Деинсталатори на обновявания"
+msgstr "Деинсталатор"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_DEBUGGING_TERMINAL"
 msgid "${prodname} Debugging Terminal"
-msgstr ""
+msgstr "Терминал за премахване на дефекти от ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_NO_UAC"
 msgid "${prodname} (No UAC)."
-msgstr ""
+msgstr "${prodname} (No UAC)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHRED_SHELL_MENU"
 msgid "Shred with ${prodname}"
-msgstr ""
+msgstr "Споделено с ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:UNINSTALL_TEXT"
@@ -1141,6 +1138,10 @@ msgid ""
 "including any files (such as custom cleaners) that you may have added or "
 "changed."
 msgstr ""
+"Приложението ${prodname} ще бъде премахнато от следната папка.\n"
+"Изберете „Деинсталиране“ за да започне премахването.\n"
+"Внимание: Процесът напълно премахва папката, включително файловете (като "
+"шаблони за почистване), които се добавяли или променяли."
 
 #. TRANSLATORS: Multi-value variables are explained
 #. in the online documentation. Basically, they are like
@@ -2333,6 +2334,11 @@ msgid ""
 "\n"
 "Are you sure you want to add this path?"
 msgstr ""
+"Внимание: папката „%(path)s“ може да съдържа важни файлове!\n"
+"\n"
+"Повлияни: %(files)d файл(а), %(size)s \n"
+"\n"
+"Желаете ли да я добавите въпреки това?"
 
 #. TRANSLATORS: Warning shown when user tries to add a protected path (no files found)
 #: ../bleachbit/ProtectedPath.py
@@ -2342,6 +2348,9 @@ msgid ""
 "\n"
 "Are you sure you want to add this path?"
 msgstr ""
+"Внимание: папката „%(path)s“ може да съдържа важни файлове!\n"
+"\n"
+"Желаете ли да я добавите въпреки това?"
 
 #: ../bleachbit/RecognizeCleanerML.py
 msgid "Security warning"
