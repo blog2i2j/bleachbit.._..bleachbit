@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-01-27 08:54-0700\n"
-"PO-Revision-Date: 2026-02-10 20:09+0000\n"
+"PO-Revision-Date: 2026-02-12 18:09+0000\n"
 "Last-Translator: ovl-1 <ovl-002@mailinator.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "bleachbit/main/nb_NO/>\n"
@@ -1287,7 +1287,7 @@ msgstr "Slett brukervalgte filer og mapper"
 #. TRANSLATORS: 'empty' means 'unallocated'
 #: ../bleachbit/Cleaner.py
 msgid "Empty space"
-msgstr ""
+msgstr "Ledig plass"
 
 #. TRANSLATORS: 'empty' means 'unallocated'
 #: ../bleachbit/Cleaner.py
@@ -1691,7 +1691,7 @@ msgstr "Genererer filer"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Manage cookies to keep"
-msgstr ""
+msgstr "Håndter infokapsler som skal beholdes"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Select the cookies to keep when cleaning cookies across browsers."
@@ -1703,15 +1703,15 @@ msgstr "Søk:"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Filter cookies..."
-msgstr ""
+msgstr "Filtrer infokapsler..."
 
 #: ../bleachbit/GuiCookie.py
 msgid "Show Selected"
-msgstr ""
+msgstr "Vis valgte"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Only show cookies that are currently selected"
-msgstr ""
+msgstr "Vis kun infokapsler som nå er valgte"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Host"
@@ -1719,15 +1719,15 @@ msgstr ""
 
 #: ../bleachbit/GuiCookie.py
 msgid "Select All"
-msgstr ""
+msgstr "Velg alle"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Deselect All"
-msgstr ""
+msgstr "Fravelg alle"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Keep Selected"
-msgstr ""
+msgstr "Behold valgte"
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1747,11 +1747,11 @@ msgstr "Språk"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
-msgstr ""
+msgstr "Beholde-liste"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
-msgstr ""
+msgstr "Advarselsbekreftelser tilbakestilt."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Check periodically for software updates via the Internet"
