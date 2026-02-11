@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BleachBit\n"
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-01-27 08:54-0700\n"
-"PO-Revision-Date: 2026-02-10 20:09+0000\n"
+"PO-Revision-Date: 2026-02-12 18:09+0000\n"
 "Last-Translator: 109247019824 <109247019824@users.noreply.hosted.weblate.org>"
 "\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -1355,11 +1355,11 @@ msgid ""
 msgstr ""
 "Почистването на свободното дисково пространство премахва следите от файлове, "
 "които са били премахнати без да бъдат унищожени, но това няма да освободи "
-"допълнително дисково пространство. Процесът може да отнеме много време и "
-"временно да забави работата на устройството. Не е необходимо, ако дискът ви "
-"е защитен с пълно шифроване. Методът работи най-добре на традиционните "
-"твърди дискове. На SSD дисковете е по-малко надежден, а честата му употреба "
-"допринася за износването им."
+"дисково пространство. Процесът може да отнеме много време и временно да "
+"забави работата на устройството. Не е необходимо, ако дискът е защитен с "
+"пълно шифроване. Методът работи най-добре на традиционните твърди дискове. "
+"За SSD е по-малко надежден, а честата му употреба допринася за износването "
+"им."
 
 #: ../bleachbit/Cleaner.py
 msgid "The system in general"
@@ -1397,7 +1397,7 @@ msgstr "неприемлив шаблон за изчистване: %s"
 #: ../bleachbit/CLI.py
 #, python-format
 msgid "Wildcard characters are not allowed in --except: %s"
-msgstr ""
+msgstr "Не са позволени заместващи знаци в --except: %s"
 
 #. TRANSLATORS: This is the command line usage.  Don't translate
 #. %prog, but do translate options, cleaner, and option.
@@ -1405,11 +1405,9 @@ msgstr ""
 #. More information about the command line is here
 #. https://www.bleachbit.org/documentation/command-line
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "usage: %prog [options] cleaner.option1 cleaner.option2"
 msgid "usage: %prog [options] cleaner.option1 [cleaner.option2 ...]"
 msgstr ""
-"употреба: %prog [настройки] почистване.настройка1 почистване.настройка2"
+"употреба: %prog [настройки] почистване.настройка1 [почистване.настройка2…]"
 
 #: ../bleachbit/CLI.py
 msgid "list cleaners"
@@ -1455,6 +1453,8 @@ msgstr "включване на настройките, които нямат п
 #: ../bleachbit/CLI.py
 msgid "exclude cleaner options (can be repeated, comma-separated)"
 msgstr ""
+"изключване на настройки за почистване (могат да бъдат повтаряни, разделяне "
+"със запетая)"
 
 #: ../bleachbit/CLI.py
 msgid "set log level to verbose"
@@ -1481,16 +1481,12 @@ msgid "update winapp2.ini, if a new version is available"
 msgstr "обновяване на winapp2.ini, ако е налично издание"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid ""
-#| "Specify only one of these commands: --list-cleaners, --wipe-empty-space, "
-#| "--preview, --clean"
 msgid ""
 "Specify only one of these commands: --list-cleaners, --wipe-empty-space, --"
 "preview, --clean, --shred"
 msgstr ""
 "Укажете само една от тези команди: --list-cleaners, --wipe-empty-space, --"
-"preview, --clean"
+"preview, --clean, --shred"
 
 #: ../bleachbit/CLI.py
 msgid "Checking online for updates to winapp2.ini"
@@ -1668,16 +1664,16 @@ msgstr "Потвърждаване при премахване"
 #: ../bleachbit/GuiBasic.py
 #, python-format
 msgid "Enable %(option)s"
-msgstr ""
+msgstr "Включване на %(option)s"
 
 #: ../bleachbit/GuiBasic.py
 #, python-format
 msgid "Remember my choice for %(option)s"
-msgstr ""
+msgstr "Запазване на избора за %(option)s"
 
 #: ../bleachbit/GuiBasic.py
 msgid "_Enable anyway"
-msgstr ""
+msgstr "_Включване въпреки това"
 
 #: ../bleachbit/GuiBasic.py
 #, python-format
@@ -1823,11 +1819,11 @@ msgstr "Разрешителен списък"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
-msgstr ""
+msgstr "Нулиране на предупреждението преди нулиране."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Check periodically for software updates via the Internet"
-msgstr "Периодична проверка за обновяване на приложението през интернет"
+msgstr "Периодична проверка за обновяване на приложението"
 
 #: ../bleachbit/GuiPreferences.py
 msgid ""
@@ -1885,10 +1881,8 @@ msgid "Exit after cleaning"
 msgstr "Изход след изчистване"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Delete confirmation"
 msgid "Reset warning confirmations"
-msgstr "Потвърждаване на премахване"
+msgstr "Нулиране на потвържденията преди нулиране"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Use IEC sizes (1 KiB = 1024 bytes) instead of SI (1 kB = 1000 bytes)"
@@ -1966,7 +1960,7 @@ msgstr "Пътят вече съществува в потребителския
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
-msgstr ""
+msgstr "Защитен път"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "File"
@@ -2079,16 +2073,9 @@ msgstr "Размер"
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
 #: ../bleachbit/GUI.py
-#, fuzzy, python-format
-#| msgid ""
-#| "Warning regarding %(cleaner)s - %(option)s:\n"
-#| "\n"
-#| "%(warning)s"
+#, python-format
 msgid "%(cleaner)s - %(option)s"
-msgstr ""
-"Обърнете внимание на %(cleaner)s - %(option)s:\n"
-"\n"
-"%(warning)s"
+msgstr "%(cleaner)s - %(option)s"
 
 #: ../bleachbit/GUI.py
 #, python-format
