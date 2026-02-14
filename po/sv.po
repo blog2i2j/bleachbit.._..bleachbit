@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-01-28 10:48+0000\n"
+"PO-Revision-Date: 2026-02-15 06:09+0000\n"
 "Last-Translator: Mona Lisa <nickwick@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/bleachbit/main/"
 "sv/>\n"
@@ -590,10 +590,10 @@ msgstr "Synkronisering"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Ta bort synkroniseringsdata och logga ut från webbläsaren"
+msgstr ""
+"Ta bort synkroniseringsdata, inklusive webbappar, och logga ut från "
+"webbläsaren"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1606,7 +1606,7 @@ msgstr ""
 "  Göran Malmberg https://launchpad.net/~sweidre\n"
 "  JL https://launchpad.net/~jl2414\n"
 "  Jens Stääf https://launchpad.net/~jens-staaf\n"
-"  Jonatan Nyberg https://launchpad.net/~bugreporter41\n"
+"  Karl Jonatan Nyberg https://launchpad.net/~bugreporter41\n"
 "  Josef Andersson https://launchpad.net/~northar\n"
 "  Kristoffer Grundström https://launchpad.net/~umeaboy\n"
 "  Mikael Hiort af Ornäs https://launchpad.net/~lakritslemmel\n"
@@ -1801,6 +1801,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Expertläget aktiverar avancerade funktioner och lättar på skyddsräcken. Var "
+"extra försiktig i expertläget."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1823,14 +1825,12 @@ msgid "Keep list"
 msgstr "Behåll lista"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Mörkt läge"
+msgstr "Expertläge"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Vissa GTK-teman stöder inte både ljusa och mörka lägen."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1966,6 +1966,7 @@ msgstr "Den här sökvägen finns redan i den anpassade listan."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Den här sökvägen är skyddad. Aktivera expertläge för att kringgå skyddet."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2042,6 +2043,7 @@ msgstr "Storlek"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Det här alternativet är skyddat. Aktivera expertläge för att kringgå skyddet."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2060,6 +2062,8 @@ msgstr "Återställer konfigurationsfilen eftersom den är skadad: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s kan inte rengöras eftersom expertläget är "
+"inaktiverat."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2118,7 +2122,7 @@ msgstr ""
 
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
-msgstr ""
+msgstr "Det här alternativet kräver expertläge. Aktivera det i Inställningar."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2134,10 +2138,8 @@ msgstr "Hantera kakor"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Hantera kakor som ska behållas"
+msgstr "Hantera anpassade sökvägar"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
