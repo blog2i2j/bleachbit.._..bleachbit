@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-27 08:54-0700\n"
+"POT-Creation-Date: 2026-02-13 21:22-0700\n"
 "PO-Revision-Date: 2025-04-27 19:46+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/bleachbit/main/ta/"
@@ -587,7 +587,9 @@ msgstr "ஒத்திசைவு"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-msgid "Delete the sync data and sign out of the browser"
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr "ஒத்திசைவு தரவை நீக்கி, உலாவியில் இருந்து வெளியேறவும்"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -867,6 +869,8 @@ msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
@@ -877,6 +881,8 @@ msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
@@ -1156,7 +1162,7 @@ msgstr "நினைவிகள்"
 #. TRANSLATORS: This is the clean button on the main window.
 #. It makes permanent changes: usually deleting files, sometimes
 #. altering them.
-#: ../bleachbit/Action.py ../bleachbit/GUI.py
+#: ../bleachbit/Action.py ../bleachbit/GuiWindow.py
 msgid "Clean"
 msgstr "துடை"
 
@@ -1533,48 +1539,53 @@ msgid ""
 "The environment variable TMP refers to a directory that does not exist: %s"
 msgstr "சுற்றுச்சூழல் மாறி TMP என்பது இல்லாத ஒரு கோப்பகத்தைக் குறிக்கிறது: %s"
 
-#: ../bleachbit/FileUtilities.py
+#: ../bleachbit/GuiApplication.py
+msgid "Choose files to shred"
+msgstr "துண்டாக்க கோப்புகளைத் தேர்வுசெய்க"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Choose folder to shred"
+msgstr "துண்டாக்க கோப்புறையைத் தேர்வுசெய்க"
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiBasic.py
+msgid "_Delete"
+msgstr "_Delete"
+
+#: ../bleachbit/GuiApplication.py
+msgid "No paths found in clipboard."
+msgstr "கிளிப்போர்டில் பாதைகள் எதுவும் காணப்படவில்லை."
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiPreferences.py
+msgid "Choose a folder"
+msgstr "ஒரு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../bleachbit/GuiApplication.py
+msgid "_OK"
+msgstr "_Ok"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Program to clean unnecessary files"
+msgstr "தேவையற்ற கோப்புகளை தூய்மை செய்வதற்கான நிரல்"
+
+#: ../bleachbit/GuiApplication.py
 msgid ""
-"There was at least one file on a file system that does not support advanced "
-"overwriting."
+"GNU General Public License version 3 or later.\n"
+"See https://www.gnu.org/licenses/gpl-3.0.txt"
 msgstr ""
-"மேம்பட்ட மேலெழுதலை ஆதரிக்காத ஒரு கோப்பு முறைமையில் குறைந்தது ஒரு கோப்பையாவது "
-"இருந்தது."
+"குனு பொது பொது உரிமம் பதிப்பு 3 அல்லது அதற்குப் பிறகு.\n"
+"https://www.gnu.org/licenses/gpl-3.0.txt ஐப் பார்க்கவும்"
 
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Path to wipe must be an existing directory: %s"
-msgstr "துடைப்பதற்கான பாதை ஏற்கனவே இருக்கும் கோப்பகமாக இருக்க வேண்டும்: %s"
+#. TRANSLATORS: Maintain the names of translators here.
+#. Launchpad does this automatically for translations
+#. typed in Launchpad. This is a special string shown
+#. in the 'About' box.
+#: ../bleachbit/GuiApplication.py
+msgid "translator-credits"
+msgstr "மொழி பெயர்ப்பாளர் நன்றிகள்"
 
-#: ../bleachbit/FileUtilities.py
-msgid "Creating new, temporary file for wiping free space."
-msgstr "இலவச இடத்தைத் துடைப்பதற்கு புதிய, தற்காலிக கோப்பை உருவாக்குதல்."
-
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Error #%d when flushing the file buffer."
-msgstr "கோப்பு இடையகத்தை சுத்தப்படுத்தும்போது பிழை #%d."
-
-#: ../bleachbit/FileUtilities.py
-msgid ""
-"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
-"{rate:.2f} MB/s"
-msgstr ""
-"எழுதினார் {கோப்புகள் :,} கோப்புகள் மற்றும் {பைட்டுகள் :,} பைட்டுகள் {விநாடிகளில் :,} "
-"வினாடிகள் {rate:.2f} mb/s"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
-msgstr "{பைட்டுகள் :,} பைட்டுகள் மற்றும் {ஐனோட்கள் :, சூப்பர் அல்லாத பயனருக்கு கிடைக்கிறது"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
-msgstr ""
-"{பைட்டுகள் :,} பைட்டுகள் மற்றும் {inodes :,} ஐனோட்கள் சூப்பர் பயனருக்கு கிடைக்கின்றன"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Handled unknown error #0 while truncating file."
-msgstr "கோப்பைக் குறைக்கும் போது அறியப்படாத பிழை #0 கையாளப்பட்டது."
+#: ../bleachbit/GuiApplication.py
+msgid "System information"
+msgstr "அமைப்பு தகவல்"
 
 #: ../bleachbit/GuiBasic.py ../bleachbit/GuiCookie.py
 msgid "_Cancel"
@@ -1583,10 +1594,6 @@ msgstr "_CANCEL"
 #: ../bleachbit/GuiBasic.py
 msgid "_Open"
 msgstr "_OPEN"
-
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
-msgid "_Delete"
-msgstr "_Delete"
 
 #: ../bleachbit/GuiBasic.py
 msgid "Delete confirmation"
@@ -1651,7 +1658,7 @@ msgstr ""
 msgid "Open web browser to %s?"
 msgstr "வலை உலாவியை %s க்கு திறக்கவா?"
 
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiBasic.py ../bleachbit/GuiWindow.py
 msgid "Confirm"
 msgstr "உறுதிப்படுத்தவும்"
 
@@ -1758,6 +1765,12 @@ msgstr ""
 msgid "Keep Selected"
 msgstr ""
 
+#: ../bleachbit/GuiPreferences.py
+msgid ""
+"Expert mode enables advanced features and relaxes guardrails. Use extra "
+"caution in expert mode."
+msgstr ""
+
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வுகள்"
@@ -1776,6 +1789,16 @@ msgstr "மொழிகள்"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
+msgstr ""
+
+#: ../bleachbit/GuiPreferences.py
+#, fuzzy
+#| msgid "Dark mode"
+msgid "Expert mode"
+msgstr "இருண்ட முறை"
+
+#: ../bleachbit/GuiPreferences.py
+msgid "Some GTK themes support do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -1870,10 +1893,6 @@ msgstr "இருண்ட முறை"
 msgid "Windows 10 theme"
 msgstr "சாளரங்கள் 10 கருப்பொருள்"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
-msgid "Choose a folder"
-msgstr "ஒரு அடைவை தேர்ந்தெடுக்கவும்"
-
 #: ../bleachbit/GuiPreferences.py
 #, fuzzy
 #| msgid ""
@@ -1908,7 +1927,7 @@ msgstr "பாதுகாக்கவும்"
 msgid "Code"
 msgstr "குறியீடு"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiPreferences.py ../bleachbit/GuiTreeModels.py
 msgid "Name"
 msgstr "பெயர்"
 
@@ -1921,6 +1940,10 @@ msgstr "இந்த பாதை ஏற்கனவே அனுமதிப்
 #: ../bleachbit/GuiPreferences.py
 msgid "This path already exists in the custom list."
 msgstr "இந்த பாதை ஏற்கனவே தனிப்பயன் பட்டியலில் உள்ளது."
+
+#: ../bleachbit/GuiPreferences.py
+msgid "This path is protected. To bypass protection, enable expert mode."
+msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -1987,59 +2010,23 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "அடைவினை சேர்"
 
-#: ../bleachbit/GUI.py
-msgid "Choose files to shred"
-msgstr "துண்டாக்க கோப்புகளைத் தேர்வுசெய்க"
-
-#: ../bleachbit/GUI.py
-msgid "Choose folder to shred"
-msgstr "துண்டாக்க கோப்புறையைத் தேர்வுசெய்க"
-
-#: ../bleachbit/GUI.py
-msgid "No paths found in clipboard."
-msgstr "கிளிப்போர்டில் பாதைகள் எதுவும் காணப்படவில்லை."
-
-#: ../bleachbit/GUI.py
-msgid "_OK"
-msgstr "_Ok"
-
-#: ../bleachbit/GUI.py
-msgid "Program to clean unnecessary files"
-msgstr "தேவையற்ற கோப்புகளை தூய்மை செய்வதற்கான நிரல்"
-
-#: ../bleachbit/GUI.py
-msgid ""
-"GNU General Public License version 3 or later.\n"
-"See https://www.gnu.org/licenses/gpl-3.0.txt"
-msgstr ""
-"குனு பொது பொது உரிமம் பதிப்பு 3 அல்லது அதற்குப் பிறகு.\n"
-"https://www.gnu.org/licenses/gpl-3.0.txt ஐப் பார்க்கவும்"
-
-#. TRANSLATORS: Maintain the names of translators here.
-#. Launchpad does this automatically for translations
-#. typed in Launchpad. This is a special string shown
-#. in the 'About' box.
-#: ../bleachbit/GUI.py
-msgid "translator-credits"
-msgstr "மொழி பெயர்ப்பாளர் நன்றிகள்"
-
-#: ../bleachbit/GUI.py
-msgid "System information"
-msgstr "அமைப்பு தகவல்"
-
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Active"
 msgstr "செயல்பாட்டிலுள்ள"
 
 #. TRANSLATORS: Size is the label for the column that shows how
 #. much space an option would clean or did clean
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Size"
 msgstr "அளவு"
 
+#: ../bleachbit/GuiTreeModels.py
+msgid "This option is protected. To bypass protection, enable expert mode."
+msgstr ""
+
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 #, fuzzy, python-format
 #| msgid ""
 #| "Warning regarding %(cleaner)s - %(option)s:\n"
@@ -2051,30 +2038,36 @@ msgstr ""
 "\n"
 " %(warning)s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, python-format
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "உள்ளமைவு கோப்பை மீட்டெடுப்பதால் அது ஊழல் நிறைந்ததாக இருப்பதால்: %s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
+#, python-format
+msgid ""
+"%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
 msgstr "நீங்கள் ஒரு செயல்பாட்டைத் தேர்ந்தெடுக்க வேண்டும்"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Done."
 msgstr "முடிந்தது."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Access the application menu by clicking the hamburger icon on the title bar."
 msgstr ""
 "தலைப்பு பட்டியில் ஆம்பர்கர் ஐகானைக் சொடுக்கு செய்வதன் மூலம் பயன்பாட்டு மெனுவை அணுகவும்."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Access the application menu by clicking the logo on the title bar."
 msgstr "தலைப்பு பட்டியில் லோகோவைக் சொடுக்கு செய்வதன் மூலம் பயன்பாட்டு மெனுவை அணுகவும்."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You are running BleachBit with administrative privileges for cleaning shared "
 "parts of the system, and references to the user profile folder will clean "
@@ -2084,7 +2077,7 @@ msgstr ""
 "இயக்குகிறீர்கள், மேலும் பயனர் சுயவிவரக் கோப்புறையின் குறிப்புகள் ரூட் கணக்கை மட்டுமே தூய்மை "
 "செய்யும்."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Run BleachBit with administrator privileges to improve the accuracy of "
 "overwriting the contents of files."
@@ -2092,14 +2085,14 @@ msgstr ""
 "கோப்புகளின் உள்ளடக்கங்களை மேலெழுதும் துல்லியத்தை மேம்படுத்த நிர்வாகி சலுகைகளுடன் "
 "ப்ளீச்ச்பிட்டை இயக்கவும்."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You elevated privileges using a different account to clean shared parts of "
 "the system. User-specific paths will refer to the administrator account, so "
 "to clean your profile, run BleachBit again as a standard user."
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "There is no official version of BleachBit on the Microsoft Store. Get the "
 "genuine version at https://www.bleachbit.org where it is always free of "
@@ -2108,59 +2101,68 @@ msgstr ""
 "நுண்மென் ச்டோரில் ப்ளீச்சிட்டின் அதிகாரப்பூர்வ பதிப்பு எதுவும் இல்லை. உண்மையான பதிப்பை "
 "https://www.bleachbit.org இல் பெறுங்கள், அங்கு அது எப்போதும் இலவசமாக இருக்கும்."
 
+#: ../bleachbit/GuiWindow.py
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Preview"
 msgstr "முன்னோட்டம்"
 
 #. TRANSLATORS: this is the context menu
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, fuzzy
 #| msgid "Cookies"
 msgid "Manage Cookies"
 msgstr "நினைவிகள்"
 
-#: ../bleachbit/GUI.py
+#. TRANSLATORS: this is the context menu
+#: ../bleachbit/GuiWindow.py
+msgid "Manage custom paths"
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட செயல்பாடுகளில் கோப்புகளை முன்னோட்டமிடுங்கள் (எந்த கோப்புகளையும் நீக்காமல்)"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Clean files in the selected operations"
 msgstr "தேர்ந்தெடுக்கப்பட்ட செயல்பாடுகளில் கோப்புகளை தூய்மை செய்யுங்கள்"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort"
 msgstr "கருக்கலைப்பு"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort the preview or cleaning process"
 msgstr "முன்னோட்டம் அல்லது தூய்மை செய்யும் செயல்முறையை நிறுத்துங்கள்"
 
 #. TRANSLATORS: Button in headerbar to update the application
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update"
 msgstr "புதுப்பிப்பு"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update BleachBit to the latest version"
 msgstr "அண்மைக் கால பதிப்பிற்கு ப்ளீச்சிட்டைப் புதுப்பிக்கவும்"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Press F11 to exit fullscreen mode."
 msgstr ""
 
 #. TRANSLATORS: This message is shown when orphaned temporary files
 #. from an interrupted disk wipe operation are detected.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "BleachBit detected leftover files from an interrupted disk wipe operation. "
 "Would you like to preview them with an option to delete them?"
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Error when checking for updates: "
 msgstr "புதுப்பிப்புகளைச் சரிபார்க்கும்போது பிழை: "
 
@@ -2397,6 +2399,49 @@ msgstr ""
 #: ../bleachbit/Windows.py
 msgid "BleachBit is starting...\n"
 msgstr "ப்ளீச்சிட் தொடங்குகிறது ...\n"
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"There was at least one file on a file system that does not support advanced "
+"overwriting."
+msgstr ""
+"மேம்பட்ட மேலெழுதலை ஆதரிக்காத ஒரு கோப்பு முறைமையில் குறைந்தது ஒரு கோப்பையாவது "
+"இருந்தது."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Path to wipe must be an existing directory: %s"
+msgstr "துடைப்பதற்கான பாதை ஏற்கனவே இருக்கும் கோப்பகமாக இருக்க வேண்டும்: %s"
+
+#: ../bleachbit/Wipe.py
+msgid "Creating new, temporary file for wiping free space."
+msgstr "இலவச இடத்தைத் துடைப்பதற்கு புதிய, தற்காலிக கோப்பை உருவாக்குதல்."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Error #%d when flushing the file buffer."
+msgstr "கோப்பு இடையகத்தை சுத்தப்படுத்தும்போது பிழை #%d."
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
+"{rate:.2f} MB/s"
+msgstr ""
+"எழுதினார் {கோப்புகள் :,} கோப்புகள் மற்றும் {பைட்டுகள் :,} பைட்டுகள் {விநாடிகளில் :,} "
+"வினாடிகள் {rate:.2f} mb/s"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
+msgstr "{பைட்டுகள் :,} பைட்டுகள் மற்றும் {ஐனோட்கள் :, சூப்பர் அல்லாத பயனருக்கு கிடைக்கிறது"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
+msgstr ""
+"{பைட்டுகள் :,} பைட்டுகள் மற்றும் {inodes :,} ஐனோட்கள் சூப்பர் பயனருக்கு கிடைக்கின்றன"
+
+#: ../bleachbit/Wipe.py
+msgid "Handled unknown error #0 while truncating file."
+msgstr "கோப்பைக் குறைக்கும் போது அறியப்படாத பிழை #0 கையாளப்பட்டது."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-27 08:54-0700\n"
+"POT-Creation-Date: 2026-02-13 21:22-0700\n"
 "PO-Revision-Date: 2025-11-05 22:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/bleachbit/main/cs/"
@@ -591,7 +591,9 @@ msgstr "Synchronizovat"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-msgid "Delete the sync data and sign out of the browser"
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr "Smazat synchronizovaná data a odhlásit z prohlížeče"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -879,6 +881,8 @@ msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr "K čištění aktualizací systému Windows je nutné oprávnění správce"
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
@@ -889,6 +893,8 @@ msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
@@ -1168,7 +1174,7 @@ msgstr "Cookies"
 #. TRANSLATORS: This is the clean button on the main window.
 #. It makes permanent changes: usually deleting files, sometimes
 #. altering them.
-#: ../bleachbit/Action.py ../bleachbit/GUI.py
+#: ../bleachbit/Action.py ../bleachbit/GuiWindow.py
 msgid "Clean"
 msgstr "Vyčistit"
 
@@ -1550,49 +1556,64 @@ msgid ""
 "The environment variable TMP refers to a directory that does not exist: %s"
 msgstr "TMP neexistuje: %s"
 
-#: ../bleachbit/FileUtilities.py
+#: ../bleachbit/GuiApplication.py
+msgid "Choose files to shred"
+msgstr "Vyberte soubory ke skartaci"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Choose folder to shred"
+msgstr "Vyberte složku ke skartaci"
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiBasic.py
+msgid "_Delete"
+msgstr "_Smazat"
+
+#: ../bleachbit/GuiApplication.py
+msgid "No paths found in clipboard."
+msgstr "Žádné cesty ve schránce nenalezeny."
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiPreferences.py
+msgid "Choose a folder"
+msgstr "Zvolte složku"
+
+#: ../bleachbit/GuiApplication.py
+msgid "_OK"
+msgstr "_OK"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Program to clean unnecessary files"
+msgstr "Program k čištěním nepotřebných souborů"
+
+#: ../bleachbit/GuiApplication.py
 msgid ""
-"There was at least one file on a file system that does not support advanced "
-"overwriting."
+"GNU General Public License version 3 or later.\n"
+"See https://www.gnu.org/licenses/gpl-3.0.txt"
 msgstr ""
-"Na souborovém systému se nachází přinejmenším jeden soubor který na který "
-"není možné použít pokročilé přepsání."
+"GNU General Public License verze 3 nebo pozdější.\n"
+"Více https://www.gnu.org/licenses/gpl-3.0.txt"
 
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Path to wipe must be an existing directory: %s"
-msgstr "Cesta k vyčištění musí být existující soubor : %s"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Creating new, temporary file for wiping free space."
-msgstr "Vytvářím nový, dočasný soubor pro čištění prázdného místa."
-
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Error #%d when flushing the file buffer."
-msgstr "Chyba #%d při pročišťování vyrovnávací paměťi souboru."
-
-#: ../bleachbit/FileUtilities.py
-msgid ""
-"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
-"{rate:.2f} MB/s"
+#. TRANSLATORS: Maintain the names of translators here.
+#. Launchpad does this automatically for translations
+#. typed in Launchpad. This is a special string shown
+#. in the 'About' box.
+#: ../bleachbit/GuiApplication.py
+msgid "translator-credits"
 msgstr ""
-"Zapsáno {files:,} souborů a {bytes:,} bajtů v {seconds:,} sekundách při "
-"{rate:.2f} MB/s"
+"Launchpad Contributions:\n"
+"  Clon https://launchpad.net/~fillip1\n"
+"  Daniel Čermák https://launchpad.net/~m4tthew\n"
+"  Kuvaly [LCT] https://launchpad.net/~kuvaly\n"
+"  Milan Horák https://launchpad.net/~sinyaweo\n"
+"  Milan Slovák https://launchpad.net/~milboys\n"
+"  Pavel Borecki https://launchpad.net/~pavel-borecki\n"
+"  Roman Horník https://launchpad.net/~roman.hornik\n"
+"  Tadeáš Pařík https://launchpad.net/~pariktadeas\n"
+"  arrange https://launchpad.net/~samozrejmost\n"
+"  fanox https://launchpad.net/~any1"
 
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
-msgstr ""
-"{bytes:,} bajtů a {inodes:,} inodů dostupných uživateli, který není super "
-"uživatelem"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
-msgstr "{bytes:,} bajtů a {inodes:,} inodů dostupných super uživateli"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Handled unknown error #0 while truncating file."
-msgstr "Zpracována neznámá chyba #0 při vyprázdnění souboru."
+#: ../bleachbit/GuiApplication.py
+msgid "System information"
+msgstr "Informace o systému"
 
 #: ../bleachbit/GuiBasic.py ../bleachbit/GuiCookie.py
 msgid "_Cancel"
@@ -1601,10 +1622,6 @@ msgstr "_Zrušit"
 #: ../bleachbit/GuiBasic.py
 msgid "_Open"
 msgstr "_Otevřít"
-
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
-msgid "_Delete"
-msgstr "_Smazat"
 
 #: ../bleachbit/GuiBasic.py
 msgid "Delete confirmation"
@@ -1669,7 +1686,7 @@ msgstr ""
 msgid "Open web browser to %s?"
 msgstr "Otevřít webovou stránku %s?"
 
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiBasic.py ../bleachbit/GuiWindow.py
 msgid "Confirm"
 msgstr "Potvrdit"
 
@@ -1776,6 +1793,12 @@ msgstr ""
 msgid "Keep Selected"
 msgstr ""
 
+#: ../bleachbit/GuiPreferences.py
+msgid ""
+"Expert mode enables advanced features and relaxes guardrails. Use extra "
+"caution in expert mode."
+msgstr ""
+
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
 msgstr "Předvolby"
@@ -1794,6 +1817,16 @@ msgstr "Jazyky"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
+msgstr ""
+
+#: ../bleachbit/GuiPreferences.py
+#, fuzzy
+#| msgid "Dark mode"
+msgid "Expert mode"
+msgstr "Tmavý motiv"
+
+#: ../bleachbit/GuiPreferences.py
+msgid "Some GTK themes support do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -1887,10 +1920,6 @@ msgstr "Tmavý motiv"
 msgid "Windows 10 theme"
 msgstr "Windows 10 motiv"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
-msgid "Choose a folder"
-msgstr "Zvolte složku"
-
 #: ../bleachbit/GuiPreferences.py
 #, fuzzy
 #| msgid ""
@@ -1926,7 +1955,7 @@ msgstr "Zachovat"
 msgid "Code"
 msgstr "Kód"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiPreferences.py ../bleachbit/GuiTreeModels.py
 msgid "Name"
 msgstr "Název"
 
@@ -1939,6 +1968,10 @@ msgstr "Tato cesta již existuje v seznamu povolených."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path already exists in the custom list."
 msgstr "Tato cesta již existuje v seznamu vlastních."
+
+#: ../bleachbit/GuiPreferences.py
+msgid "This path is protected. To bypass protection, enable expert mode."
+msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2005,70 +2038,23 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "Přidat složku"
 
-#: ../bleachbit/GUI.py
-msgid "Choose files to shred"
-msgstr "Vyberte soubory ke skartaci"
-
-#: ../bleachbit/GUI.py
-msgid "Choose folder to shred"
-msgstr "Vyberte složku ke skartaci"
-
-#: ../bleachbit/GUI.py
-msgid "No paths found in clipboard."
-msgstr "Žádné cesty ve schránce nenalezeny."
-
-#: ../bleachbit/GUI.py
-msgid "_OK"
-msgstr "_OK"
-
-#: ../bleachbit/GUI.py
-msgid "Program to clean unnecessary files"
-msgstr "Program k čištěním nepotřebných souborů"
-
-#: ../bleachbit/GUI.py
-msgid ""
-"GNU General Public License version 3 or later.\n"
-"See https://www.gnu.org/licenses/gpl-3.0.txt"
-msgstr ""
-"GNU General Public License verze 3 nebo pozdější.\n"
-"Více https://www.gnu.org/licenses/gpl-3.0.txt"
-
-#. TRANSLATORS: Maintain the names of translators here.
-#. Launchpad does this automatically for translations
-#. typed in Launchpad. This is a special string shown
-#. in the 'About' box.
-#: ../bleachbit/GUI.py
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Clon https://launchpad.net/~fillip1\n"
-"  Daniel Čermák https://launchpad.net/~m4tthew\n"
-"  Kuvaly [LCT] https://launchpad.net/~kuvaly\n"
-"  Milan Horák https://launchpad.net/~sinyaweo\n"
-"  Milan Slovák https://launchpad.net/~milboys\n"
-"  Pavel Borecki https://launchpad.net/~pavel-borecki\n"
-"  Roman Horník https://launchpad.net/~roman.hornik\n"
-"  Tadeáš Pařík https://launchpad.net/~pariktadeas\n"
-"  arrange https://launchpad.net/~samozrejmost\n"
-"  fanox https://launchpad.net/~any1"
-
-#: ../bleachbit/GUI.py
-msgid "System information"
-msgstr "Informace o systému"
-
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Active"
 msgstr "Aktivní"
 
 #. TRANSLATORS: Size is the label for the column that shows how
 #. much space an option would clean or did clean
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Size"
 msgstr "Velikost"
 
+#: ../bleachbit/GuiTreeModels.py
+msgid "This option is protected. To bypass protection, enable expert mode."
+msgstr ""
+
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 #, fuzzy, python-format
 #| msgid ""
 #| "Warning regarding %(cleaner)s - %(option)s:\n"
@@ -2080,33 +2066,39 @@ msgstr ""
 "\n"
 "%(warning)s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, python-format
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr ""
 "Nastavení vrácena na výchozí hodnoty, protože soubor s nastaveními je "
 "poškozený: %s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
+#, python-format
+msgid ""
+"%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
 msgstr "Nejprve musíte zvolit operaci"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Done."
 msgstr "Hotovo."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Access the application menu by clicking the hamburger icon on the title bar."
 msgstr ""
 "Nabídku aplikace naleznete pod ikonou tří vodorovných čárek v titulní liště "
 "okna."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Access the application menu by clicking the logo on the title bar."
 msgstr "Otevřete nabídku aplikace kliknutím na logo v liště záhlaví."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You are running BleachBit with administrative privileges for cleaning shared "
 "parts of the system, and references to the user profile folder will clean "
@@ -2115,7 +2107,7 @@ msgstr ""
 "Nyní používáte BleachBit s administrátorskými právy, se kterým mohou být "
 "čištěny sdílené systémové části a soubory uživatele root v jeho složce."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Run BleachBit with administrator privileges to improve the accuracy of "
 "overwriting the contents of files."
@@ -2123,14 +2115,14 @@ msgstr ""
 "Přesnost přepsání obsahu souborů zvýšíte spuštěním Bleachbit s právy správce "
 "systému."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You elevated privileges using a different account to clean shared parts of "
 "the system. User-specific paths will refer to the administrator account, so "
 "to clean your profile, run BleachBit again as a standard user."
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "There is no official version of BleachBit on the Microsoft Store. Get the "
 "genuine version at https://www.bleachbit.org where it is always free of "
@@ -2139,58 +2131,67 @@ msgstr ""
 "V Microsoft Obchodě není žádná oficiální verze BleachBitu. Získej pravou "
 "verzi na https://www.bleachbit.org kde je vždy zdarma."
 
+#: ../bleachbit/GuiWindow.py
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Preview"
 msgstr "Náhled"
 
 #. TRANSLATORS: this is the context menu
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, fuzzy
 #| msgid "Cookies"
 msgid "Manage Cookies"
 msgstr "Cookies"
 
-#: ../bleachbit/GUI.py
+#. TRANSLATORS: this is the context menu
+#: ../bleachbit/GuiWindow.py
+msgid "Manage custom paths"
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr "Náhled souborů ve vybraných operacích (bez smazání jakékoliv souboru)"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Clean files in the selected operations"
 msgstr "Vyčistit soubory ve zvolených operacích"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort"
 msgstr "Přerušit"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort the preview or cleaning process"
 msgstr "Přerušit náhled nebo čištění procesu"
 
 #. TRANSLATORS: Button in headerbar to update the application
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update"
 msgstr "Aktualizace"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update BleachBit to the latest version"
 msgstr "Aktualizace BleachBit na nejnovější verzi"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Press F11 to exit fullscreen mode."
 msgstr "Klávesa F11 ukončí režim celé obrazovky."
 
 #. TRANSLATORS: This message is shown when orphaned temporary files
 #. from an interrupted disk wipe operation are detected.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "BleachBit detected leftover files from an interrupted disk wipe operation. "
 "Would you like to preview them with an option to delete them?"
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Error when checking for updates: "
 msgstr "Chyba při ověřování aktualizací: "
 
@@ -2427,6 +2428,50 @@ msgstr "K čištění aktualizací systému Windows je nutné oprávnění sprá
 #: ../bleachbit/Windows.py
 msgid "BleachBit is starting...\n"
 msgstr "BleachBit se zapíná...\n"
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"There was at least one file on a file system that does not support advanced "
+"overwriting."
+msgstr ""
+"Na souborovém systému se nachází přinejmenším jeden soubor který na který "
+"není možné použít pokročilé přepsání."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Path to wipe must be an existing directory: %s"
+msgstr "Cesta k vyčištění musí být existující soubor : %s"
+
+#: ../bleachbit/Wipe.py
+msgid "Creating new, temporary file for wiping free space."
+msgstr "Vytvářím nový, dočasný soubor pro čištění prázdného místa."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Error #%d when flushing the file buffer."
+msgstr "Chyba #%d při pročišťování vyrovnávací paměťi souboru."
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
+"{rate:.2f} MB/s"
+msgstr ""
+"Zapsáno {files:,} souborů a {bytes:,} bajtů v {seconds:,} sekundách při "
+"{rate:.2f} MB/s"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
+msgstr ""
+"{bytes:,} bajtů a {inodes:,} inodů dostupných uživateli, který není super "
+"uživatelem"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
+msgstr "{bytes:,} bajtů a {inodes:,} inodů dostupných super uživateli"
+
+#: ../bleachbit/Wipe.py
+msgid "Handled unknown error #0 while truncating file."
+msgstr "Zpracována neznámá chyba #0 při vyprázdnění souboru."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or

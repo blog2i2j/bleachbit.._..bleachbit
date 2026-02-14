@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-01-27 08:54-0700\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-13 21:22-0700\n"
 "PO-Revision-Date: 2026-02-08 19:09+0000\n"
 "Last-Translator: billy appetie "
 "<billy_appetie@users.noreply.hosted.weblate.org>\n"
@@ -592,7 +592,9 @@ msgstr "Penyinkronan"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-msgid "Delete the sync data and sign out of the browser"
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr "Hapus data penyinkronan dan keluar dari peramban"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -889,6 +891,8 @@ msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr "Kredensial administrator diperlukan untuk menghapus instalasi."
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
@@ -899,6 +903,8 @@ msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr "Untuk siapa pun yang menggunakan komputer ini (semua pengguna)"
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
@@ -1029,8 +1035,8 @@ msgctxt "nsis:SECTION_CORE_DESCRIPTION"
 msgid ""
 "These are the basic files needed for ${prodname} to function (required)."
 msgstr ""
-"Ini adalah file dasar yang diperlukan agar ${prodname} berfungsi (diperlukan)"
-"."
+"Ini adalah file dasar yang diperlukan agar ${prodname} berfungsi "
+"(diperlukan)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_CORE_NAME"
@@ -1184,7 +1190,7 @@ msgstr "Bersihkan Kuki"
 #. TRANSLATORS: This is the clean button on the main window.
 #. It makes permanent changes: usually deleting files, sometimes
 #. altering them.
-#: ../bleachbit/Action.py ../bleachbit/GUI.py
+#: ../bleachbit/Action.py ../bleachbit/GuiWindow.py
 msgid "Clean"
 msgstr "Bersihkan"
 
@@ -1562,49 +1568,53 @@ msgid ""
 "The environment variable TMP refers to a directory that does not exist: %s"
 msgstr "Variabel lingkungan TMP merujuk ke direktori yang tidak ada: %s"
 
-#: ../bleachbit/FileUtilities.py
+#: ../bleachbit/GuiApplication.py
+msgid "Choose files to shred"
+msgstr "Pilih berkas-berkas yang akan disobek"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Choose folder to shred"
+msgstr "Pilih folder yang akan disobek"
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiBasic.py
+msgid "_Delete"
+msgstr "_Hapus"
+
+#: ../bleachbit/GuiApplication.py
+msgid "No paths found in clipboard."
+msgstr "Tidak ada alamat di papan klip."
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiPreferences.py
+msgid "Choose a folder"
+msgstr "Pilih folder"
+
+#: ../bleachbit/GuiApplication.py
+msgid "_OK"
+msgstr "_Oke"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Program to clean unnecessary files"
+msgstr "Program untuk membersihkan berkas yang takperlu"
+
+#: ../bleachbit/GuiApplication.py
 msgid ""
-"There was at least one file on a file system that does not support advanced "
-"overwriting."
+"GNU General Public License version 3 or later.\n"
+"See https://www.gnu.org/licenses/gpl-3.0.txt"
 msgstr ""
-"Setidaknya ada satu berkas dalam sebuah sistem berkas yang tidak mendukung "
-"penimpaan berkas tingkat lanjut."
+"GNU General Public License versi 3 atau yang lebih baru.\n"
+"Lihat https://www.gnu.org/licenses/gpl-3.0.txt"
 
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Path to wipe must be an existing directory: %s"
-msgstr "Alamat yang hendak disapu harus merupakan direktori yang sudah ada: %s"
+#. TRANSLATORS: Maintain the names of translators here.
+#. Launchpad does this automatically for translations
+#. typed in Launchpad. This is a special string shown
+#. in the 'About' box.
+#: ../bleachbit/GuiApplication.py
+msgid "translator-credits"
+msgstr "Arif Budiman <arifpedia@gmail.com>"
 
-#: ../bleachbit/FileUtilities.py
-msgid "Creating new, temporary file for wiping free space."
-msgstr "Membuat berkas sementara yang baru untuk menyapu ruang kosong."
-
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Error #%d when flushing the file buffer."
-msgstr "Kesalahan #%d saat membersihkan buffer berkas."
-
-#: ../bleachbit/FileUtilities.py
-msgid ""
-"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
-"{rate:.2f} MB/s"
-msgstr ""
-"Tertulis {files:,} berkas dan {bytes:,} bita dalam {seconds:,} detik pada "
-"{rate:.2f} MB/s"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
-msgstr ""
-"{bytes:,} byte dan {inodes:,} inode yang tersedia untuk pengguna non-"
-"superuser"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
-msgstr "{bytes:,} byte dan {inodes:,} inode yang tersedia untuk pengguna super"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Handled unknown error #0 while truncating file."
-msgstr "Menangani galat yang tak diketahui #0 saat memotong berkas."
+#: ../bleachbit/GuiApplication.py
+msgid "System information"
+msgstr "Informasi sistem"
 
 #: ../bleachbit/GuiBasic.py ../bleachbit/GuiCookie.py
 msgid "_Cancel"
@@ -1613,10 +1623,6 @@ msgstr "_Batalkan"
 #: ../bleachbit/GuiBasic.py
 msgid "_Open"
 msgstr "_Buka"
-
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
-msgid "_Delete"
-msgstr "_Hapus"
 
 #: ../bleachbit/GuiBasic.py
 msgid "Delete confirmation"
@@ -1682,7 +1688,7 @@ msgstr ""
 msgid "Open web browser to %s?"
 msgstr "Buka %s di peramban web?"
 
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiBasic.py ../bleachbit/GuiWindow.py
 msgid "Confirm"
 msgstr "Konfirmasikan"
 
@@ -1788,6 +1794,12 @@ msgstr "Batal Memilih Semua"
 msgid "Keep Selected"
 msgstr "Pertahankan Pilihan"
 
+#: ../bleachbit/GuiPreferences.py
+msgid ""
+"Expert mode enables advanced features and relaxes guardrails. Use extra "
+"caution in expert mode."
+msgstr ""
+
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
 msgstr "Preferensi"
@@ -1807,6 +1819,16 @@ msgstr "Bahasa"
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
 msgstr "Pertahankan daftar"
+
+#: ../bleachbit/GuiPreferences.py
+#, fuzzy
+#| msgid "Dark mode"
+msgid "Expert mode"
+msgstr "Mode gelap"
+
+#: ../bleachbit/GuiPreferences.py
+msgid "Some GTK themes support do not support both light and dark modes."
+msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1897,10 +1919,6 @@ msgstr "Mode gelap"
 msgid "Windows 10 theme"
 msgstr "Tema Windows 10"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
-msgid "Choose a folder"
-msgstr "Pilih folder"
-
 #: ../bleachbit/GuiPreferences.py
 msgid "Choose a writable folder for each drive for which to wipe empty space."
 msgstr ""
@@ -1933,7 +1951,7 @@ msgstr "Pertahankan"
 msgid "Code"
 msgstr "Kode"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiPreferences.py ../bleachbit/GuiTreeModels.py
 msgid "Name"
 msgstr "Nama"
 
@@ -1944,6 +1962,10 @@ msgstr "Jalur ini telah ada dalam daftar simpan."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path already exists in the custom list."
 msgstr "Jalur ini sudah ada dalam daftar kustom."
+
+#: ../bleachbit/GuiPreferences.py
+msgid "This path is protected. To bypass protection, enable expert mode."
+msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2007,86 +2029,56 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "Tambah folder"
 
-#: ../bleachbit/GUI.py
-msgid "Choose files to shred"
-msgstr "Pilih berkas-berkas yang akan disobek"
-
-#: ../bleachbit/GUI.py
-msgid "Choose folder to shred"
-msgstr "Pilih folder yang akan disobek"
-
-#: ../bleachbit/GUI.py
-msgid "No paths found in clipboard."
-msgstr "Tidak ada alamat di papan klip."
-
-#: ../bleachbit/GUI.py
-msgid "_OK"
-msgstr "_Oke"
-
-#: ../bleachbit/GUI.py
-msgid "Program to clean unnecessary files"
-msgstr "Program untuk membersihkan berkas yang takperlu"
-
-#: ../bleachbit/GUI.py
-msgid ""
-"GNU General Public License version 3 or later.\n"
-"See https://www.gnu.org/licenses/gpl-3.0.txt"
-msgstr ""
-"GNU General Public License versi 3 atau yang lebih baru.\n"
-"Lihat https://www.gnu.org/licenses/gpl-3.0.txt"
-
-#. TRANSLATORS: Maintain the names of translators here.
-#. Launchpad does this automatically for translations
-#. typed in Launchpad. This is a special string shown
-#. in the 'About' box.
-#: ../bleachbit/GUI.py
-msgid "translator-credits"
-msgstr "Arif Budiman <arifpedia@gmail.com>"
-
-#: ../bleachbit/GUI.py
-msgid "System information"
-msgstr "Informasi sistem"
-
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Active"
 msgstr "Aktif"
 
 #. TRANSLATORS: Size is the label for the column that shows how
 #. much space an option would clean or did clean
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Size"
 msgstr "Ukuran"
 
+#: ../bleachbit/GuiTreeModels.py
+msgid "This option is protected. To bypass protection, enable expert mode."
+msgstr ""
+
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 #, python-format
 msgid "%(cleaner)s - %(option)s"
 msgstr "%(cleaner)s - %(option)s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, python-format
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "Mengatur ulang berkas konfigurasi karena rusak: %s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
+#, python-format
+msgid ""
+"%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
 msgstr "Anda harus memilih operasi"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Done."
 msgstr "Selesai."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Access the application menu by clicking the hamburger icon on the title bar."
 msgstr "Akses menu aplikasi dengan mengeklik ikon hamburger pada bilah judul."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Access the application menu by clicking the logo on the title bar."
 msgstr "Akses menu aplikasi dengan mengeklik logo pada bilah judul."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You are running BleachBit with administrative privileges for cleaning shared "
 "parts of the system, and references to the user profile folder will clean "
@@ -2096,7 +2088,7 @@ msgstr ""
 "membersihkan bagian sistem yang dipakai bersama. Acuan ke folder profil "
 "pengguna hanya akan membersihkan akun root."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Run BleachBit with administrator privileges to improve the accuracy of "
 "overwriting the contents of files."
@@ -2104,7 +2096,7 @@ msgstr ""
 "Jalankan BleachBit dengan hak administrator untuk meningkatkan keakuratan "
 "menimpa isi berkas."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You elevated privileges using a different account to clean shared parts of "
 "the system. User-specific paths will refer to the administrator account, so "
@@ -2115,7 +2107,7 @@ msgstr ""
 "pengguna akan merujuk ke akun administrator, jadi untuk membersihkan profil "
 "Anda, jalankan BleachBit lagi sebagai pengguna standar."
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "There is no official version of BleachBit on the Microsoft Store. Get the "
 "genuine version at https://www.bleachbit.org where it is always free of "
@@ -2124,52 +2116,63 @@ msgstr ""
 "Tidak ada versi resmi BleachBit di Microsoft Store. Dapatkan versi aslinya "
 "di https://www.bleachbit.org yang selalu gratis."
 
+#: ../bleachbit/GuiWindow.py
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Preview"
 msgstr "Pratinjau"
 
 #. TRANSLATORS: this is the context menu
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Manage Cookies"
 msgstr "Kelola Kuki"
 
-#: ../bleachbit/GUI.py
+#. TRANSLATORS: this is the context menu
+#: ../bleachbit/GuiWindow.py
+#, fuzzy
+#| msgid "Manage cookies to keep"
+msgid "Manage custom paths"
+msgstr "Kelola kuki untuk disimpan"
+
+#: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr ""
 "Pratinjau berkas-berkas pada operasi yang dipilih (tanpa menghapus berkas-"
 "berkas apa pun)"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Clean files in the selected operations"
 msgstr "Bersihkan berkas dalam operasi yang dipilih"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort"
 msgstr "Batalkan"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort the preview or cleaning process"
 msgstr "Batalkan proses pratinjau atau pembersihan"
 
 #. TRANSLATORS: Button in headerbar to update the application
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update"
 msgstr "Pembaruan"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update BleachBit to the latest version"
 msgstr "Perbarui BleachBit ke versi terbaru"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Press F11 to exit fullscreen mode."
 msgstr "Tekan F11 untuk keluar dari mode layar penuh."
 
 #. TRANSLATORS: This message is shown when orphaned temporary files
 #. from an interrupted disk wipe operation are detected.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "BleachBit detected leftover files from an interrupted disk wipe operation. "
 "Would you like to preview them with an option to delete them?"
@@ -2178,7 +2181,7 @@ msgstr ""
 "terputus. Apakah Anda ingin melihat pratinjau file-file tersebut dengan opsi "
 "untuk menghapusnya?"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Error when checking for updates: "
 msgstr "Terdapat galat saat memeriksa pemutakhiran: "
 
@@ -2424,6 +2427,50 @@ msgstr "Hak administrator diperlukan untuk membersihkan Pembaruan Windows"
 #: ../bleachbit/Windows.py
 msgid "BleachBit is starting...\n"
 msgstr "Sedang memulai BleachBit...\n"
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"There was at least one file on a file system that does not support advanced "
+"overwriting."
+msgstr ""
+"Setidaknya ada satu berkas dalam sebuah sistem berkas yang tidak mendukung "
+"penimpaan berkas tingkat lanjut."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Path to wipe must be an existing directory: %s"
+msgstr "Alamat yang hendak disapu harus merupakan direktori yang sudah ada: %s"
+
+#: ../bleachbit/Wipe.py
+msgid "Creating new, temporary file for wiping free space."
+msgstr "Membuat berkas sementara yang baru untuk menyapu ruang kosong."
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Error #%d when flushing the file buffer."
+msgstr "Kesalahan #%d saat membersihkan buffer berkas."
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
+"{rate:.2f} MB/s"
+msgstr ""
+"Tertulis {files:,} berkas dan {bytes:,} bita dalam {seconds:,} detik pada "
+"{rate:.2f} MB/s"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
+msgstr ""
+"{bytes:,} byte dan {inodes:,} inode yang tersedia untuk pengguna non-"
+"superuser"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
+msgstr "{bytes:,} byte dan {inodes:,} inode yang tersedia untuk pengguna super"
+
+#: ../bleachbit/Wipe.py
+msgid "Handled unknown error #0 while truncating file."
+msgstr "Menangani galat yang tak diketahui #0 saat memotong berkas."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or

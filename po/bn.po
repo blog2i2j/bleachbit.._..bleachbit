@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-27 08:54-0700\n"
+"POT-Creation-Date: 2026-02-13 21:22-0700\n"
 "PO-Revision-Date: 2025-11-09 09:51+0000\n"
 "Last-Translator: Safa Abbas Bahar Chowdhury <sabc994@gmail.com>\n"
 "Language-Team: Bengali <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -586,7 +586,9 @@ msgstr "হালনাগাদ"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-msgid "Delete the sync data and sign out of the browser"
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr "হালনাগাদকৃত তথ্য মুছুন এবং ব্রাউজার থেকে প্রস্থান করুন"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -868,6 +870,8 @@ msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
@@ -878,6 +882,8 @@ msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
@@ -1157,7 +1163,7 @@ msgstr "কুকিজ"
 #. TRANSLATORS: This is the clean button on the main window.
 #. It makes permanent changes: usually deleting files, sometimes
 #. altering them.
-#: ../bleachbit/Action.py ../bleachbit/GUI.py
+#: ../bleachbit/Action.py ../bleachbit/GuiWindow.py
 msgid "Clean"
 msgstr "ক্লিন করুন"
 
@@ -1540,46 +1546,59 @@ msgstr ""
 "এনভায়রনমেন্ট ভ্যারিয়েবল TMP এমন একটি ডিরেক্টরিকে নির্দেশ করে যার কোন অস্তিত্ব নেই: "
 "%s"
 
-#: ../bleachbit/FileUtilities.py
+#: ../bleachbit/GuiApplication.py
+msgid "Choose files to shred"
+msgstr "শ্রেড করার জন্য ফাইল বাছাই করুন"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Choose folder to shred"
+msgstr "শ্রেড করার জন্য ফোল্ডার বাছাই করুন"
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiBasic.py
+msgid "_Delete"
+msgstr "_ডিলিট করুন"
+
+#: ../bleachbit/GuiApplication.py
+msgid "No paths found in clipboard."
+msgstr "ক্লিপবোর্ডে কোন পাথ পাওয়া যাচ্ছেনা।"
+
+#: ../bleachbit/GuiApplication.py ../bleachbit/GuiPreferences.py
+msgid "Choose a folder"
+msgstr "একটি ফোল্ডার নির্বাচন করুন"
+
+#: ../bleachbit/GuiApplication.py
+msgid "_OK"
+msgstr "_ওকে"
+
+#: ../bleachbit/GuiApplication.py
+msgid "Program to clean unnecessary files"
+msgstr "অপ্রয়োজনীয় ফাইলগুলো পরিষ্কার করার প্রোগ্রাম﻿"
+
+#: ../bleachbit/GuiApplication.py
 msgid ""
-"There was at least one file on a file system that does not support advanced "
-"overwriting."
+"GNU General Public License version 3 or later.\n"
+"See https://www.gnu.org/licenses/gpl-3.0.txt"
 msgstr ""
-"একটি ফাইল সিস্টেমে অন্তত একটি ফাইল আছে যা এডভান্সড ওভাররাইটিংকে সাপোর্ট করেনা।"
+"GNU জেনারেল পাবলিক লাইসেন্স ভার্সন ৩ অথবা তার পরবর্তী।\n"
+"দেখুন https://www.gnu.org/licenses/gpl-3.0.txt"
 
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Path to wipe must be an existing directory: %s"
-msgstr "ওয়াইপ করার জন্য পাথটিকে অবশ্যই অস্তিত্ব আছে এমন একটি ডিরেক্টরি হতে হবে: %s"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Creating new, temporary file for wiping free space."
-msgstr "ফাঁকা স্পেস ওয়াইপ করার জন্য নতুন টেম্পোরারি ফাইল তৈরি করা হচ্ছে।"
-
-#: ../bleachbit/FileUtilities.py
-#, python-format
-msgid "Error #%d when flushing the file buffer."
-msgstr "ফাইল বাফার ফ্লাশ করার সময় ইরোর #%d দেখা দিয়েছে।"
-
-#: ../bleachbit/FileUtilities.py
-msgid ""
-"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
-"{rate:.2f} MB/s"
+#. TRANSLATORS: Maintain the names of translators here.
+#. Launchpad does this automatically for translations
+#. typed in Launchpad. This is a special string shown
+#. in the 'About' box.
+#: ../bleachbit/GuiApplication.py
+msgid "translator-credits"
 msgstr ""
-"লিখেছে {files:,} ফাইলস এবং {bytes:,} বাইটস {seconds:,} সেকেন্ডে {rate:.2f} MB/"
-"s গতিতে"
+"Launchpad Contributions:\n"
+"  Firefly https://launchpad.net/~avalanchefirefly\n"
+"  Mahadi Hasan https://launchpad.net/~mahadiosb\n"
+"  Mahay Alam Khan https://launchpad.net/~mahayalamkhan\n"
+"  Omar Faruque https://launchpad.net/~omarmear\n"
+"  রিমন https://launchpad.net/~remonshai"
 
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
-msgstr "{bytes:,} বাইটস এবং {inodes:,} ইনোডস নন-সুপার-ইউজারের জন্য এভেইলেবল আছে"
-
-#: ../bleachbit/FileUtilities.py
-msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
-msgstr "{bytes:,} বাইটস এবং {inodes:,} ইনোডস সুপার-ইউজারের জন্য এভেইলেবল আছে"
-
-#: ../bleachbit/FileUtilities.py
-msgid "Handled unknown error #0 while truncating file."
-msgstr "ফাইল ট্রাঙ্কেট করার সময় অজানা ইরোর error #0 এর সম্মুখীন হতে হয়েছে।"
+#: ../bleachbit/GuiApplication.py
+msgid "System information"
+msgstr "সিস্টেম ইনফরমেশন"
 
 #: ../bleachbit/GuiBasic.py ../bleachbit/GuiCookie.py
 msgid "_Cancel"
@@ -1588,10 +1607,6 @@ msgstr "_বাতিল করুন"
 #: ../bleachbit/GuiBasic.py
 msgid "_Open"
 msgstr "_খুলুন"
-
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
-msgid "_Delete"
-msgstr "_ডিলিট করুন"
 
 #: ../bleachbit/GuiBasic.py
 msgid "Delete confirmation"
@@ -1657,7 +1672,7 @@ msgstr ""
 msgid "Open web browser to %s?"
 msgstr "%s এর জন্য ওয়েব ব্রাউজার ওপেন করবেন?"
 
-#: ../bleachbit/GuiBasic.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiBasic.py ../bleachbit/GuiWindow.py
 msgid "Confirm"
 msgstr "কনফার্ম"
 
@@ -1764,6 +1779,12 @@ msgstr ""
 msgid "Keep Selected"
 msgstr ""
 
+#: ../bleachbit/GuiPreferences.py
+msgid ""
+"Expert mode enables advanced features and relaxes guardrails. Use extra "
+"caution in expert mode."
+msgstr ""
+
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
@@ -1782,6 +1803,16 @@ msgstr "ভাষাসমূহ"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
+msgstr ""
+
+#: ../bleachbit/GuiPreferences.py
+#, fuzzy
+#| msgid "Dark mode"
+msgid "Expert mode"
+msgstr "ডার্ক মোড"
+
+#: ../bleachbit/GuiPreferences.py
+msgid "Some GTK themes support do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -1877,10 +1908,6 @@ msgstr "ডার্ক মোড"
 msgid "Windows 10 theme"
 msgstr "উইন্ডোজ ১০ থিম"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
-msgid "Choose a folder"
-msgstr "একটি ফোল্ডার নির্বাচন করুন"
-
 #: ../bleachbit/GuiPreferences.py
 #, fuzzy
 #| msgid ""
@@ -1916,7 +1943,7 @@ msgstr "সংরক্ষণ করুন"
 msgid "Code"
 msgstr "কোড"
 
-#: ../bleachbit/GuiPreferences.py ../bleachbit/GUI.py
+#: ../bleachbit/GuiPreferences.py ../bleachbit/GuiTreeModels.py
 msgid "Name"
 msgstr "নাম"
 
@@ -1929,6 +1956,10 @@ msgstr "এই পাথটি ইতিমধ্যে হোয়াইটল
 #: ../bleachbit/GuiPreferences.py
 msgid "This path already exists in the custom list."
 msgstr "এই পাথটি ইতিমধ্যে কাস্টম তালিকায় আছে﻿।"
+
+#: ../bleachbit/GuiPreferences.py
+msgid "This path is protected. To bypass protection, enable expert mode."
+msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -1994,65 +2025,23 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "ফোল্ডার যোগ করুন"
 
-#: ../bleachbit/GUI.py
-msgid "Choose files to shred"
-msgstr "শ্রেড করার জন্য ফাইল বাছাই করুন"
-
-#: ../bleachbit/GUI.py
-msgid "Choose folder to shred"
-msgstr "শ্রেড করার জন্য ফোল্ডার বাছাই করুন"
-
-#: ../bleachbit/GUI.py
-msgid "No paths found in clipboard."
-msgstr "ক্লিপবোর্ডে কোন পাথ পাওয়া যাচ্ছেনা।"
-
-#: ../bleachbit/GUI.py
-msgid "_OK"
-msgstr "_ওকে"
-
-#: ../bleachbit/GUI.py
-msgid "Program to clean unnecessary files"
-msgstr "অপ্রয়োজনীয় ফাইলগুলো পরিষ্কার করার প্রোগ্রাম﻿"
-
-#: ../bleachbit/GUI.py
-msgid ""
-"GNU General Public License version 3 or later.\n"
-"See https://www.gnu.org/licenses/gpl-3.0.txt"
-msgstr ""
-"GNU জেনারেল পাবলিক লাইসেন্স ভার্সন ৩ অথবা তার পরবর্তী।\n"
-"দেখুন https://www.gnu.org/licenses/gpl-3.0.txt"
-
-#. TRANSLATORS: Maintain the names of translators here.
-#. Launchpad does this automatically for translations
-#. typed in Launchpad. This is a special string shown
-#. in the 'About' box.
-#: ../bleachbit/GUI.py
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Firefly https://launchpad.net/~avalanchefirefly\n"
-"  Mahadi Hasan https://launchpad.net/~mahadiosb\n"
-"  Mahay Alam Khan https://launchpad.net/~mahayalamkhan\n"
-"  Omar Faruque https://launchpad.net/~omarmear\n"
-"  রিমন https://launchpad.net/~remonshai"
-
-#: ../bleachbit/GUI.py
-msgid "System information"
-msgstr "সিস্টেম ইনফরমেশন"
-
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Active"
 msgstr "সক্রিয়"
 
 #. TRANSLATORS: Size is the label for the column that shows how
 #. much space an option would clean or did clean
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 msgid "Size"
 msgstr "আকার"
 
+#: ../bleachbit/GuiTreeModels.py
+msgid "This option is protected. To bypass protection, enable expert mode."
+msgstr ""
+
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiTreeModels.py
 #, fuzzy, python-format
 #| msgid ""
 #| "Warning regarding %(cleaner)s - %(option)s:\n"
@@ -2064,29 +2053,35 @@ msgstr ""
 "\n"
 "%(warning)s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, python-format
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "কনফিগারেশন ফাইল রিসেট করা হচ্ছে, কেননা এটি করাপ্ট: %s"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
+#, python-format
+msgid ""
+"%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
 msgstr "আপনাকে অবশ্যই একটি অপারেশন বাছাই করতে হবে"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Done."
 msgstr "শেষ।"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Access the application menu by clicking the hamburger icon on the title bar."
 msgstr "টাইটেল বারের হ্যামবার্গার লোগোতে ক্লিক করে এপ্লিকেশন মেনুতে প্রবেশ করুন।"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Access the application menu by clicking the logo on the title bar."
 msgstr "টাইটেল বারের লোগোতে ক্লিক করে এপ্লিকেশন মেনুতে প্রবেশ করুন।"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You are running BleachBit with administrative privileges for cleaning shared "
 "parts of the system, and references to the user profile folder will clean "
@@ -2096,7 +2091,7 @@ msgstr ""
 "BleachBit রান করছেন এবং ইউজার প্রোফাইল ফোল্ডারের রেফারেন্স শুধু রুট একাউন্টকে ক্লিন "
 "করবে।"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "Run BleachBit with administrator privileges to improve the accuracy of "
 "overwriting the contents of files."
@@ -2104,14 +2099,14 @@ msgstr ""
 "ফাইলগুলোর কনটেন্ট ওভাররাইট করার একুরেসি ভালো করার জন্য এডমিনিস্ট্রেটর প্রিভিলেজ "
 "সহকারে BleachBit রান করুন।"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "You elevated privileges using a different account to clean shared parts of "
 "the system. User-specific paths will refer to the administrator account, so "
 "to clean your profile, run BleachBit again as a standard user."
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "There is no official version of BleachBit on the Microsoft Store. Get the "
 "genuine version at https://www.bleachbit.org where it is always free of "
@@ -2120,58 +2115,67 @@ msgstr ""
 "মাইক্রোসফট স্টোরে ব্লিচবিটের অফিসিয়াল ভার্সন নেই। আসল ভার্সনটি পেতে গেলে https://"
 "www.bleachbit.org থেকে ডাউনলোড করুন, এখানে এটি সবসময় বিনামূল্যে পাওয়া যায়।"
 
+#: ../bleachbit/GuiWindow.py
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Preview"
 msgstr "প্রিভিউ"
 
 #. TRANSLATORS: this is the context menu
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 #, fuzzy
 #| msgid "Cookies"
 msgid "Manage Cookies"
 msgstr "কুকিজ"
 
-#: ../bleachbit/GUI.py
+#. TRANSLATORS: this is the context menu
+#: ../bleachbit/GuiWindow.py
+msgid "Manage custom paths"
+msgstr ""
+
+#: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr "বাছাই করা অপারেশনগুলোর ফাইল সমূহ প্রিভিউ করুন (কোন ফাইল ডিলিট না করে)"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Clean files in the selected operations"
 msgstr "বাছাই করা অপারেশনগুলোর ফাইল সমূহ ক্লিন করুন"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort"
 msgstr "বাতিল করুন"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Abort the preview or cleaning process"
 msgstr "প্রিভিউ অথবা ক্লিনিং প্রসেস বাতিল করুন"
 
 #. TRANSLATORS: Button in headerbar to update the application
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update"
 msgstr "আপডেট"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Update BleachBit to the latest version"
 msgstr "ব্লিচবিটকে সর্বশেষ ভার্সনে আপডেট করুন﻿"
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Press F11 to exit fullscreen mode."
 msgstr "ফুলস্ক্রিন মোড থেকে বের হতে F11 চাপুন।"
 
 #. TRANSLATORS: This message is shown when orphaned temporary files
 #. from an interrupted disk wipe operation are detected.
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid ""
 "BleachBit detected leftover files from an interrupted disk wipe operation. "
 "Would you like to preview them with an option to delete them?"
 msgstr ""
 
-#: ../bleachbit/GUI.py
+#: ../bleachbit/GuiWindow.py
 msgid "Error when checking for updates: "
 msgstr "আপডেটের জন্য চেক করার সময় ইরোর দেখা দিয়েছে: "
 
@@ -2410,6 +2414,47 @@ msgstr ""
 #: ../bleachbit/Windows.py
 msgid "BleachBit is starting...\n"
 msgstr ""
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"There was at least one file on a file system that does not support advanced "
+"overwriting."
+msgstr ""
+"একটি ফাইল সিস্টেমে অন্তত একটি ফাইল আছে যা এডভান্সড ওভাররাইটিংকে সাপোর্ট করেনা।"
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Path to wipe must be an existing directory: %s"
+msgstr "ওয়াইপ করার জন্য পাথটিকে অবশ্যই অস্তিত্ব আছে এমন একটি ডিরেক্টরি হতে হবে: %s"
+
+#: ../bleachbit/Wipe.py
+msgid "Creating new, temporary file for wiping free space."
+msgstr "ফাঁকা স্পেস ওয়াইপ করার জন্য নতুন টেম্পোরারি ফাইল তৈরি করা হচ্ছে।"
+
+#: ../bleachbit/Wipe.py
+#, python-format
+msgid "Error #%d when flushing the file buffer."
+msgstr "ফাইল বাফার ফ্লাশ করার সময় ইরোর #%d দেখা দিয়েছে।"
+
+#: ../bleachbit/Wipe.py
+msgid ""
+"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
+"{rate:.2f} MB/s"
+msgstr ""
+"লিখেছে {files:,} ফাইলস এবং {bytes:,} বাইটস {seconds:,} সেকেন্ডে {rate:.2f} MB/"
+"s গতিতে"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
+msgstr "{bytes:,} বাইটস এবং {inodes:,} ইনোডস নন-সুপার-ইউজারের জন্য এভেইলেবল আছে"
+
+#: ../bleachbit/Wipe.py
+msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
+msgstr "{bytes:,} বাইটস এবং {inodes:,} ইনোডস সুপার-ইউজারের জন্য এভেইলেবল আছে"
+
+#: ../bleachbit/Wipe.py
+msgid "Handled unknown error #0 while truncating file."
+msgstr "ফাইল ট্রাঙ্কেট করার সময় অজানা ইরোর error #0 এর সম্মুখীন হতে হয়েছে।"
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
