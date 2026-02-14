@@ -171,9 +171,12 @@ class OpenOfficeOrg(Cleaner):
 
         # reference: http://katana.oooninja.com/w/editions_of_openoffice.org
         if 'posix' == os.name:
-            self.prefixes = ["~/.ooo-2.0", "~/.openoffice.org2",
-                             "~/.openoffice.org2.0", "~/.openoffice.org/3",
-                             "~/.ooo-dev3"]
+            self.prefixes = ["~/.ooo-2.0",
+                             "~/.openoffice.org2",
+                             "~/.openoffice.org2.0",
+                             "~/.openoffice.org/3",
+                             "~/.ooo-dev3",
+                             "~/.config/libreoffice/4"]
         if 'nt' == os.name:
             self.prefixes = [
                 "$APPDATA\\OpenOffice.org\\3", "$APPDATA\\OpenOffice.org2"]
