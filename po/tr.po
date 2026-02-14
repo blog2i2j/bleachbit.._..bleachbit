@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-02-02 19:01+0000\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"PO-Revision-Date: 2026-02-15 06:09+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/bleachbit/main/"
 "tr/>\n"
 "Language: tr\n"
@@ -588,10 +588,9 @@ msgstr "Eşitle"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Eşitleme verisini sil ve tarayıcı oturumunu kapat"
+msgstr ""
+"Web uygulamaları dahil eşitleme verisini sil ve tarayıcı oturumunu kapat"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1790,6 +1789,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Uzman kipi, gelişmiş özellikleri etkinleştirir ve güvenlik önlemlerini "
+"gevşetir. Uzman kipinde daha dikkatli olun."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1812,14 +1813,12 @@ msgid "Keep list"
 msgstr "Kalacakların listesi"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Koyu kip"
+msgstr "Uzman kipi"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Bazı GTK temaları hem açık hem de koyu kipleri desteklemez."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1953,7 +1952,7 @@ msgstr "Bu yol zaten özel listede var."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
-msgstr ""
+msgstr "Bu yol korumalı. Korumayı atlamak için uzman kipini etkinleştirin."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2029,7 +2028,7 @@ msgstr "Boyut"
 
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
-msgstr ""
+msgstr "Bu seçenek korumalı. Korumayı atlamak için uzman kipini etkinleştirin."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2048,6 +2047,7 @@ msgstr "Yapılandırma dosyası bozuk olduğu için sıfırlanıyor: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s uzman kipi devre dışı olduğu için temizlenemiyor."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2107,7 +2107,7 @@ msgstr ""
 
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
-msgstr ""
+msgstr "Bu seçenek uzman kipini gerektirir. Tercihlerden etkinleştirin."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2123,10 +2123,8 @@ msgstr "Çerezleri Yönet"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Kalacak çerezleri yönet"
+msgstr "Özel yolları yönet"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
