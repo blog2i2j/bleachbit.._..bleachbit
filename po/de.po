@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-02-08 19:09+0000\n"
+"PO-Revision-Date: 2026-02-15 06:09+0000\n"
 "Last-Translator: Mr-Update <mr.update@yahoo.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/bleachbit/main/de/"
-">\n"
+"Language-Team: German <https://hosted.weblate.org/projects/bleachbit/main/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -594,10 +594,10 @@ msgstr "Synchronisation"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Die Synchronisationsdaten löschen und vom Browser abmelden"
+msgstr ""
+"Die Synchronisationsdaten einschließlich Web-Apps löschen und vom Browser "
+"abmelden"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1823,6 +1823,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Der Expertenmodus aktiviert erweiterte Funktionen und lockert die "
+"Sicherheitsvorkehrungen. Seien Sie im Expertenmodus besonders vorsichtig."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1845,14 +1847,14 @@ msgid "Keep list"
 msgstr "Behalteliste"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Dunkler Modus"
+msgstr "Expertenmodus"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
 msgstr ""
+"Einige GTK-Designs unterstützen nicht sowohl den hellen als auch den dunklen "
+"Modus."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1945,7 +1947,7 @@ msgstr "Dunkler Modus"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Windows 10 theme"
-msgstr "Windows 10-Thema"
+msgstr "Windows 10-Design"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Choose a writable folder for each drive for which to wipe empty space."
@@ -1994,6 +1996,8 @@ msgstr "Dieser Pfad ist in der benutzerdefinierten Liste bereits vorhanden."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Dieser Pfad ist geschützt. Um den Schutz zu umgehen, aktivieren Sie den "
+"Expertenmodus."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2070,6 +2074,8 @@ msgstr "Größe"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Diese Option ist geschützt. Um den Schutz zu umgehen, aktivieren Sie den "
+"Expertenmodus."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2088,6 +2094,8 @@ msgstr "Zurücksetzen der Konfigurationsdatei, weil sie fehlerhaft ist: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s kann nicht bereinigt werden, da der Expertenmodus "
+"deaktiviert ist."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2152,6 +2160,8 @@ msgstr ""
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
+"Diese Option erfordert den Expertenmodus. Aktivieren Sie ihn in den "
+"Einstellungen."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2167,10 +2177,8 @@ msgstr "Cookies verwalten"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Zu behaltende Cookies verwalten"
+msgstr "Benutzerdefinierte Pfade verwalten"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
@@ -2236,7 +2244,7 @@ msgstr "Auslagerungsspeicher wird reaktiviert."
 #: ../bleachbit/Memory.py
 #, python-format
 msgid "Setting nice value %d for this process."
-msgstr "nice-Wert %d für diesen Prozess wird festgelegt."
+msgstr "Festlegen eines guten Werts %d für diesen Prozess."
 
 #: ../bleachbit/Memory.py
 #, python-brace-format
