@@ -369,6 +369,7 @@ There is NO WARRANTY, to the extent permitted by law.""" % APP_VERSION)
         sys.exit(app.run())
     if options.shred:
         # delete arbitrary files without GUI
+        Options.options.set_override('first_start', False)
         # create a temporary cleaner object
         backends['_gui'] = create_simple_cleaner(args)
         operations = {'_gui': ['files']}
