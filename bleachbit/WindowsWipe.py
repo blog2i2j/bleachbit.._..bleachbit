@@ -47,7 +47,7 @@
 ***   we will truncate the file and treat it all as missed clusters.
 ***
 ***   --Phase 2
-*** - (*) Get volume bitmap of free/allocated clusters using defrag API. 
+*** - (*) Get volume bitmap of free/allocated clusters using defrag API.
 ***   Figure out if checkpoint has made our missed clusters available
 ***   for use again (this is potentially delayed by a few seconds in NTFS).
 *** - If they have not yet been made available, wait 0.1s then repeat
@@ -1094,23 +1094,33 @@ def wipe_extent_by_defrag(volume_handle, lcn_start, lcn_end, cluster_size,
     # The new zero-fill file may not be contiguous, so it requires a
     # loop to be sure of reaching the end of the new file's clusters.
     new_vcn = 0
+    target_clusters = lcn_end - lcn_start + 1
+    clusters_moved = 0
     for new_lcn_start, new_lcn_end in new_extents:
         # logger.debug("Zero-fill wrote from %d to %d",
         #              new_lcn_start, new_lcn_end)
         cluster_count = new_lcn_end - new_lcn_start + 1
-        cluster_dest = lcn_start + new_vcn
+
+        # Prevent moving more clusters than necessary, which can happen if
+        # the file system allocates more clusters than the file size.
+        remaining_target = target_clusters - clusters_moved
+        if remaining_target <= 0:
+            break
+        count_to_move = min(cluster_count, remaining_target)
+
+        cluster_dest = lcn_start + clusters_moved
 
         if new_lcn_start != cluster_dest:
             logger.debug("Move %d clusters to %d",
-                         cluster_count, cluster_dest)
+                         count_to_move, cluster_dest)
             try:
                 move_file(volume_handle, file_handle, new_vcn,
-                          cluster_dest, cluster_count)
-            except:
+                          cluster_dest, count_to_move)
+            except Exception as e:
                 # Move file failed, probably because another process
                 # has allocated a cluster on disk.
                 # Break into smaller pieces and do what we can.
-                logger.debug("!! Move encountered an error !!")
+                logger.debug("!! Move encountered an error: %s !!", e)
                 CloseHandle(file_handle)
                 if lcn_start >= lcn_end:
                     return False
@@ -1125,6 +1135,7 @@ def wipe_extent_by_defrag(volume_handle, lcn_start, lcn_end, cluster_size,
             logging.debug("No need to move extent from %d",
                           new_lcn_start)
         new_vcn += cluster_count
+        clusters_moved += count_to_move
 
     CloseHandle(file_handle)
     DeleteFile(tmp_file_path)
