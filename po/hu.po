@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-01-30 08:01+0000\n"
+"PO-Revision-Date: 2026-02-15 06:09+0000\n"
 "Last-Translator: Ghost of Sparta <makesocialfoss32@keemail.me>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/bleachbit/main/"
 "hu/>\n"
@@ -591,10 +591,10 @@ msgstr "Szinkronizálás"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Szinkronizált adatok törlése és kijelentkezés a böngészőből"
+msgstr ""
+"Szinkronizált adatok törlése, beleértve a webalkalmazásokat, és "
+"kijelentkezés a böngészőből"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1819,6 +1819,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"A szakértő mód engedélyezi a speciális funkciók használatát, és enyhíti a "
+"védőkorlátokat. A szakértő módban legyen fokozottan óvatos."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1841,14 +1843,12 @@ msgid "Keep list"
 msgstr "Megtartandó lista"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Sötét mód"
+msgstr "Szakértői mód"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Egyes GTK-témák nem támogatják egyszerre a világos és a sötét módot."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1987,6 +1987,8 @@ msgstr "Ez az útvonal már létezik az egyéni listán."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Ez az elérési útvonal védett. A védelem megkerüléséhez engedélyezze a "
+"szakértői módot."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2063,6 +2065,7 @@ msgstr "Méret"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Ez az opció védett. A védelem megkerüléséhez engedélyezze a szakértői módot."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2081,6 +2084,7 @@ msgstr "Konfigurációs fájl visszaállítása, mert sérült: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s – %(option)s nem tisztítható, mert a szakértői mód le van tiltva."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2142,6 +2146,8 @@ msgstr ""
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
+"Ehhez az opcióhoz szakértői mód szükséges. Engedélyezze a „Beállítások” "
+"menüben."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2157,10 +2163,8 @@ msgstr "Sütik kezelése"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Megtartandó sütik kezelése"
+msgstr "Egyéni elérési útvonalak kezelése"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
