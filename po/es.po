@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-02-13 17:15+0000\n"
+"PO-Revision-Date: 2026-02-16 10:09+0000\n"
 "Last-Translator: Francisco Serrador <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/bleachbit/main/"
 "es/>\n"
@@ -596,10 +596,10 @@ msgstr "Sincronización"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Eliminar los datos de sincronización y cerrar la sesión del navegador"
+msgstr ""
+"Eliminar los datos de sincronización, incluyendo las apps de web, y cerrar "
+"la sesión del navegador"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1845,6 +1845,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"El modo experto habilita características avanzadas y relaja las guardias. "
+"Utilice con precaución adicional en modo experto."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1867,14 +1869,12 @@ msgid "Keep list"
 msgstr "Conservar listado"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Modo oscuro"
+msgstr "Modo experto"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Algunos temas GTK admiten no admitir ambos modos claros y oscuros."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -2014,6 +2014,8 @@ msgstr "Esta ruta ya figura en la lista personalizada."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Esta ruta está protegida. Para superar la protección, habilite el modo "
+"experto."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2090,6 +2092,8 @@ msgstr "Tamaño"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Esta opción está protegida. Para superar la protección, habilite el modo "
+"experto."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2108,6 +2112,8 @@ msgstr "Restableciendo el archivo de configuración porque está dañado: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s no puede ser purgado porque el modo experto está "
+"inhabilitado."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2170,7 +2176,7 @@ msgstr ""
 
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
-msgstr ""
+msgstr "Esta opción requiere modo experto. Habilítelo en Preferencias."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2186,10 +2192,8 @@ msgstr "Gestión de cookies"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Gestiona las cookies a conservar"
+msgstr "Gestiona rutas adaptadas"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
