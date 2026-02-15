@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-02-01 18:01+0000\n"
+"PO-Revision-Date: 2026-02-16 10:09+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
-"Language-Team: Irish <https://hosted.weblate.org/projects/bleachbit/main/ga/"
-">\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/bleachbit/main/ga/>"
+"\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
-"(n>6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
+"6 && n<11) ? 3 : 4;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -595,10 +595,10 @@ msgstr "Sioncrónaigh"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Scrios na sonraí sioncrónaithe agus sínigh amach as an mbrabhsálaí"
+msgstr ""
+"Scrios na sonraí sioncrónaithe, lena n-áirítear aipeanna gréasáin, agus "
+"sínigh amach as an mbrabhsálaí"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1814,6 +1814,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Cumasaíonn mód saineolaithe gnéithe ardleibhéil agus maolaíonn sé ráillí "
+"cosanta. Bí cúramach go háirithe i mód saineolaithe."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1836,14 +1838,12 @@ msgid "Keep list"
 msgstr "Coinnigh an liosta"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Mód dorcha"
+msgstr "Mód saineolaithe"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Ní thacaíonn roinnt téamaí GTK le móid éadroma agus dorcha araon."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1983,6 +1983,8 @@ msgstr "Tá an cosán seo ar fáil cheana féin sa liosta saincheaptha."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Tá an cosán seo faoi chosaint. Chun an chosaint a sheachaint, cumasaigh mód "
+"saineolaithe."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2059,6 +2061,8 @@ msgstr "Méid"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Tá an rogha seo faoi chosaint. Chun an chosaint a sheachaint, cumasaigh mód "
+"saineolaithe."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2077,6 +2081,8 @@ msgstr "An comhad cumraíochta á athshocrú toisc go bhfuil sé truaillithe: %s
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - Ní féidir %(option)s a ghlanadh mar go bhfuil mód saineolaí "
+"díchumasaithe."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2139,7 +2145,7 @@ msgstr ""
 
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
-msgstr ""
+msgstr "Éilíonn an rogha seo mód saineolaí. Cumasaigh é i Roghanna."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2155,10 +2161,8 @@ msgstr "Bainistigh Fianáin"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Bainistigh fianáin le coinneáil"
+msgstr "Bainistigh cosáin saincheaptha"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
@@ -2602,7 +2606,7 @@ msgstr "Comhaid le scriosadh: %d"
 #: ../bleachbit/Worker.py
 #, python-format
 msgid "Special operations: %d"
-msgstr "Logann CVS speisialta: %d"
+msgstr "Oibríochtaí speisialta: %d"
 
 #: ../bleachbit/Worker.py
 #, python-format
