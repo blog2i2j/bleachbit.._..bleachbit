@@ -1,4 +1,4 @@
-name: Update translation in org.bleachbit.BleachBit.desktop
+name: Merge new translations to .desktop and NSIS
 
 on:
   push:
@@ -27,14 +27,14 @@ jobs:
           wget https://raw.githubusercontent.com/bleachbit/bleachbit-misc/refs/heads/master/extract_desktop.py
           python3 -m pip install --upgrade pip setuptools
 
-      - name: Run make command
+      - name: Compile message catalogs to binary format
         run: make -C po local
 
-      - name: Run extract_desktop.py
+      - name: Extract translations from .mo to .desktop
         run: python3 extract_desktop.py
 
       # Generate NsisInclude/BleachBitLang.nsh from po/*.po
-      - name: Run NSIS translation generator
+      - name: Extract translations to NSIS
         run: python3 windows/nsis_translations.py --generate
 
       - name: Commit if changed
@@ -45,7 +45,7 @@ jobs:
           if [ -z "$(git diff --cached --exit-code)" ]; then
               echo "No changes to commit."
           else
-              git commit -m 'Update translation in .desktop file' -m 'Automatically extracted from ./po/*.po'
+              git commit -m 'Update localization files' -m 'Automatically extracted from ./po/*.po'
               git push
           fi
 
