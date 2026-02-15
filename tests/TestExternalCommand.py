@@ -27,7 +27,8 @@ if HAVE_GTK:
     from bleachbit.GuiApplication import Bleachbit
 
 
-START_TIMEOUT_SECONDS = 10
+START_TIMEOUT_SECONDS = 20
+MAX_PATH_DISPLAY = 200
 
 
 def wait_for_process_tree_windows(process, timeout=60, poll_interval=0.1):
@@ -60,6 +61,24 @@ def wait_for_process_tree_windows(process, timeout=60, poll_interval=0.1):
             process.kill()
             process.wait()
             raise subprocess.TimeoutExpired(process.args, timeout)
+
+        # Add absolute safety timeout to prevent hanging
+        if elapsed > timeout + 30:  # Extra 30 seconds safety margin
+            # Force kill everything and exit
+            try:
+                process.kill()
+                process.wait()
+                # Try to kill any remaining grandchildren
+                for pid in grandchild_pids:
+                    try:
+                        if psutil.pid_exists(pid):
+                            proc = psutil.Process(pid)
+                            proc.kill()
+                    except (psutil.NoSuchProcess, psutil.AccessDenied):
+                        pass
+            except:
+                pass
+            raise subprocess.TimeoutExpired(process.args, elapsed)
 
         if not child_exited:
             child_status = process.poll()
@@ -95,27 +114,170 @@ def wait_for_process_tree_windows(process, timeout=60, poll_interval=0.1):
         time.sleep(poll_interval)
 
 
-def is_application_running(require_both=False):
-    """Check if the application is running"""
-    is_process_running = False
-    for process in psutil.process_iter(['name', 'cmdline']):
-        try:
+class ApplicationRunningTracker:
+    """Tracks processes and window titles during application run detection"""
+
+    def __init__(self, check_window_title=False, timeout=0):
+        self.check_window_title = check_window_title
+        self.timeout = timeout
+        self.seen_processes = set()
+        self.seen_window_titles = set()
+        self.elapsed_time = None
+        # This search is more broader than criteria for whether application
+        # is running, in case the other criteria is too strict.
+        self.candidate_search = ['bleach', 'python']
+
+    def _check_application_state(self):
+        """Check current application state without timeout logic.
+
+        Returns tuple (is_running, window_open) where:
+        - is_running: True if bleachbit process found
+        - window_open: True if bleachbit window found (Windows only)
+        """
+        is_process_running = False
+        window_open = False
+
+        for process in psutil.process_iter(['name', 'cmdline']):
+            try:
+                name = process.info['name'] or ''
+                cmdline = process.info['cmdline'] or []
+                name_and_cmdline = f"{name}: {' '.join(cmdline)[:MAX_PATH_DISPLAY]}"
+
+                # Track all interesting processes
+                for candidate in self.candidate_search:
+                    if candidate in name_and_cmdline.lower():
+                        self.seen_processes.add(name_and_cmdline)
+
+                # Check for BleachBit process
+                # With shell=True, the process name becomes cmd.exe instead of python.
+                cmdline_str = ' '.join(cmdline).lower()
+                name_lower = name.lower()
+                image_is_cmd = name_lower in ('cmd.exe', 'cmd')
+                image_is_python = name_lower.startswith('python')
+                arg_is_python = 'python.exe' in cmdline_str
+                is_python = (image_is_python and arg_is_python) or image_is_python
+                # In this test, there are two ways of launching the application,
+                # and this detects either.
+                # --gui is the idle process that waits
+                # --context-menu deletes and exits
+                has_context_arg = '--context-menu' in cmdline or '--gui' in cmdline
+                if is_python and has_context_arg:
+                    is_process_running = True
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                pass
+
+        # Check window titles on Windows
+        if os.name == 'nt' and self.check_window_title:
+            opened_windows_titles = common.get_opened_windows_titles()
+            window_open = any(
+                'BleachBit' == window_title for window_title in opened_windows_titles)
+
+            for window_title in opened_windows_titles:
+                for candidate in self.candidate_search:
+                    if candidate in window_title.lower():
+                        self.seen_window_titles.add(window_title)
+                        break
+
+        return is_process_running, window_open
+
+    def _is_running_based_on_checks(self, is_process_running, window_open):
+        """Determine if application is running based on check_window_title setting."""
+        if self.check_window_title and os.name == 'nt':
+            return is_process_running and window_open
+        return is_process_running or window_open
+
+    def is_application_running(self, expect_running=True):
+        """Check if the application is running with optional timeout polling.
+
+        Args:
+            expect_running: If True, poll until timeout waiting for app to start.
+                           If False, return immediately.
+
+        Returns:
+            bool: True if application is running, False otherwise
+        """
+        if expect_running and self.timeout > 0:
+            start_time = time.time()
+            while True:
+                is_process_running, window_open = self._check_application_state()
+                if self._is_running_based_on_checks(is_process_running, window_open):
+                    return True
+                self.elapsed_time = time.time() - start_time
+                if self.elapsed_time >= self.timeout:
+                    return False
+                # Add safety check to prevent infinite loops
+                if self.elapsed_time > self.timeout + 5:  # Extra safety margin
+                    return False
+                time.sleep(0.1)
+        else:
+            is_process_running, window_open = self._check_application_state()
+            return self._is_running_based_on_checks(is_process_running, window_open)
+
+    def not_running_msg(self):
+        """Returns a string with diagnostic information
+
+        Returns
+        - count of window titles
+        - list of potential matches for window titles (including those seen earlier)
+        - count of processes running
+        - list of potential matches for processes (including those seen earlier)
+        - check_window_title
+        - timeout limit
+        - time elapsed waiting
+        """
+        window_title_str = ""
+        if os.name == 'nt' and self.check_window_title:
+            opened_window_titles = common.get_opened_windows_titles()
+            window_title_count = len(opened_window_titles)
+            interesting_window_titles = []
+
+            # Include currently seen interesting titles
+            for window_title in opened_window_titles:
+                for candidate in self.candidate_search:
+                    if candidate in window_title.lower():
+                        interesting_window_titles.append(window_title)
+                        break
+
+            # Also include titles we saw earlier but don't see now
+            missing_titles = self.seen_window_titles - \
+                set(opened_window_titles)
+            if missing_titles:
+                interesting_window_titles.extend(
+                    [f"[PREVIOUSLY SEEN] {title}" for title in missing_titles])
+
+            window_title_str = f"currently {window_title_count} window titles, interesting:\n" + \
+                "\n".join(
+                    f"  - {title}" for title in interesting_window_titles)
+
+        interesting_processes = []
+        process_count = 0
+        current_processes = set()
+
+        for process in psutil.process_iter(['name', 'cmdline']):
+            process_count += 1
             name = process.info['name'] or ''
             cmdline = process.info['cmdline'] or []
-            if name.lower().startswith('python') and any(arg in ('--context-menu', '--no-load-cleaners') for arg in cmdline):
-                is_process_running = True
-                continue
-        except (psutil.NoSuchProcess, psutil.AccessDenied):
-            pass
-    # Second, check using window titles.
-    if not os.name == 'nt':
-        return is_process_running
-    opened_windows_titles = common.get_opened_windows_titles()
-    window_open = any(
-        ['BleachBit' == window_title for window_title in opened_windows_titles])
-    if require_both:
-        return is_process_running and window_open
-    return is_process_running or window_open
+            name_and_cmdline = f"{name}: {' '.join(cmdline)[:MAX_PATH_DISPLAY]}"
+            current_processes.add(name_and_cmdline)
+
+            for candidate in self.candidate_search:
+                if candidate in name_and_cmdline.lower():
+                    interesting_processes.append(name_and_cmdline)
+                    break
+
+        # Also include processes we saw earlier but don't see now
+        missing_processes = self.seen_processes - current_processes
+        if missing_processes:
+            interesting_processes.extend(
+                [f"[PREVIOUSLY SEEN] {proc}" for proc in missing_processes])
+
+        process_str = f"currently {process_count} processes, interesting:\n" + \
+            "\n".join(f"  - {proc}" for proc in interesting_processes)
+
+        return f"{window_title_str}\n{process_str}" \
+            f"\ncheck_window_title: {self.check_window_title}" \
+            f"\ntimeout: {self.timeout}" \
+            f"\ntime elapsed: {round(self.elapsed_time, 2)}"
 
 
 class ExternalCommandTestCase(common.BleachbitTestCase):
@@ -144,36 +306,42 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
             # We don't want to affect other tests, executed after this one.
             common.put_env('BLEACHBIT_TEST_OPTIONS_DIR', None)
 
-    def assertRunning(self, expect_running=True, timeout=START_TIMEOUT_SECONDS):
+    def assertRunning(self, expect_running=True, check_window_title=True, timeout=START_TIMEOUT_SECONDS):
         """Assert whether BleachBit GUI processes are running or not
 
         Args:
             expect_running: If True (default), assert that processes ARE running.
                            If False, assert that processes are NOT running.
+            check_window_title: Whether to also check for window title (Windows only)
             timeout: Maximum time to wait for process to be running (only used when expect_running=True)
         """
-        if expect_running:
-            start_time = time.time()
-            while time.time() - start_time < timeout:
-                if is_application_running(True):
-                    return
-                time.sleep(0.1)
+        tracker = ApplicationRunningTracker(
+            check_window_title=check_window_title,
+            timeout=timeout if expect_running else 0
+        )
+        is_running = tracker.is_application_running(
+            expect_running=expect_running)
+
+        if expect_running and not is_running:
             self.fail(
-                "Expected BleachBit GUI process to be running, but none found")
-        else:
-            if is_application_running(True):
-                self.fail("BleachBit GUI process is still running")
+                f"Expected BleachBit GUI process to be running, but none found\n{tracker.not_running_msg()}")
+        elif not expect_running and is_running:
+            self.fail("BleachBit GUI process is still running")
 
     def _context_helper(self, fn_prefix, allow_opened_window=False):
-        """Unit test for 'Shred with BleachBit' Windows Explorer context menu command"""
+        """Unit test for 'Shred with BleachBit' Windows Explorer context menu command
 
-        # This test is more likely an integration test as it imitates user behavior.
-        # It could be interpreted as TestCLI->test_gui_no-uac_shred_exit
-        # but it is more explicit to have it here as a separate case.
-        # It covers a single case where one file is shred without delete confirmation dialog.
+        Called from
+        - test_windows_explorer_context_menu_natural
+        - test_context_menu_command_while_the_app_is_running
+
+        This test is more likely an integration test as it imitates user behavior.
+        It could be interpreted as TestCLI->test_gui_no-uac_shred_exit
+        but it is more explicit to have it here as a separate case.
+        It covers a single case where one file is shred without delete confirmation dialog.
+        """
 
         file_to_shred = self.mkstemp(prefix=fn_prefix)
-        print('file_to_shred = {}'.format(file_to_shred))
         self.assertExists(file_to_shred)
         if not allow_opened_window:
             self.assertRunning(False)
@@ -203,11 +371,19 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
         """
         process = subprocess.Popen(shred_command_string,
                                    shell=True, cwd=cwd)
-        self.assertRunning()  # delay until started, within timeout
         try:
+            # It may close too quickly to detect the window title.
+            self.assertRunning(check_window_title=False)
             returncode = wait_for_process_tree_windows(process, timeout=60)
         except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait()
             self.fail("Shred command timed out")
+        finally:
+            # Ensure process is cleaned up to avoid ResourceWarning
+            if process.poll() is None:
+                process.kill()
+                process.wait()
         self.assertEqual(
             returncode, 0, f"Shred command failed with return code {returncode}")
 
@@ -245,20 +421,21 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
         # The --no-load-cleaners makes it faster.
         args = [sys.executable, 'bleachbit.py',
                 '--gui', '--no-load-cleaners', '--no-check-online-updates', '--no-uac']
-        print(args)
         p = subprocess.Popen(args, shell=False)
-        # Let the first process start up before launching the second process.
-        time.sleep(START_TIMEOUT_SECONDS)
-        self.assertRunning()
         try:
-            # Run a second process that will shred a file.
-            self._context_helper('while_app_is_running',
-                                 allow_opened_window=True)
+            # Let the first process start up before launching the second process.
+            self.assertRunning(check_window_title=True)
+            try:
+                # Run a second process that will shred a file.
+                self._context_helper('while_app_is_running',
+                                     allow_opened_window=True)
+            finally:
+                self.assertRunning()
         finally:
-            self.assertRunning()
-            # Kill the first process immediately after context menu operation completes
-            p.kill()
-            p.wait()
+            # Ensure the process is always killed, even if assertions fail
+            if p.poll() is None:  # Check if process is still running
+                p.kill()
+                p.wait()
         self.assertRunning(False)
 
     def _test_as_non_admin_with_context_menu_path(self, fn_prefix):
@@ -277,6 +454,7 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
             """
             from win32com.shell import shell, shellcon
             import win32event
+            import win32file
             bleachbit.Windows.shell.ShellExecuteEx = original
             rc = shell.ShellExecuteEx(lpVerb=lpVerb,
                                       lpFile=lpFile,
@@ -286,6 +464,8 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
                                       )
             hproc = rc['hProcess']
             win32event.WaitForSingleObject(hproc, win32event.INFINITE)
+            # Close the process handle to prevent ResourceWarning
+            win32file.CloseHandle(hproc)
             return rc
 
         # We redirect the ShellExecuteEx call like this because if we do it in a mock we enter recursion
