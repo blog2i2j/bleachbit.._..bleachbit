@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2025-11-11 11:52+0000\n"
-"Last-Translator: \"Filipe Mota (BlackSpirits)\" <blackspirits@gmail.com>\n"
+"PO-Revision-Date: 2026-02-16 10:09+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/bleachbit/"
 "main/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 "X-Launchpad-Export-Date: 2021-07-06 03:44+0000\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -840,16 +840,19 @@ msgid ""
 "Click 'OK' to uninstall the old version before upgrading, or click 'Cancel' "
 "to abort the upgrade."
 msgstr ""
+"${prodname} já está instalado.\n"
+"Clique \"OK\" para desinstalar a versão antiga antes de atualizar, ou clique "
+"\"Cancelar\" para cancelar a atualização."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:BLEACHBIT_MUI_FINISHPAGE_LINK"
 msgid "Visit the ${prodname} website"
-msgstr ""
+msgstr "Visitar site do ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:INSTALLER_CAPTION"
 msgid "${prodname} ${VERSION} Setup"
-msgstr ""
+msgstr "Instalação do ${prodname} ${VERSION}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIPRINT1"
@@ -857,12 +860,16 @@ msgid ""
 "The next step is building the font cache, during which a black console "
 "window may appear."
 msgstr ""
+"O próximo passo é criar o cache de fontes, uma janela preta do console pode "
+"aparecer durante este processo."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIPRINT2"
 msgid ""
 "It usually finishes in one minute, but sometimes it takes up to ten minutes."
 msgstr ""
+"Isto geralmente leva cerca de um minuto, mas as vezes pode levar até 10 "
+"minutos."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ADMIN_ACCOUNT_LOGIN_REQUIRED"
@@ -870,118 +877,122 @@ msgid ""
 "You need to log in with an account that is a member of the administrators "
 "group to continue."
 msgstr ""
+"Precisa entrar com uma conta que é membro do grupo de administradores para "
+"continuar."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ADMIN_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required."
-msgstr ""
+msgstr "São necessárias credenciais de administrador."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Administrator privileges are required to clean Windows Updates"
 msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
-msgstr ""
-"Privilégios de administrador são necessários para limpar atualizações do "
-"Windows"
+msgstr "Credenciais de administrador são necessárias para desinstalar."
 
 #. TRANSLATORS: The character '&' positions the keyboard accelerator key.
 #. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
-msgstr ""
+msgstr "Para qu&alquer um que usa este computador (todos os utilizadores)"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
-msgstr ""
+msgstr "Para qualquer um que usa este computador (todos os utilizadores)"
 
 #. TRANSLATORS: The character '&' positions the keyboard accelerator key.
 #. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
-msgstr ""
+msgstr "Para &mim ({USER})"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER_UMUI"
 msgid "For me ({USER})"
-msgstr ""
+msgstr "Para mim ({USER})"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ELEVATION_ERROR"
 msgid "Unable to elevate, error {ERROR}."
-msgstr ""
+msgstr "Não foi possível elevar os privilégios, erro {ERROR}."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ELEVATION_NOT_SUPPORTED"
 msgid "The operating system doesn't support elevation."
-msgstr ""
+msgstr "O sistema operativo não suporta elevação de privilégios."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALLATION_FOR_CURRENT_USER_NOT_SUPPORTED"
 msgid "The operating system doesn't support current user installations."
-msgstr ""
+msgstr "O sistema operativo não suporta as instalações atuais do utilizador."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALLED_ALL_USERS"
 msgid "Version {VERSION} is installed for all users in \"{FOLDER}\"."
 msgstr ""
+"A versão {VERSION} está instalada para todos os utilizadores em \"{FOLDER}\"."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALLED_CURRENT_USER"
 msgid "Version {VERSION} is installed for the current user in \"{FOLDER}\"."
 msgstr ""
+"A versão {VERSION} está instalada para o utilizador atual em \"{FOLDER}\"."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALL_HEADER"
 msgid ""
 "Select whether to install $(^NameDA) for all users or for the current user."
 msgstr ""
+"Selecione se deseja instalar $(^NameDA) para todos os utilizadores ou para o "
+"utilizador atual."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALL_PAGE_SUBTITLE"
 msgid "Choose for which users to install $(^NameDA)."
-msgstr ""
+msgstr "Escolha para quais utilizadores instalar $(^NameDA)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INVALID_PARAMS"
 msgid "Invalid combination of parameters."
-msgstr ""
+msgstr "Combinação inválida de parâmetros."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_LOGON_SERVICE_NOT_RUNNING"
 msgid "Unable to elevate, Secondary Logon service not running."
 msgstr ""
+"Não foi possível elevar os privilégios. O serviço de logon secundário não "
+"está em execução."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_ALL_USERS"
 msgid "Fresh installation for all users."
-msgstr ""
+msgstr "Instalação limpa para todos os utilizadores."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_NEW_INSTALLATION_CURRENT_USER"
 msgid "Fresh installation for the current user."
-msgstr ""
+msgstr "Instalação limpa para o utilizador atual."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_NOT_INSTALLED"
 msgid "There is no installation of $(^NameDA)."
-msgstr ""
+msgstr "Não há nenhuma instalação de $(^NameDA)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Choose a folder"
 msgctxt "nsis:MULTIUSER_PAGE_TITLE"
 msgid "Choose Users"
-msgstr "Escolha uma pasta"
+msgstr "Escolha os utilizadores"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_DIFF_VERSION_ALL_USERS"
 msgid ""
 "Uninstall version {OLD_VERSION} and install version {VERSION} for all users."
 msgstr ""
+"Desinstalar a versão {OLD_VERSION} e instalar a versão {VERSION} para todos "
+"os utilizadores."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_DIFF_VERSION_CURRENT_USER"
@@ -989,21 +1000,23 @@ msgid ""
 "Uninstall version {OLD_VERSION} and install version {VERSION} for the "
 "current user."
 msgstr ""
+"Desinstalar a versão {OLD_VERSION} e instalar a versão {VERSION} para o "
+"utilizador atual."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_ALL_USERS"
 msgid "Reinstall version {VERSION} for all users."
-msgstr ""
+msgstr "Reinstalar versão {VERSION} para todos os utilizadores."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_REINSTALL_SAME_VERSION_CURRENT_USER"
 msgid "Reinstall version {VERSION} for the current user."
-msgstr ""
+msgstr "Reinstalar versão {VERSION} para o utilizador atual."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_RUN_AS_ADMIN"
 msgid "You need to run this program as an administrator."
-msgstr ""
+msgstr "Precisa executar este programa como administrador."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_UNINSTALL_HEADER"
@@ -1011,119 +1024,118 @@ msgid ""
 "$(^NameDA) is installed both for all users and for the current user.\n"
 "Select which installation to remove."
 msgstr ""
+"$(^NameDA) está instalado para todos os utilizadores e também para o "
+"utilizador atual.\n"
+"Selecione qual instalação deseja remover."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_UNINSTALL_PAGE_SUBTITLE"
 msgid "Choose for which users to remove $(^NameDA)."
-msgstr ""
+msgstr "Escolha para quais utilizadores remover $(^NameDA)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_CORE_DESCRIPTION"
 msgid ""
 "These are the basic files needed for ${prodname} to function (required)."
 msgstr ""
+"Estes são os ficheiros básicos necessários para que ${prodname} funcione "
+"(obrigatório)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Choose files to shred"
 msgctxt "nsis:SECTION_CORE_NAME"
 msgid "Core files (required)"
-msgstr "Escolha os ficheiros a destruir"
+msgstr "Ficheiros principais (obrigatório)"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Widgets for the desktop"
 msgctxt "nsis:SECTION_DESKTOP_DESCRIPTION"
 msgid "Create a shortcut on the desktop."
-msgstr "Widgets para o ambiente de trabalho"
+msgstr "Criar atalho na área de trabalho."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Desktop widgets"
 msgctxt "nsis:SECTION_DESKTOP_NAME"
 msgid "Desktop"
-msgstr "Widgets do ambiente de trabalho"
+msgstr "Área de trabalho"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_INTEGRATE_SHRED_DESCRIPTION"
 msgid ""
 "Add an option to delete files from the file context menu in Windows Explorer."
 msgstr ""
+"Adicionar uma opção para apagar ficheiros a partir do menu de contexto do "
+"Explorador de Ficheiros do Windows."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_INTEGRATE_SHRED_NAME"
 msgid "Integrate Shred"
-msgstr ""
+msgstr "Integrar Triturar"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
 msgid "Create a shortcut on the Quick Launch bar."
-msgstr ""
+msgstr "Criar atalho na barra de inicialização rápida."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_QUICK_LAUNCH_NAME"
 msgid "Quick Launch"
-msgstr ""
+msgstr "Inicialização rápida"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_SHORTCUTS_DESCRIPTION"
 msgid "Create shortcuts to ${prodname}"
-msgstr ""
+msgstr "Criar atalhos para ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_SHORTCUTS_NAME"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Atalhos"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_START_MENU_DESCRIPTION"
 msgid "Create a shortcut in the Start menu."
-msgstr ""
+msgstr "Criar atalho no menu Iniciar."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_START_MENU_NAME"
 msgid "Start menu"
-msgstr ""
+msgstr "Menu iniciar"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_TRANSLATIONS_DESCRIPTION"
 msgid ""
 "Install language files to use ${prodname} in your preferred local language."
 msgstr ""
+"Instalar ficheiros de idioma para usar o ${prodname} no seu idioma local "
+"preferido."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Localizations"
 msgctxt "nsis:SECTION_TRANSLATIONS_NAME"
 msgid "Translations"
-msgstr "Localizações"
+msgstr "Traduções"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
 msgid "Add an uninstall program."
-msgstr ""
+msgstr "Adicionar programa de desinstalação."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Update uninstallers"
 msgctxt "nsis:SECTION_UNINSTALL_NAME"
 msgid "Uninstall"
-msgstr "Desinstaladores de atualizações"
+msgstr "Desinstalar"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_DEBUGGING_TERMINAL"
 msgid "${prodname} Debugging Terminal"
-msgstr ""
+msgstr "Terminal de depuração do ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_NO_UAC"
 msgid "${prodname} (No UAC)."
-msgstr ""
+msgstr "${prodname} (Sem Controlo de Conta de Utilizador)."
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHRED_SHELL_MENU"
 msgid "Shred with ${prodname}"
-msgstr ""
+msgstr "Triturar com ${prodname}"
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:UNINSTALL_TEXT"
@@ -1134,6 +1146,11 @@ msgid ""
 "including any files (such as custom cleaners) that you may have added or "
 "changed."
 msgstr ""
+"O produto ${prodname} será desinstalado da seguinte pasta.\n"
+"Clique em Desinstalar para iniciar a desinstalação.\n"
+"AVISO: O desinstalador remove completamente a pasta de instalação, incluindo "
+"quaisquer ficheiros (como programas de limpeza personalizados) que possa ter "
+"adicionado ou alterado."
 
 #. TRANSLATORS: Multi-value variables are explained
 #. in the online documentation. Basically, they are like
@@ -1169,10 +1186,8 @@ msgid "Clean file"
 msgstr "Limpar ficheiro"
 
 #: ../bleachbit/Action.py
-#, fuzzy
-#| msgid "Cookies"
 msgid "Clean cookies"
-msgstr "Cookies"
+msgstr "Limpar cookies"
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the clean button on the main window.
@@ -1297,7 +1312,7 @@ msgstr ""
 
 #: ../bleachbit/Cleaner.py
 msgid "This option may prevent uninstalling some updates."
-msgstr ""
+msgstr "Esta opção pode impedir a desinstalação de algumas atualizações."
 
 #: ../bleachbit/Cleaner.py
 msgid "Clipboard"
@@ -1322,15 +1337,12 @@ msgstr "Eliminar ficheiros e pastas especificados pelo utilizador"
 #. TRANSLATORS: 'empty' means 'unallocated'
 #: ../bleachbit/Cleaner.py
 msgid "Empty space"
-msgstr ""
+msgstr "Espaço vazio"
 
 #. TRANSLATORS: 'empty' means 'unallocated'
 #: ../bleachbit/Cleaner.py
-#, fuzzy
-#| msgid "Overwrite free disk space to hide deleted files"
 msgid "Wipe empty space to hide deleted files"
-msgstr ""
-"Escrever sobre o espaço livre em disco para ocultar os ficheiros eliminados"
+msgstr "Limpar espaço livre para ocultar ficheiros apagados"
 
 #: ../bleachbit/Cleaner.py ../bleachbit/GuiPreferences.py
 #: ../bleachbit/Worker.py
@@ -1342,6 +1354,13 @@ msgid ""
 "on traditional hard drives. On solid-state drives, it is less reliable, and "
 "frequent use contributes to wear."
 msgstr ""
+"A limpeza de espaço vazio remove vestígios de ficheiros apagados sem "
+"destruição completa, mas não libera espaço adicional no disco. O processo "
+"pode demorar bastante e pode fazer o seu computador temporariamente mais "
+"lento. Não é necessário se a sua unidade estiver protegida com criptografia "
+"de disco completo. O método funciona melhor em discos rígidos tradicionais. "
+"Em unidades de estado sólido (SSDs), é menos confiável e o uso frequente "
+"contribui para o desgaste."
 
 #: ../bleachbit/Cleaner.py
 msgid "The system in general"
@@ -1356,7 +1375,7 @@ msgstr "Sistema"
 #: ../bleachbit/Cleaner.py ../bleachbit/CLI.py
 #, python-format
 msgid "Wipe empty space in %s"
-msgstr ""
+msgstr "Limpar espaço vazio em %s"
 
 #: ../bleachbit/Cleaner.py
 msgid "Loading native cleaners."
@@ -1367,10 +1386,9 @@ msgid "Importing cleaners from Winapp2.ini."
 msgstr "A importar ferramentas de Winapp2.ini."
 
 #: ../bleachbit/Cleaner.py
-#, fuzzy, python-format
-#| msgid "_Wipe Free Space"
+#, python-format
 msgid "Wipe empty space %s"
-msgstr "_Limpar espaço livre"
+msgstr "Limpar espaço vazio %s"
 
 #: ../bleachbit/CLI.py
 #, python-format
@@ -1380,7 +1398,7 @@ msgstr "não é uma ferramenta válida: %s"
 #: ../bleachbit/CLI.py
 #, python-format
 msgid "Wildcard characters are not allowed in --except: %s"
-msgstr ""
+msgstr "Caracteres curinga não são permitidos, exceto: %s"
 
 #. TRANSLATORS: This is the command line usage.  Don't translate
 #. %prog, but do translate options, cleaner, and option.
@@ -1388,10 +1406,8 @@ msgstr ""
 #. More information about the command line is here
 #. https://www.bleachbit.org/documentation/command-line
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "usage: %prog [options] cleaner.option1 cleaner.option2"
 msgid "usage: %prog [options] cleaner.option1 [cleaner.option2 ...]"
-msgstr "utilização: %prog [opções] cleaner.option1 cleaner.option2"
+msgstr "uso: %prog [opções] limpador.opção1 [limpador.opção2 ...]"
 
 #: ../bleachbit/CLI.py
 msgid "list cleaners"
@@ -1415,10 +1431,8 @@ msgid "shred specific files or folders"
 msgstr "destruir ficheiros ou pastas específicas"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "wipe free space in the given paths"
 msgid "wipe empty space in the given paths"
-msgstr "limpar espaço livre nos caminhos indicados"
+msgstr "limpar o espaço vazio nos caminhos especificados"
 
 #: ../bleachbit/CLI.py
 msgid "overwrite files to hide contents"
@@ -1438,7 +1452,7 @@ msgstr "ativar todas as opções que não têm um aviso"
 
 #: ../bleachbit/CLI.py
 msgid "exclude cleaner options (can be repeated, comma-separated)"
-msgstr ""
+msgstr "excluir opções do limpador (pode ser repetido, separado por vírgulas)"
 
 #: ../bleachbit/CLI.py
 msgid "set log level to verbose"
@@ -1465,32 +1479,24 @@ msgid "update winapp2.ini, if a new version is available"
 msgstr "atualizar winapp2.ini, se existir uma versão mais recente"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid ""
-#| "Specify only one of these commands: --list-cleaners, --wipe-free-space, --"
-#| "preview, --clean"
 msgid ""
 "Specify only one of these commands: --list-cleaners, --wipe-empty-space, --"
 "preview, --clean, --shred"
 msgstr ""
-"Especificar apenas um destes comandos: --list-cleaners, --wipe-free-space, --"
-"preview, --clean"
+"Especifique só um destes comandos: --list-cleaners, --wipe-empty-space, --"
+"preview, --clean, --shred"
 
 #: ../bleachbit/CLI.py
 msgid "Checking online for updates to winapp2.ini"
 msgstr "A verificar se existem atualizações para winapp2.ini"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "No directories given for --wipe-free-space"
 msgid "No directories given for --wipe-empty-space"
-msgstr "Nenhum diretório dado para --wipe-free-space"
+msgstr "Nenhuma pasta especificada para --wipe-empty-space"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "Wiping free space can take a long time."
 msgid "Wiping empty space can take a long time."
-msgstr "Limpar espaço livre pode levar muito tempo."
+msgstr "Limpar o espaço vazio pode levar um certo tempo."
 
 #: ../bleachbit/CLI.py
 msgid "No work to do. Specify options."
@@ -1676,16 +1682,16 @@ msgstr "Confirmar antes de eliminar"
 #: ../bleachbit/GuiBasic.py
 #, python-format
 msgid "Enable %(option)s"
-msgstr ""
+msgstr "Ativar %(option)s"
 
 #: ../bleachbit/GuiBasic.py
 #, python-format
 msgid "Remember my choice for %(option)s"
-msgstr ""
+msgstr "Lembrar a minha escolha para %(option)s"
 
 #: ../bleachbit/GuiBasic.py
 msgid "_Enable anyway"
-msgstr ""
+msgstr "Ativar assim m_esmo"
 
 #: ../bleachbit/GuiBasic.py
 #, python-format
@@ -1771,45 +1777,43 @@ msgstr "Gerar ficheiros"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Manage cookies to keep"
-msgstr ""
+msgstr "Gerir cookies para manter"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Select the cookies to keep when cleaning cookies across browsers."
-msgstr ""
+msgstr "Selecione os cookies para manter ao limpá-los nos navegadores."
 
 #: ../bleachbit/GuiCookie.py
-#, fuzzy
-#| msgid "Search tool"
 msgid "Search:"
-msgstr "Ferramenta de pesquisa"
+msgstr "Pesquisar:"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Filter cookies..."
-msgstr ""
+msgstr "Filtrar cookies..."
 
 #: ../bleachbit/GuiCookie.py
 msgid "Show Selected"
-msgstr ""
+msgstr "Mostrar selecionados"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Only show cookies that are currently selected"
-msgstr ""
+msgstr "Somente mostrar cookies que estão selecionados no momento"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Select All"
-msgstr ""
+msgstr "Selecionar todos"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Deselect All"
-msgstr ""
+msgstr "Desmarcar todos"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Keep Selected"
-msgstr ""
+msgstr "Manter selecionados"
 
 #: ../bleachbit/GuiPreferences.py
 msgid ""
@@ -1835,7 +1839,7 @@ msgstr "Idiomas"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Keep list"
-msgstr ""
+msgstr "Manter lista"
 
 #: ../bleachbit/GuiPreferences.py
 #, fuzzy
@@ -1849,7 +1853,7 @@ msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
-msgstr ""
+msgstr "Confirmações de aviso redefinidas."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Check periodically for software updates via the Internet"
@@ -1885,7 +1889,7 @@ msgstr "Idioma:"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Restart BleachBit for full effect."
-msgstr ""
+msgstr "Reinicie o BleachBit para aplicar as alterações."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Hide irrelevant cleaners"
@@ -1908,10 +1912,8 @@ msgid "Exit after cleaning"
 msgstr "Sair após a limpeza"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Delete confirmation"
 msgid "Reset warning confirmations"
-msgstr "Confirmação"
+msgstr "Redefinir confirmações de aviso"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Use IEC sizes (1 KiB = 1024 bytes) instead of SI (1 kB = 1000 bytes)"
@@ -1939,13 +1941,9 @@ msgid "Windows 10 theme"
 msgstr "Tema Windows 10"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid ""
-#| "Choose a writable folder for each drive for which to overwrite free space."
 msgid "Choose a writable folder for each drive for which to wipe empty space."
 msgstr ""
-"Escolha uma pasta para cada disco em que pretende sobrescrever o espaço "
-"livre."
+"Escolha uma pasta gravável em cada unidade para sobrescrever o espaço vazio."
 
 #. TRANSLATORS: In the preferences dialog, this button adds a path to
 #. the list of paths
@@ -1978,10 +1976,8 @@ msgid "Name"
 msgstr "Nome"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "This path already exists in the whitelist."
 msgid "This path already exists in the keep list."
-msgstr "Este caminho já existe na lista de permissões."
+msgstr "Este caminho já existe na lista para manter."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "This path already exists in the custom list."
@@ -1993,7 +1989,7 @@ msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
-msgstr ""
+msgstr "Caminho protegido"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "File"
@@ -2005,22 +2001,19 @@ msgstr "Pasta"
 
 #. TRANSLATORS: %s is a file or folder path that was just added
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy, python-format
-#| msgid "Access denied: %s"
+#, python-format
 msgid "Added: %s"
-msgstr "Acesso negado: %s"
+msgstr "Adicionado: %s"
 
 #. TRANSLATORS: %s is a file or folder path that was just removed
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy, python-format
-#| msgctxt "button"
-#| msgid "Remove"
+#, python-format
 msgid "Removed: %s"
-msgstr "Remover"
+msgstr "Removido: %s"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Manage cookies to keep..."
-msgstr ""
+msgstr "Gerir cookies para manter..."
 
 #. TRANSLATORS: "Paths" is used generically to refer to both files
 #. and folders
@@ -2073,16 +2066,9 @@ msgstr ""
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
 #: ../bleachbit/GuiTreeModels.py
-#, fuzzy, python-format
-#| msgid ""
-#| "Warning regarding %(cleaner)s - %(option)s:\n"
-#| "\n"
-#| "%(warning)s"
+#, python-format
 msgid "%(cleaner)s - %(option)s"
-msgstr ""
-"Aviso relacionado com %(cleaner)s - %(option)s:\n"
-"\n"
-"%(warning)s"
+msgstr "%(cleaner)s - %(option)s"
 
 #: ../bleachbit/GuiWindow.py
 #, python-format
@@ -2136,6 +2122,10 @@ msgid ""
 "the system. User-specific paths will refer to the administrator account, so "
 "to clean your profile, run BleachBit again as a standard user."
 msgstr ""
+"Elevou os seus privilégios usando uma conta diferente para limpar partes "
+"partilhadas do sistema. Os caminhos específicos do utilizador referirão-se à "
+"conta de administrador; portanto, para limpar o seu perfil, execute o "
+"BleachBit novamente como um utilizador padrão."
 
 #: ../bleachbit/GuiWindow.py
 msgid ""
@@ -2159,10 +2149,8 @@ msgstr "Pré-visualizar"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Cookies"
 msgid "Manage Cookies"
-msgstr "Cookies"
+msgstr "Gerir cookies"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
@@ -2205,6 +2193,8 @@ msgid ""
 "BleachBit detected leftover files from an interrupted disk wipe operation. "
 "Would you like to preview them with an option to delete them?"
 msgstr ""
+"O BleachBit detetou ficheiros remanescentes de uma operação de limpeza de "
+"disco interrompida. Deseja visualizá-los e, se desejar, apagá-los?"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Error when checking for updates: "
@@ -2333,6 +2323,11 @@ msgid ""
 "\n"
 "Are you sure you want to add this path?"
 msgstr ""
+"Aviso: '%(path)s' pode conter ficheiros importantes.\n"
+"\n"
+"Impacto: %(files)d ficheiro(s), %(size)s\n"
+"\n"
+"Deseja realmente adicionar este caminho?"
 
 #. TRANSLATORS: Warning shown when user tries to add a protected path (no files found)
 #: ../bleachbit/ProtectedPath.py
@@ -2342,6 +2337,9 @@ msgid ""
 "\n"
 "Are you sure you want to add this path?"
 msgstr ""
+"Aviso: '%(path)s' pode conter ficheiros importantes.\n"
+"\n"
+"Deseja realmente adicionar este caminho?"
 
 #: ../bleachbit/RecognizeCleanerML.py
 msgid "Security warning"
@@ -2533,14 +2531,14 @@ msgstr "Erro: {operation_option}: {command}"
 
 #. TRANSLATORS: 'empty' means 'unallocated'
 #: ../bleachbit/Worker.py
-#, fuzzy
-#| msgid "Please wait.  Wiping free disk space."
 msgid "Please wait. Wiping empty space."
-msgstr "Aguarde. Estamos a limpar o espaço livre."
+msgstr "Por favor, aguarde. A limpar o espaço vazio."
 
 #: ../bleachbit/Worker.py
 msgid "To stop this process, press the abort button on the toolbar and wait."
 msgstr ""
+"Para parar este processo, pressione o botão Abortar na barra de ferramentas "
+"e aguarde."
 
 #: ../bleachbit/Worker.py
 msgid ""
@@ -2548,6 +2546,9 @@ msgid ""
 "files may remain on the disk, and they may use all available space. To "
 "remove them, start BleachBit again."
 msgstr ""
+"Se a aplicação for fechada à força antes da conclusão do processo, ficheiros "
+"grandes podem permanecer no disco e ocupar todo o espaço disponível. Para "
+"removê-los, inicie o BleachBit novamente."
 
 #. TRANSLATORS: %s is replaced with Firefox, System, etc.
 #: ../bleachbit/Worker.py
@@ -2626,10 +2627,8 @@ msgid "Shred Paths from Clipboard"
 msgstr "Destruir caminhos da área de transferência"
 
 #: ../share/app-menu.ui
-#, fuzzy
-#| msgid "_Wipe Free Space"
 msgid "_Wipe Empty Space"
-msgstr "_Limpar espaço livre"
+msgstr "_Limpar espaço vazio"
 
 #: ../share/app-menu.ui
 msgid "_Make Chaff"
