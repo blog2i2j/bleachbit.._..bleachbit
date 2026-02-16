@@ -882,6 +882,7 @@ def package_installer(fast_build, nsi_path=r'windows\bleachbit.nsi'):
 
 def main():
     """Main function"""
+    start_time = time.time()
     logger.info('BleachBit version %s', get_version())
     environment_check()
     fast_build = len(sys.argv) > 1 and sys.argv[1] == 'fast'
@@ -892,7 +893,10 @@ def main():
     # Clearly show the sizes of the files that end users download because the
     # goal is to minimize them.
     os.system(r'dir *.zip windows\*.exe windows\*.zip')
-    logger.info('Success!')
+    duration = time.time() - start_time
+    minutes = int(duration // 60)
+    seconds = int(duration % 60)
+    logger.info(__file__ + ' success! Duration: %d minutes, %d seconds', minutes, seconds)
 
 
 if '__main__' == __name__:
