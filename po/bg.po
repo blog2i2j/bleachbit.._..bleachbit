@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BleachBit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-02-12 18:09+0000\n"
-"Last-Translator: 109247019824 "
-"<109247019824@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-02-17 20:09+0000\n"
+"Last-Translator: 109247019824 <109247019824@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/bleachbit/main/"
 "bg/>\n"
 "Language: bg\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Launchpad-Export-Date: 2014-01-24 03:57+0000\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-Language: Bulgarian\n"
@@ -593,12 +593,10 @@ msgstr "Синхронизиране"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr ""
-"Премахване на информацията за синхронизиране и изход от профила на мрежовия "
-"четец"
+"Премахване на синхронизираната информация, включително от уеб приложенията и "
+"изход от профила на мрежовия четец"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1807,6 +1805,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Режимът за експерти включва разширени възможности и намалява ограниченията. "
+"Бъдете особено внимателни при включен експертен режим."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1829,14 +1829,12 @@ msgid "Keep list"
 msgstr "Разрешителен списък"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Тъмен режим"
+msgstr "Режим за експерти"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Някои теми за GTK не поддържат светли и тъмни теми."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1978,6 +1976,7 @@ msgstr "Пътят вече съществува в потребителския
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Този път е защитен. За да заобиколите защитата, включете режима за експерти."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2054,6 +2053,8 @@ msgstr "Размер"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Тази настройка е защитена. За да заобиколите защитата, включете режима за "
+"експерти."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2072,6 +2073,8 @@ msgstr "Нулиране на файла с настройки, защото е 
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s не може да бъде почистен, защото режимът за "
+"експерти е изключен."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2135,6 +2138,7 @@ msgstr ""
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
+"Тази настройка работи само в режим за експерти. Включете го в Настройки."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2150,10 +2154,8 @@ msgstr "Управление на бисквитки"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Управление на запазвани бисквитки"
+msgstr "Управление на потребителски пътища"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
