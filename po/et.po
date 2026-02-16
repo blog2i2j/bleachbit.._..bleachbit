@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-13 21:22-0700\n"
-"PO-Revision-Date: 2026-01-28 15:55+0000\n"
+"PO-Revision-Date: 2026-02-16 10:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/bleachbit/main/"
 "et/>\n"
@@ -590,10 +590,8 @@ msgstr "Sünkroonimine"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data, including web apps, and sign out of the browser"
-msgstr "Kustuta sünkroniseeritud andmed ja logi välja veebisirvijast"
+msgstr "Kustuta sünkroonitud andmed ja logi välja veebibrauserist"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -1794,6 +1792,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"Asjatundjatele mõeldud režiim võimaldab kasutada täiendavaid seadistusi ning "
+"lõdvemaid reegleid. Ole sel puhul eraldi ettevaatlik."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1816,14 +1816,12 @@ msgid "Keep list"
 msgstr "Säilita loend"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Tume kujundus"
+msgstr "Režiim asjatundjatele"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes support do not support both light and dark modes."
-msgstr ""
+msgstr "Mõned GTK-kujundused ei suuda kasutada heledat ja tumedat kujundust."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -1961,6 +1959,8 @@ msgstr "See asukoht on juba olemas sinu loodud nimekirjas."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"See asukoht on kaitstud olekus. Kaitse sürjutamiseks palun kasuta "
+"asjatundjatele mõeldud režiimi."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2037,6 +2037,8 @@ msgstr "Suurus"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"See eelistus on kaitstud olekus. Kaitse sürjutamiseks palun kasuta "
+"asjatundjatele mõeldud režiimi."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2055,6 +2057,8 @@ msgstr "Lähtestame konfiguratsioonifaili, kuna see on rikutud: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s: kuna asjatundjatele mõeldud režiim on lülitatud "
+"välja, siis puhastamine pole võimalik."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2114,6 +2118,8 @@ msgstr ""
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
+"Selle eelistuse kasutamine eeldab asjatundjatele mõeldud režiimi pruukimist. "
+"Saad ta eelistustest sisse lülitada."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2129,10 +2135,8 @@ msgstr "Halda küpsiseid"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Halda säilitatavaid küpsiseid"
+msgstr "Halda kohandatud asukohti"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
