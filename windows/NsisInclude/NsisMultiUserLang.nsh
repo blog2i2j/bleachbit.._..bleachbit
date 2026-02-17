@@ -655,7 +655,7 @@ Version: 2023-02-223
 	LangString MULTIUSER_UNINSTALL_PAGE_SUBTITLE ${LANG_CZECH} "Choose for which users to remove $(^NameDA)."
 	LangString SECTION_CORE_DESCRIPTION ${LANG_CZECH} "These are the basic files needed for ${prodname} to function (required)."
 	LangString SECTION_CORE_NAME ${LANG_CZECH} "Vyberte soubory ke skartaci"
-	LangString SECTION_DESKTOP_DESCRIPTION ${LANG_CZECH} "Prvky plochy"
+	LangString SECTION_DESKTOP_DESCRIPTION ${LANG_CZECH} "Vytvořit zástupce na ploše."
 	LangString SECTION_DESKTOP_NAME ${LANG_CZECH} "Widgety plochy"
 	LangString SECTION_INTEGRATE_SHRED_DESCRIPTION ${LANG_CZECH} "Add an option to delete files from the file context menu in Windows Explorer."
 	LangString SECTION_INTEGRATE_SHRED_NAME ${LANG_CZECH} "Integrate Shred"
