@@ -27,6 +27,7 @@ import logging
 import os
 import random
 import requests
+from unittest.mock import MagicMock, Mock, patch
 
 import bleachbit
 from tests import common
@@ -148,6 +149,37 @@ class NetworkTestCase(common.BleachbitTestCase):
                 error_msg = response_to_error_msg(response)
                 self.assertEqual(response.status_code, status_code,
                                  error_msg)
+
+    def test_fetch_url_headers(self):
+        """Unit test for fetch_url() header handling"""
+        with patch('bleachbit.Network.requests.Session') as mock_session:
+            session_instance = MagicMock()
+            session_instance.get.return_value = Mock()
+            mock_session.return_value.__enter__.return_value = session_instance
+
+            tests = [
+                # (custom_headers, expected_custom_key)
+                (None, None),
+                ({'X-BleachBit-Version': '5.1.0'}, 'X-BleachBit-Version'),
+            ]
+            for custom_headers, expected_custom_key in tests:
+                with self.subTest(custom_headers=custom_headers):
+                    response = fetch_url('https://example.com', max_retries=0, timeout=5,
+                                         headers=custom_headers)
+                    kwargs = session_instance.get.call_args.kwargs
+                    headers = kwargs['headers']
+                    self.assertEqual(
+                        response, session_instance.get.return_value)
+                    self.assertIsInstance(headers, dict)
+                    self.assertIn('User-Agent', headers)
+                    self.assertEqual(headers['User-Agent'], get_user_agent())
+                    self.assertNotIn('X-OS-Type', headers)
+                    if expected_custom_key:
+                        self.assertIn(expected_custom_key, headers)
+                        self.assertEqual(headers[expected_custom_key],
+                                         custom_headers[expected_custom_key])
+                    else:
+                        self.assertNotIn('X-BleachBit-Version', headers)
 
     def test_fetch_url_retry(self):
         """Unit test for fetch_url() with retry"""

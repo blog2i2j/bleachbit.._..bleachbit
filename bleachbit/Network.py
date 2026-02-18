@@ -108,7 +108,8 @@ def download_url_to_fn(url, fn, expected_sha512=None, on_error=None,
     return True
 
 
-def fetch_url(url, max_retries=3, backoff_factor=0.5, timeout=60):
+def fetch_url(url, max_retries=3, backoff_factor=0.5, timeout=60,
+              headers=None):
     """Fetch a URL using requests library
 
     Args:
@@ -116,6 +117,7 @@ def fetch_url(url, max_retries=3, backoff_factor=0.5, timeout=60):
         max_retries (int, optional): Maximum number of retry attempts
         backoff_factor (float, optional): A backoff factor to apply between attempts
         timeout (int, optional): How many seconds to wait for the server before giving up
+        headers (dict, optional): Extra HTTP headers appended to default headers
 
     Returns:
         requests.Response: Response object from requests library
@@ -140,7 +142,10 @@ def fetch_url(url, max_retries=3, backoff_factor=0.5, timeout=60):
         else:
             logger.error(
                 'Application is frozen but certificate file not found: %s', ca_bundle)
-    headers = {'User-Agent': get_user_agent()}
+    assert headers is None or isinstance(headers, dict)
+    request_headers = {'User-Agent': get_user_agent()}
+    if headers:
+        request_headers.update(headers)
     # 408: request timeout
     # 429: too many requests
     # 500: internal server error
@@ -155,9 +160,40 @@ def fetch_url(url, max_retries=3, backoff_factor=0.5, timeout=60):
             'http://', requests.adapters.HTTPAdapter(max_retries=retries))
         session.mount(
             'https://', requests.adapters.HTTPAdapter(max_retries=retries))
-        response = session.get(url, headers=headers,
+        response = session.get(url, headers=request_headers,
                                timeout=timeout, verify=True)
         return response
+
+
+def _get_os_name_version():
+    """Return (os_name, os_version) tuple for network requests."""
+    os_name = platform.system()  # 'Linux', 'Windows', etc.
+    if sys.platform == 'linux':
+        # pylint: disable=import-outside-toplevel
+        from bleachbit.Unix import get_distribution_name_version
+        os_version = get_distribution_name_version()
+    elif sys.platform[:6] == 'netbsd':
+        os_version = os_name + '/' + platform.machine() + ' ' + platform.release()
+    else:
+        os_version = platform.uname().version
+    return os_name, os_version
+
+
+def get_update_request_headers():
+    """Return headers specific to update checks."""
+    os_name, os_version = _get_os_name_version()
+
+    headers = {
+        'X-BleachBit-Version': APP_VERSION,
+        'X-OS-Type': os_name,
+        'X-OS-Version': os_version,
+        'X-Locale': get_active_language_code(),
+    }
+
+    if (gtk_version := get_gtk_version()):
+        headers['X-GTK-Version'] = gtk_version
+
+    return headers
 
 
 def get_gtk_version():
@@ -191,24 +227,11 @@ def get_ip_for_url(url):
 
 def get_user_agent():
     """Return the user agent string"""
-    __platform = platform.system()  # 'Linux', 'Windows', etc.
-    # On Windows, version is like '10.0.22631'.
-    __os = platform.uname().version
-    if sys.platform == 'linux':
-        # pylint: disable=import-outside-toplevel
-        from bleachbit.Unix import get_distribution_name_version
-        __os = get_distribution_name_version()
-    elif sys.platform[:6] == 'netbsd':
-        __sys = platform.system()
-        mach = platform.machine()
-        rel = platform.release()
-        __os = __sys + '/' + mach + ' ' + rel
-    __locale = get_active_language_code()
-    gtk_ver_raw = get_gtk_version()
-    if gtk_ver_raw:
-        gtk_ver = f'; GTK {gtk_ver_raw}'
-    else:
-        gtk_ver = ''
+    os_name, os_ver = _get_os_name_version()
+    locale = get_active_language_code()
+    parts = [os_name, os_ver, locale]
+    if (gtk_ver := get_gtk_version()):
+        parts.append(f'GTK {gtk_ver}')
 
-    agent = f"BleachBit/{APP_VERSION} ({__platform}; {__os}; {__locale}{gtk_ver})"
+    agent = f"BleachBit/{APP_VERSION} ({'; '.join(parts)})"
     return agent

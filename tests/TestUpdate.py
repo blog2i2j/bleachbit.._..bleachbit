@@ -67,6 +67,17 @@ class UpdateTestCase(common.BleachbitTestCase):
                 updates = check_updates(True, False, None, None)
                 self.assertEqual(updates, expected)
 
+                # check_updates() must send update-specific headers
+                mock_fetch.assert_called()
+                _, fetch_kwargs = mock_fetch.call_args
+                sent_headers = fetch_kwargs['headers']
+                self.assertIn('X-BleachBit-Version', sent_headers)
+                self.assertIn('X-OS-Type', sent_headers)
+                self.assertIn('X-OS-Version', sent_headers)
+                self.assertIn('X-Locale', sent_headers)
+                if 'X-GTK-Version' in sent_headers:
+                    self.assertIsInstance(sent_headers['X-GTK-Version'], str)
+
     def test_check_updates_real_network(self):
         """Unit test for function check_updates() using real network"""
         for update in check_updates(True, False, None, None):

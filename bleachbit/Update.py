@@ -35,7 +35,8 @@ import requests
 # local
 import bleachbit
 from bleachbit.Language import get_text as _
-from bleachbit.Network import download_url_to_fn, fetch_url, get_ip_for_url
+from bleachbit.Network import (download_url_to_fn, fetch_url,
+                               get_ip_for_url, get_update_request_headers)
 
 
 logger = logging.getLogger(__name__)
@@ -102,7 +103,8 @@ def check_updates(check_beta, check_winapp2, append_text, cb_success):
     if 'windowsapp' in sys.executable.lower():
         url += '?windowsapp=1'
     try:
-        response = fetch_url(url)
+        response = fetch_url(url,
+                             headers=get_update_request_headers())
     except requests.RequestException as e:
         logger.error(
             _('Error when opening a network connection to check for updates. Please verify the network is working and that a firewall is not blocking this application. Error message: {}').format(e))
