@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2026-02-19 07:09+0000\n"
-"Last-Translator: 大王叫我来巡山 "
-"<hamburger2048@users.noreply.hosted.weblate.org>\n"
+"Last-Translator: 橙汁 <Chengzhir@proton.me>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/bleachbit/main/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -2385,7 +2384,7 @@ msgstr "超级用户可以使用 {bytes:,} 字节和 {inodes:,} 个索引节点"
 
 #: ../bleachbit/Wipe.py
 msgid "Encountered unknown error #0 while truncating file."
-msgstr "截断文件时接遇到了未知错误 #0 。"
+msgstr "截断文件时遇到了未知错误 #0 。"
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
