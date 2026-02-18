@@ -45,6 +45,8 @@ msgid "Administrator credentials required to uninstall."
 msgstr ""
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
 msgstr ""
@@ -55,6 +57,8 @@ msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
 #: windows/NsisInclude/NsisMultiUserLang.nsh
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
 msgstr ""
