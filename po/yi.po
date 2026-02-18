@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2020-04-05 02:23+0000\n"
 "Last-Translator: bernard stafford <Unknown>\n"
 "Language-Team: Yiddish <yi@li.org>\n"
@@ -44,8 +44,12 @@ msgstr "קיכלעך"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "ויסמעקן קיכלעך, וואָס אַנטהאַלטן אינפֿאָרמאַציע אַזאַ ווי וועב פּלאַץ פּרעפֿערענצן, "
@@ -256,7 +260,9 @@ msgstr "פאָרעם געשיכטע"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr "א געשיכטע פון פארמען אריין אין וועב זייטלעך און אין דער זוך באַר"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
@@ -294,8 +300,8 @@ msgstr "סעסיע ומקערן"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
-msgstr "לאָודיד די ערשט סעסיע נאָך די בלעטערער קלאָוזיז אָדער קראַשיז"
+msgid "Restores the previous session when the browser next starts."
+msgstr ""
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -465,9 +471,13 @@ msgid "Places"
 msgstr "ערטער"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "א דאַטאַבייס פון URL ס אַרייַנגערעכנט בוקמאַרקס, פאַוויקאָנס און אַ געשיכטע פון "
 "וויזיטיד וועבסיטעס"
@@ -542,7 +552,9 @@ msgstr "ויסמעקן די קראַנט סעסיע"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "א געשיכטע פון פארמען אריין אין וועב זייטלעך"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -589,7 +601,7 @@ msgstr "סינק"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "ויסמעקן די סינק דאַטן און צייכן אויס פון דעם בלעטערער"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -734,7 +746,9 @@ msgid "Blocklists"
 msgstr "בלאָקקליסץ"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "בלאָקקליסץ דאַרפֿן צו דערהייַנטיקן צו אַרבעטן."
 
 #: ../cleaners/transmission.xml
@@ -1128,7 +1142,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "טיף יבערקוקן שטיצט ניט מאַלטי-ווערט בייַטעוודיק."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1476,7 +1492,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "ווייפּינג פּאָטער פּלאַץ קענען נעמען אַ לאַנג צייַט."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "קיין אַרבעט צו טאָן. ספּעציפיצירן אָפּציעס."
 
 #: ../bleachbit/CLI.py
@@ -1806,7 +1824,7 @@ msgid "Expert mode"
 msgstr "פינצטער מאָדע"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2454,7 +2472,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "{bytes:,} ביטעס און {inodes:,} ינאָדעס פאַראַנען צו יבער-באַניצער"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "כאַנדאַלד אומבאַקאַנט טעות # 0 בשעת טרונקאַטינג טעקע."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2618,6 +2638,9 @@ msgstr "_געהילף"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_ וועגן בליטשאַביט"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr "לאָודיד די ערשט סעסיע נאָך די בלעטערער קלאָוזיז אָדער קראַשיז"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

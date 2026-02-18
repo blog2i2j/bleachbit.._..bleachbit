@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2024-02-29 15:02+0000\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/bleachbit/main/hi/"
@@ -45,8 +45,12 @@ msgstr "कुकीज़"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr "उन कुकीज़ को हटाएँ जिनमें वेबसाइट प्रेफेरेंस, ऑथेंटिकेशन और ट्रैकिंग जानकारी होती हैं"
 
@@ -253,7 +257,9 @@ msgstr "फ़ॉर्म हिस्ट्री"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr "वेब साइटों और सर्च बार में एंटर किए फ़ॉर्म्स की एक हिस्ट्री"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
@@ -291,8 +297,8 @@ msgstr "सत्र वापस लाएँ"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
-msgstr "यदि ब्राउज़र बंद हो जाए या क्रैश हो जाए तो पहला सत्र लोड कर देता है"
+msgid "Restores the previous session when the browser next starts."
+msgstr ""
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -457,9 +463,13 @@ msgid "Places"
 msgstr "जगहें"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "यूआरएल का एक डाटाबेस जिसमें फेव्रेट, फैविकॉन और विजिट की हुई वेबसाइटों की हिस्ट्री भी "
 "शामिल है"
@@ -534,7 +544,9 @@ msgstr "वर्तमान सत्र हटाएँ"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "वेब साइटों में एंटर किए फॉर्म्स की एक हिस्ट्री"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -581,7 +593,7 @@ msgstr "सिंक करें"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "सिंक डाटा डिलीट करें और ब्राउज़र से साइन आउट करें"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -723,7 +735,9 @@ msgid "Blocklists"
 msgstr "ब्लॉकलिस्ट"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "ब्लॉकलिस्ट तभी काम करेंगे जब इन्हें अपडेट किया जाएगा।"
 
 #: ../cleaners/transmission.xml
@@ -1116,7 +1130,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "डीप स्कैन मल्टी-वैल्यू वेरिएबल को सपोर्ट नहीं करता है।"
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1463,7 +1479,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "फ्री स्पेस वाइप करने में लंबा समय लग सकता है।"
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "करने के लिए कोई काम नहीं है। ऑप्शन बताएं।"
 
 #: ../bleachbit/CLI.py
@@ -1799,7 +1817,7 @@ msgid "Expert mode"
 msgstr "डार्क मोड"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2440,7 +2458,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "सुपर यूज़र को {bytes:,} बाइट और {inodes:,} इनोड उपलब्ध हैं"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "फाइल ट्रंकेट करते समय अज्ञात एरर #0 मिली।"
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2602,6 +2622,9 @@ msgstr "_सहायता"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_BleachBit के बारे में"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr "यदि ब्राउज़र बंद हो जाए या क्रैश हो जाए तो पहला सत्र लोड कर देता है"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2026-02-16 10:09+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
-"Language-Team: Irish <https://hosted.weblate.org/projects/bleachbit/main/ga/>"
-"\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/bleachbit/main/ga/"
+">\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
-"6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
+"(n>6 && n<11) ? 3 : 4;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -45,8 +45,12 @@ msgstr "Fianáin"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "Scrios fianáin, ina bhfuil faisnéis ar nós sainroghanna an láithreáin "
@@ -257,7 +261,9 @@ msgstr "Stair na bhfoirmeacha"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr ""
 "Stair na bhfoirmeacha a iontráladh ar láithreáin ghréasáin agus sa bharra "
 "Cuardaigh"
@@ -297,9 +303,8 @@ msgstr "Athchóirigh an tseisiúin"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
+msgid "Restores the previous session when the browser next starts."
 msgstr ""
-"Luchtaíonn an seisiún tosaigh tar éis don bhrabhsálaí dúnadh nó tuairteáil"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -471,9 +476,13 @@ msgid "Places"
 msgstr "Áiteanna"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "Bunachar sonraí URLanna lena n-áirítear leabharmharcanna, favicons, agus "
 "stair na suíomhanna gréasáin ar tugadh cuairt orthu"
@@ -548,7 +557,9 @@ msgstr "Scrios an seisiún reatha"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "Stair na bhfoirmeacha a iontráladh i láithreáin ghréasáin"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -595,7 +606,10 @@ msgstr "Sioncrónaigh"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+#, fuzzy
+#| msgid ""
+#| "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr ""
 "Scrios na sonraí sioncrónaithe, lena n-áirítear aipeanna gréasáin, agus "
 "sínigh amach as an mbrabhsálaí"
@@ -747,7 +761,9 @@ msgid "Blocklists"
 msgstr "Blocliostaí"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "Beidh gá le nuashonrú ar bhlocliostaí chun go n-oibreodh."
 
 #: ../cleaners/transmission.xml
@@ -1164,7 +1180,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "Ní thacaíonn scanadh domhain le haróg illuacha."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1513,7 +1531,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "Is féidir go dtógfaidh sé tamall fada spás folamh a ghlanadh."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "Níl aon obair le déanamh. Sonraigh roghanna."
 
 #: ../bleachbit/CLI.py
@@ -1842,7 +1862,9 @@ msgid "Expert mode"
 msgstr "Mód saineolaithe"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+#, fuzzy
+#| msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr "Ní thacaíonn roinnt téamaí GTK le móid éadroma agus dorcha araon."
 
 #: ../bleachbit/GuiPreferences.py
@@ -2495,7 +2517,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "{bytes:,} bytes agus {inodes:,} inodes ar fáil do shár-úsáideoirí"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "Láimhseáil earráid anaithnid #0 agus comhad á ghiorrú."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2661,6 +2685,10 @@ msgstr "_Help"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_Maidir le BleachBit"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr ""
+#~ "Luchtaíonn an seisiún tosaigh tar éis don bhrabhsálaí dúnadh nó tuairteáil"
 
 #~ msgctxt "nsis:SECTION_TRANSLATIONS_DESCRIPTION"
 #~ msgid ""

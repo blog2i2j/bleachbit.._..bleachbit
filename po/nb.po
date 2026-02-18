@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2026-02-16 10:09+0000\n"
 "Last-Translator: ovl-1 <ovl-002@mailinator.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
@@ -45,8 +45,12 @@ msgstr "Informasjonskapsler"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "Slett informasjonskapsler, som inneholder informasjon om blant annet "
@@ -255,7 +259,9 @@ msgstr "Skjemahistorikk"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr "Historikk over skjemaer utfylt på nettsteder og i søkelinjen"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
@@ -293,9 +299,8 @@ msgstr "Øktgjenoppretting"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
+msgid "Restores the previous session when the browser next starts."
 msgstr ""
-"Laster inn den opprinnelige økten etter at nettleseren lukkes eller krasjer"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -466,9 +471,13 @@ msgid "Places"
 msgstr "Steder"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "En database med nettadresser inkludert bokmerker, favikoner og en historikk "
 "over besøkte nettsteder"
@@ -543,7 +552,9 @@ msgstr "Slett den gjeldende økten"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "Historikk over utfylte skjemaer på nettsteder"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -592,7 +603,7 @@ msgstr "Synkronisering"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "Slett synkroniseringsdataene og logg ut av nettleseren"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -735,7 +746,9 @@ msgid "Blocklists"
 msgstr "Blokkeringslister"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "Blokkeringslister må oppdateres for å fungere."
 
 #: ../cleaners/transmission.xml
@@ -1117,7 +1130,7 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr ""
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1445,7 +1458,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "Overskriving av ledig diskplass kan ta lang tid."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "Ingenting å gjøre. Angi alternativer."
 
 #: ../bleachbit/CLI.py
@@ -1778,7 +1793,7 @@ msgid "Expert mode"
 msgstr "Ekspertmodus"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2395,7 +2410,7 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr ""
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr ""
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2553,6 +2568,11 @@ msgstr "_Hjelp"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_Om BleachBit"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr ""
+#~ "Laster inn den opprinnelige økten etter at nettleseren lukkes eller "
+#~ "krasjer"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2026-01-22 06:04+0000\n"
 "Last-Translator: \"Vasilis K.\" <skyhirules@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/bleachbit/main/el/"
@@ -45,8 +45,12 @@ msgstr "Cookies"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "Διαγραφή των cookies, που περιέχουν πληροφορίες όπως προτιμήσεις "
@@ -257,7 +261,9 @@ msgstr "Ιστορικό Φορμών"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr ""
 "Ιστορικό φορμών που καταχωρήθηκαν σε ιστοσελίδες και στη μπάρα Αναζήτησης"
 
@@ -296,10 +302,8 @@ msgstr "Επαναφορά συνεδρίας"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
+msgid "Restores the previous session when the browser next starts."
 msgstr ""
-"Φορτώνει την αρχική συνεδρία μετά από κλείσιμο ή κόλλημα του προγράμματος "
-"περιήγησης"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -470,9 +474,13 @@ msgid "Places"
 msgstr "Τοποθεσίες"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "Μια βάση δεδομένων των URLs που περιλαμβάνουν σελιδοδείκτες, αγαπημένα "
 "εικονίδια και το ιστορικό ήδη ανοιγμένων ιστοσελίδων"
@@ -547,7 +555,9 @@ msgstr "Διαγραφή τρέχουσας συνεδρίας"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "Ιστορικό φορμών που καταχωρήθηκαν σε ιστοσελίδες"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -597,7 +607,7 @@ msgstr "Συγχρονισμός"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "Διαγραφή δεδομένων συγχρονισμού και αποσύνδεση από τον φυλλομετρητή"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -745,7 +755,9 @@ msgid "Blocklists"
 msgstr "Λίστα μπλοκαρισμένων"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "Η λίστα μπλοκαρισμένων θα χρειαστεί αναβάθμιση για να λειτουργήσει."
 
 #: ../cleaners/transmission.xml
@@ -1149,7 +1161,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "Η βαθιά σάρωση δεν υποστηρίζει μεταβλητή πολλαπλών τιμών."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1499,7 +1513,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "Η εκκαθάριση του ελεύθερου χώρου μπορεί να πάρει πολύ χρόνο."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "Δεν εκκρεμεί εργασία. Καθορίστε επιλογές."
 
 #: ../bleachbit/CLI.py
@@ -1842,7 +1858,7 @@ msgid "Expert mode"
 msgstr "Σκοτεινό θέμα"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2494,7 +2510,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "{bytes:,} bytes και {inodes:,} inodes διαθέσιμα σε super χρήστη"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "Χειρισμός αγνώστου σφάλματος #0 κατά την περικοπή αρχείου."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2657,6 +2675,11 @@ msgstr "_Βοήθεια"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_Περί του BleachBit"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr ""
+#~ "Φορτώνει την αρχική συνεδρία μετά από κλείσιμο ή κόλλημα του προγράμματος "
+#~ "περιήγησης"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

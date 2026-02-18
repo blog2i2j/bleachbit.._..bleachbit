@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2021-10-28 17:41+0000\n"
 "Last-Translator: Marcos Lans <Unknown>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -44,8 +44,12 @@ msgstr "Cookies"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "Eliminar as cookies, que conteñen informacións tales como as preferencias "
@@ -256,7 +260,9 @@ msgstr "Historial de formularios"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr ""
 "Un historial de formularios introducidos en sitios web e na barra de busca"
 
@@ -295,9 +301,8 @@ msgstr "Restaurar sesión"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
+msgid "Restores the previous session when the browser next starts."
 msgstr ""
-"Cargar a sesión inicial despois de que o navegador se peche ou se estrague"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -467,9 +472,13 @@ msgid "Places"
 msgstr "Lugares"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr ""
 "Unha base de datos dos URL incluíndo marcadores, faviconas e un historial de "
 "sitios web visitados"
@@ -544,7 +553,9 @@ msgstr "Eliminar a sesión actual"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "O hisorial dos formularios introducidos en sitios web"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -592,7 +603,7 @@ msgstr "Sincronizar"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "Eliminar os datos de sincronización e pechar a sesión do navegador"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -740,7 +751,9 @@ msgid "Blocklists"
 msgstr "Listas de bloqueo"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "As listas de bloqueo precisan actualizarse para funcionar."
 
 #: ../cleaners/transmission.xml
@@ -1135,7 +1148,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "A análise en profundidade no acepta variábeis multi-valor."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1492,7 +1507,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "Limpar o espazo libre pode levar unha boa miga."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "Non hai tarefas que facer. Especificar opcións."
 
 #: ../bleachbit/CLI.py
@@ -1822,7 +1839,7 @@ msgid "Expert mode"
 msgstr "Modo escuro"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2469,7 +2486,7 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr ""
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr ""
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2631,6 +2648,10 @@ msgstr "_Axuda"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "Sobre o Ble_achBit"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr ""
+#~ "Cargar a sesión inicial despois de que o navegador se peche ou se estrague"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

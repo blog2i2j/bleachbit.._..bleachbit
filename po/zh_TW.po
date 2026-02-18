@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2025-08-18 10:02+0000\n"
 "Last-Translator: Pin-Hsien Lee <phsnlee@ncpy.dev>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -45,8 +45,12 @@ msgstr "Cookies"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr "刪除 Cookies；它們保存了網站偏好、身分驗證、追蹤 ID 等資訊"
 
@@ -253,7 +257,9 @@ msgstr "表單紀錄"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr "網站表單與搜尋欄的輸入紀錄"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
@@ -289,8 +295,8 @@ msgstr "瀏覽狀態還原"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
-msgstr "在瀏覽器關閉或崩潰後載入最初的瀏覽狀態"
+msgid "Restores the previous session when the browser next starts."
+msgstr ""
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -455,9 +461,13 @@ msgid "Places"
 msgstr "位置"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr "保存書籤、網站圖標與造訪網頁紀錄的 URL 資料庫"
 
 #: ../cleaners/epiphany.xml
@@ -530,7 +540,9 @@ msgstr "刪除目前的作業階段"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "網站表單的輸入紀錄"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -575,7 +587,7 @@ msgstr "同步資料"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "刪除同步資料並從瀏覽器登出"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -716,7 +728,9 @@ msgid "Blocklists"
 msgstr "封鎖名單"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "需要更新才能使用封鎖名單。"
 
 #: ../cleaners/transmission.xml
@@ -1110,7 +1124,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "深層掃描不支援複數個值。"
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1454,7 +1470,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "抹寫可用空間會花費很長時間。"
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "沒有任何工作。指定至少一個選項。"
 
 #: ../bleachbit/CLI.py
@@ -1781,7 +1799,7 @@ msgid "Expert mode"
 msgstr "深色模式"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2403,7 +2421,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "超級使用者可用 {bytes:,} bytes 和 {inodes:,} inodes"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "清空檔案時處理了未知錯誤 #0 。"
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2563,6 +2583,9 @@ msgstr "幫助(_H)"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "關於 BleachBit (_A)"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr "在瀏覽器關閉或崩潰後載入最初的瀏覽狀態"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"

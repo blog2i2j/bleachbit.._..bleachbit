@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:22-0700\n"
+"POT-Creation-Date: 2026-02-17 23:41-0700\n"
 "PO-Revision-Date: 2021-06-18 15:40+0000\n"
 "Last-Translator: N.SUJATHA DEVI <Unknown>\n"
 "Language-Team: Telugu <te@li.org>\n"
@@ -44,8 +44,12 @@ msgstr "కుకీలు"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
+#, fuzzy
+#| msgid ""
+#| "Delete cookies, which contain information such as web site preferences, "
+#| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as web site preferences, "
+"Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
 "వెబ్ సైట్ ప్రాధాన్యతలు, ప్రామాణీకరణ, మరియు ట్రాకింగ్ ఐడెంటిఫికేషన్ వంటి సమాచారాన్ని కలిగి ఉండే కుకీలను డిలీట్ "
@@ -254,7 +258,9 @@ msgstr "ఫారం చరిత్ర"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-msgid "A history of forms entered in web sites and in the Search bar"
+#, fuzzy
+#| msgid "A history of forms entered in web sites and in the Search bar"
+msgid "A history of forms entered in websites and in the Search bar"
 msgstr "వెబ్ సైట్‌లో మరియు సెర్చ్ బార్‌లో ఎంటర్ చేయబడిన ఫారంల హిస్టరీ"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
@@ -290,8 +296,8 @@ msgstr "సెషన్ రీస్టోర్"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
-msgid "Loads the initial session after the browser closes or crashes"
-msgstr "బ్రౌజర్ క్లోజ్ లేదా క్రాష్ అయిన తర్వాత మొదటి సెషన్‌ను లోడ్ చేస్తుంది"
+msgid "Restores the previous session when the browser next starts."
+msgstr ""
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -458,9 +464,13 @@ msgid "Places"
 msgstr "ప్రదేశాలు"
 
 #: ../cleaners/epiphany.xml
+#, fuzzy
+#| msgid ""
+#| "A database of URLs including bookmarks, favicons, and a history of "
+#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
-"web sites"
+"websites"
 msgstr "బుక్‌మార్క్‌స్, ఫేవికాన్‌స్ మరియు సందర్శించిన వెబ్‌సైట్ల హిస్టరీతో సహా URLల డేటాబేస్"
 
 #: ../cleaners/epiphany.xml
@@ -533,7 +543,9 @@ msgstr "ప్రస్తుత సెషన్‌ను డిలీట్ చ
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-msgid "A history of forms entered in web sites"
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
 msgstr "వెబ్ సైట్‌లలో ఎంటర్ చేసిన ఫారంల చరిత్ర"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
@@ -580,7 +592,7 @@ msgstr "సమకాలీకరణ"
 #: ../cleaners/microsoft_edge.xml
 #, fuzzy
 #| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data, including web apps, and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "సమకాలీకరణ డేటాను డిలీట్ చేసి, బ్రౌజర్ నుండి సైన్ అవుట్ చేయండి"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
@@ -721,7 +733,9 @@ msgid "Blocklists"
 msgstr "బ్లాక్‌లిస్ట్‌లు"
 
 #: ../cleaners/transmission.xml
-msgid "Blocklists will need update to work."
+#, fuzzy
+#| msgid "Blocklists will need update to work."
+msgid "Blocklists will need to be updated to work."
 msgstr "బ్లాక్‌లిస్ట్‌లు పనిచేయడానికి అప్డేట్ అవసరం."
 
 #: ../cleaners/transmission.xml
@@ -1114,7 +1128,9 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-msgid "Deep scan does not support multi-value variable."
+#, fuzzy
+#| msgid "Deep scan does not support multi-value variable."
+msgid "Deep scan does not support multi-value variables."
 msgstr "డీప్ స్కాన్ మల్టీ-వాల్యూ వేరియబుల్‌కు మద్దతు ఇవ్వదు."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
@@ -1459,7 +1475,9 @@ msgid "Wiping empty space can take a long time."
 msgstr "ఫ్రీ స్పేస్‌ను వైప్ చేయడానికి చాలా సమయం పట్టవచ్చు."
 
 #: ../bleachbit/CLI.py
-msgid "No work to do. Specify options."
+#, fuzzy
+#| msgid "No work to do. Specify options."
+msgid "No operations selected. Specify cleaner options."
 msgstr "చేయడానికి ఏ పని లేదు. ఎంపికలను పేర్కొనండి."
 
 #: ../bleachbit/CLI.py
@@ -1785,7 +1803,7 @@ msgid "Expert mode"
 msgstr "డార్క్ మోడ్"
 
 #: ../bleachbit/GuiPreferences.py
-msgid "Some GTK themes support do not support both light and dark modes."
+msgid "Some GTK themes do not support both light and dark modes."
 msgstr ""
 
 #: ../bleachbit/GuiPreferences.py
@@ -2416,7 +2434,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "సూపర్-యూజర్‌కు {bytes:,} బైట్స్ మరియు {inodes:,} ఐనోడ్స్ అందుబాటులో ఉన్నాయి"
 
 #: ../bleachbit/Wipe.py
-msgid "Handled unknown error #0 while truncating file."
+#, fuzzy
+#| msgid "Handled unknown error #0 while truncating file."
+msgid "Encountered unknown error #0 while truncating file."
 msgstr "ఫైల్‌ను ట్రంకేట్ చేసేటప్పుడు తెలియని ఎర్రర్ #0ను నిర్వహించింది."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
@@ -2580,6 +2600,9 @@ msgstr "_సహాయం"
 #: ../share/app-menu.ui
 msgid "_About BleachBit"
 msgstr "_BleachBit గురించి"
+
+#~ msgid "Loads the initial session after the browser closes or crashes"
+#~ msgstr "బ్రౌజర్ క్లోజ్ లేదా క్రాష్ అయిన తర్వాత మొదటి సెషన్‌ను లోడ్ చేస్తుంది"
 
 #, fuzzy, python-format
 #~| msgid "not a valid cleaner: %s"
