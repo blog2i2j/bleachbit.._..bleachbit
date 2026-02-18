@@ -958,15 +958,15 @@ class GUI(Gtk.ApplicationWindow):
         css_provider.load_from_data(b"""
             @keyframes update-pulse {
                 0% { opacity: 1; }
-                50% { opacity: 0.7; }
+                50% { opacity: 0.2; }
                 100% { opacity: 1; }
             }
             .update-available {
                 background: @theme_selected_bg_color;
                 color: @theme_selected_fg_color;
                 animation: update-pulse 2s ease-in-out;
-                animation-delay: 2s;
-                animation-iteration-count: 1;
+                animation-delay: 5s; /* delay until the animation starts */
+                animation-iteration-count: 1; /* only animate once */
             }
         """)
         Gtk.StyleContext.add_provider_for_screen(
