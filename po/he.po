@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
-"PO-Revision-Date: 2026-02-16 10:09+0000\n"
+"PO-Revision-Date: 2026-02-19 07:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/bleachbit/main/he/"
-">\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/bleachbit/main/"
+"he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Launchpad-Export-Date: 2021-10-29 20:32+0000\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -45,15 +45,10 @@ msgstr "עוגיות"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
-#, fuzzy
-#| msgid ""
-#| "Delete cookies, which contain information such as web site preferences, "
-#| "authentication, and tracking identification"
 msgid ""
 "Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
-msgstr ""
-"מחיקת עוגיות, המכילות מידע כגון העדפות, אימות ונתוני מעקב לאתרי אינטרנט"
+msgstr "מחיקת עוגיות, המכילות מידע כגון העדפות, אימות ונתוני מעקב לאתרי אינטרנט"
 
 #: ../cleaners/realplayer.xml ../cleaners/bash.xml ../cleaners/elinks.xml
 #: ../cleaners/easytag.xml ../cleaners/safari.xml ../cleaners/chromium.xml
@@ -260,8 +255,6 @@ msgstr "היסטוריית הטפסים"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites and in the Search bar"
 msgid "A history of forms entered in websites and in the Search bar"
 msgstr "היסטוריה של טפסים שהוזנו באתרי אינטרנט ובסרגל החיפוש"
 
@@ -301,7 +294,7 @@ msgstr "שיחזור הפעלה"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
 msgid "Restores the previous session when the browser next starts."
-msgstr ""
+msgstr "שחזור ההפעלה הקודמת עם ההפעלה הבאה של הדפדפן."
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -467,10 +460,6 @@ msgid "Places"
 msgstr "מקומות"
 
 #: ../cleaners/epiphany.xml
-#, fuzzy
-#| msgid ""
-#| "A database of URLs including bookmarks, favicons, and a history of "
-#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
 "websites"
@@ -548,8 +537,6 @@ msgstr "מחיקת ההפעלה הנוכחית"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites"
 msgid "A history of forms entered in websites"
 msgstr "היסטוריה של טפסים שהוזנו באתרי אינטרנט"
 
@@ -595,11 +582,8 @@ msgstr "סנכרון"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid ""
-#| "Delete the sync data, including web apps, and sign out of the browser"
 msgid "Delete the sync data (including web apps) and sign out of the browser"
-msgstr "למחוק את נתוני הסנכרון, כולל יישומי אתרים, ולצאת מהדפדפן"
+msgstr "למחוק את נתוני הסנכרון (כולל יישומי אתרים) ולצאת מהדפדפן"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -739,8 +723,6 @@ msgid "Blocklists"
 msgstr "רשימות חסימה"
 
 #: ../cleaners/transmission.xml
-#, fuzzy
-#| msgid "Blocklists will need update to work."
 msgid "Blocklists will need to be updated to work."
 msgstr "יש לעדכן את רשימות החסימה כדי שתפעלנה."
 
@@ -1134,8 +1116,6 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-#, fuzzy
-#| msgid "Deep scan does not support multi-value variable."
 msgid "Deep scan does not support multi-value variables."
 msgstr "סריקה עמוקה לא תומכת במשתנים מרובי ערכים."
 
@@ -1471,10 +1451,8 @@ msgid "Wiping empty space can take a long time."
 msgstr "מחיקת המקום הריק עשויה לארוך זמן רב."
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "No work to do. Specify options."
 msgid "No operations selected. Specify cleaner options."
-msgstr "אין עבודה לבצע. נא לציין אפשרויות."
+msgstr "לא נבחרו פעולות. נא לציין אפשרויות מנקה."
 
 #: ../bleachbit/CLI.py
 msgid "--overwrite is intended only for use with --clean"
@@ -1800,10 +1778,8 @@ msgid "Expert mode"
 msgstr "מצב מומחים"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Some GTK themes support do not support both light and dark modes."
 msgid "Some GTK themes do not support both light and dark modes."
-msgstr "חלק מתמיכת ערכות העיצוב של GTK לא תומכות במצבים בהיר וכהה יחד."
+msgstr "חלק מערכות העיצוב של GTK לא תומכות במצבים בהיר וכהה יחד."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -2428,10 +2404,8 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "{bytes:,} בתים ו־{inodes:,} inodes זמינים למשתמשי על"
 
 #: ../bleachbit/Wipe.py
-#, fuzzy
-#| msgid "Handled unknown error #0 while truncating file."
 msgid "Encountered unknown error #0 while truncating file."
-msgstr "טופלה שגיאה בלתי ידוע #0 בעת חיתוך קובץ."
+msgstr "צצה שגיאה בלתי ידועה #0 בעת חיתוך קובץ."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
