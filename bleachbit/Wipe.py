@@ -435,7 +435,7 @@ def wipe_path(pathname, idle=False):
                 except IOError as e:
                     if e.errno == 0:
                         logger.debug(
-                            _("Handled unknown error #0 while truncating file."))
+                            _("Encountered unknown error #0 while truncating file."))
                     time.sleep(0.1)
             # explicitly delete
             try:

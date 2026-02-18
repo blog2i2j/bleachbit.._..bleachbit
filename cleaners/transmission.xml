@@ -26,7 +26,7 @@
   <option id="blocklists">
     <label translators="Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations">Blocklists</label>
     <description>Delete the files</description>
-    <warning>Blocklists will need update to work.</warning>
+    <warning>Blocklists will need to be updated to work.</warning>
     <action command="delete" search="walk.files" path="$XDG_CONFIG_HOME/transmission/blocklists/"/>
   </option>
   <option id="torrents">

@@ -351,7 +351,7 @@ There is NO WARRANTY, to the extent permitted by law.""" % APP_VERSION)
         operations = args_to_operations(
             args, options.preset, options.all_but_warning, excludes)
         if not operations:
-            logger.error(_("No work to do. Specify options."))
+            logger.error(_("No operations selected. Specify cleaner options."))
             sys.exit(1)
     if options.overwrite:
         if not options.clean or options.shred:

@@ -158,7 +158,7 @@ class FileActionProvider(ActionProvider):
                     # an environment variable, but each multi-value variable
                     # can have multiple values. They're a way to make CleanerML
                     # files more concise.
-                    _("Deep scan does not support multi-value variable."))
+                    _("Deep scan does not support multi-value variables."))
         if not any([self.object_type, self.regex, self.nregex,
                     self.wholeregex, self.nwholeregex]):
             # If the filter is not needed, bypass it for speed.

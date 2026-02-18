@@ -58,7 +58,7 @@
   </option>
   <option id="cookies">
     <label>Cookies</label>
-    <description>Delete cookies, which contain information such as web site preferences, authentication, and tracking identification</description>
+    <description>Delete cookies, which contain information such as website preferences, authentication, and tracking identification</description>
     <action command="cookie" search="file" path="$$profile$$/Cookies"/>
     <action command="delete" search="file" path="$$profile$$/Cookies-journal"/>
     <action command="cookie" search="file" path="$$profile$$/Network/Cookies"/>
@@ -79,7 +79,7 @@
   </option>
   <option id="form_history">
     <label>Form history</label>
-    <description>A history of forms entered in web sites</description>
+    <description>A history of forms entered in websites</description>
     <action command="chrome.autofill" search="file" path="$$profile$$/Web Data"/>
   </option>
   <option id="history">
@@ -135,7 +135,7 @@
   </option>
   <option id="sync">
     <label>Sync</label>
-    <description>Delete the sync data, including web apps, and sign out of the browser</description>
+    <description>Delete the sync data (including web apps) and sign out of the browser</description>
     <action command="delete" search="walk.files" path="$$profile$$/Sync Data/"/>
     <action command="delete" search="walk.files" path="$$profile$$/Sync Data Backup/"/>
     <action command="json" search="file" path="$$base$$/Local State" address="profile"/>

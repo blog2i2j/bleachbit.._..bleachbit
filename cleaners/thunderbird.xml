@@ -50,7 +50,7 @@
   </option>
   <option id="cookies">
     <label>Cookies</label>
-    <description>Delete cookies, which contain information such as web site preferences, authentication, and tracking identification</description>
+    <description>Delete cookies, which contain information such as website preferences, authentication, and tracking identification</description>
     <action command="delete" search="file" path="$$profile$$/cookies.sqlite"/>
   </option>
   <option id="index">
@@ -62,7 +62,7 @@
   <option id="sessionjson">
     <!-- delete the session, i.e. open windows and tabs  -->
     <label>Session restore</label>
-    <description>Loads the initial session after the browser closes or crashes</description>
+    <description>Restores the previous session when the browser next starts.</description>
     <action command="delete" search="file" path="$$profile$$/session.json"/>
   </option>
   <option id="passwords">
