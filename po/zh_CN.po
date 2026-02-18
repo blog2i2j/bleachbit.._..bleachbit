@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
-"PO-Revision-Date: 2026-02-15 06:09+0000\n"
+"PO-Revision-Date: 2026-02-19 07:09+0000\n"
 "Last-Translator: 大王叫我来巡山 "
 "<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Launchpad-Export-Date: 2021-10-26 02:44+0000\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -46,14 +46,10 @@ msgstr "Cookie"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
-#, fuzzy
-#| msgid ""
-#| "Delete cookies, which contain information such as web site preferences, "
-#| "authentication, and tracking identification"
 msgid ""
 "Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
-msgstr "删除 Cookie 文件，它们保存网站首选项、认证和身份等信息"
+msgstr "删除 Cookie 文件，它们保存网站首选项、身份认证和跟踪标识符等信息"
 
 #: ../cleaners/realplayer.xml ../cleaners/bash.xml ../cleaners/elinks.xml
 #: ../cleaners/easytag.xml ../cleaners/safari.xml ../cleaners/chromium.xml
@@ -258,10 +254,8 @@ msgstr "表单历史"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites and in the Search bar"
 msgid "A history of forms entered in websites and in the Search bar"
-msgstr "网页表单和搜索栏的历史记录"
+msgstr "在网站和搜索栏中输入的表单的历史记录"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
 #: ../cleaners/zen.xml ../cleaners/chromium.xml ../cleaners/thunderbird.xml
@@ -297,7 +291,7 @@ msgstr "浏览状态还原"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
 msgid "Restores the previous session when the browser next starts."
-msgstr ""
+msgstr "浏览器下次启动时恢复之前会话。"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -462,14 +456,10 @@ msgid "Places"
 msgstr "位置"
 
 #: ../cleaners/epiphany.xml
-#, fuzzy
-#| msgid ""
-#| "A database of URLs including bookmarks, favicons, and a history of "
-#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
 "websites"
-msgstr "URL数据库，包括书签、网页图标和历史记录"
+msgstr "URL数据库，包括书签、网页图标和网站访问历史记录"
 
 #: ../cleaners/epiphany.xml
 msgid "This option deletes all bookmarks."
@@ -541,8 +531,6 @@ msgstr "删除当前会话"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites"
 msgid "A history of forms entered in websites"
 msgstr "在网站中输入的表单的历史记录"
 
@@ -586,11 +574,8 @@ msgstr "同步数据"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid ""
-#| "Delete the sync data, including web apps, and sign out of the browser"
 msgid "Delete the sync data (including web apps) and sign out of the browser"
-msgstr "删除包括 web 应用在内的同步数据并退出浏览器"
+msgstr "删除包括 web 应用在内的同步数据并退出浏览器登录"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -730,8 +715,6 @@ msgid "Blocklists"
 msgstr "黑名单"
 
 #: ../cleaners/transmission.xml
-#, fuzzy
-#| msgid "Blocklists will need update to work."
 msgid "Blocklists will need to be updated to work."
 msgstr "黑名单需要更新才能工作。"
 
@@ -1122,8 +1105,6 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-#, fuzzy
-#| msgid "Deep scan does not support multi-value variable."
 msgid "Deep scan does not support multi-value variables."
 msgstr "深度扫描不支持多值变量。"
 
@@ -1456,10 +1437,8 @@ msgid "Wiping empty space can take a long time."
 msgstr "擦除磁盘未分配区域可能需要很长时间。"
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "No work to do. Specify options."
 msgid "No operations selected. Specify cleaner options."
-msgstr "没有指定任何任务。请至少指定一个选项。"
+msgstr "没有选中操作。请指定清理规则选项。"
 
 #: ../bleachbit/CLI.py
 msgid "--overwrite is intended only for use with --clean"
@@ -1792,8 +1771,6 @@ msgid "Expert mode"
 msgstr "专家模式"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Some GTK themes support do not support both light and dark modes."
 msgid "Some GTK themes do not support both light and dark modes."
 msgstr "一些 GTK 主题不同时支持浅色和深色模式。"
 
@@ -2407,10 +2384,8 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "超级用户可以使用 {bytes:,} 字节和 {inodes:,} 个索引节点"
 
 #: ../bleachbit/Wipe.py
-#, fuzzy
-#| msgid "Handled unknown error #0 while truncating file."
 msgid "Encountered unknown error #0 while truncating file."
-msgstr "截断文件时接受到了未知错误 #0 。"
+msgstr "截断文件时接遇到了未知错误 #0 。"
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
