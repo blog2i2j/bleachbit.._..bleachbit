@@ -31,6 +31,30 @@ START_TIMEOUT_SECONDS = 20
 MAX_PATH_DISPLAY = 200
 
 
+def is_bleachbit_running_process(process_name, cmdline):
+    """Return whether process_name/cmdline represent a running BleachBit GUI/context process."""
+    assert isinstance(process_name, str)
+    assert isinstance(cmdline, list)
+    name_lower = (process_name or '').lower()
+    normalized_cmdline = [str(arg).lower() for arg in (cmdline or [])]
+    cmdline_str = ' '.join(normalized_cmdline)
+
+    image_is_python = name_lower.startswith('python')
+    # With subprocess shell=True, process image is cmd.exe instead of python.
+    image_is_cmd = name_lower in ('cmd.exe', 'cmd')
+    launches_python = 'python.exe' in cmdline_str or 'python3' in cmdline_str
+    if not (image_is_python or (image_is_cmd and launches_python)):
+        return False
+
+    has_bleachbit_entrypoint = any(
+        arg == 'bleachbit.py' or arg.endswith(
+            '\\bleachbit.py') or arg.endswith('/bleachbit.py')
+        for arg in normalized_cmdline
+    )
+    has_context_arg = '--context-menu' in normalized_cmdline or '--gui' in normalized_cmdline
+    return has_bleachbit_entrypoint and has_context_arg
+
+
 def wait_for_process_tree_windows(process, timeout=60, poll_interval=0.1):
     """Wait for a process and its grandchildren to complete on Windows.
 
@@ -148,20 +172,7 @@ class ApplicationRunningTracker:
                     if candidate in name_and_cmdline.lower():
                         self.seen_processes.add(name_and_cmdline)
 
-                # Check for BleachBit process
-                # With shell=True, the process name becomes cmd.exe instead of python.
-                cmdline_str = ' '.join(cmdline).lower()
-                name_lower = name.lower()
-                image_is_cmd = name_lower in ('cmd.exe', 'cmd')
-                image_is_python = name_lower.startswith('python')
-                arg_is_python = 'python.exe' in cmdline_str
-                is_python = (image_is_python and arg_is_python) or image_is_python
-                # In this test, there are two ways of launching the application,
-                # and this detects either.
-                # --gui is the idle process that waits
-                # --context-menu deletes and exits
-                has_context_arg = '--context-menu' in cmdline or '--gui' in cmdline
-                if is_python and has_context_arg:
+                if is_bleachbit_running_process(name, cmdline):
                     is_process_running = True
             except (psutil.NoSuchProcess, psutil.AccessDenied):
                 pass
@@ -486,6 +497,50 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
                               file_to_shred], uac=True)
 
         self.assertNotExists(file_to_shred)
+
+    def test_is_bleachbit_running_process(self):
+        """Test process-matching helper without depending on live processes."""
+        # Path as seen on AppVeyor
+        py_dir = r'C:\\projects\\bleachbit\\vcpkg_installed\\x86-windows\\tools\\python3\\'
+        py_exe = os.path.join(py_dir, 'python.exe')
+        tests = (
+            # Test runner.
+            (False, 'python.exe',
+                [
+                    py_exe,
+                    os.path.join(py_dir, 'coverage.exe'),
+                    'run',
+                    '--include=bleachbit/*',
+                    'tests/TestAll.py',
+                ]
+             ),
+            # D-Bus session bus.
+            (False, 'gdbus.exe',
+                [os.path.join(py_dir, 'gdbus.exe'), '_win32_run_session_bus']
+             ),
+            # This is the cleaning process.
+            (True, 'cmd.exe',
+                [
+                    'C:\\Windows\\system32\\cmd.exe',
+                    '/c',
+                    py_exe,
+                    'bleachbit.py',
+                    '--no-delete-confirmation',
+                    '--no-first-start',
+                    '--context-menu'  # followed by a pathname to delete
+                ]
+             ),
+            # This is the idle process.
+            (True, 'python.exe',
+                [py_exe, 'bleachbit.py', '--gui', '--no-load-cleaners',
+                    '--no-check-online-updates', '--no-uac']
+             ),
+        )
+        for expected, process_name, cmdline in tests:
+            self.assertEqual(
+                expected,
+                is_bleachbit_running_process(process_name, cmdline)
+            )
 
     def test_wait_for_grandchild_process(self):
         """Test that wait_for_process_tree_windows waits for grandchild processes"""
