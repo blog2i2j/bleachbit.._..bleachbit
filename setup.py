@@ -27,13 +27,8 @@ import glob
 import os
 import sys
 
-# third-party
-from setuptools import setup
-
 # local import
 import bleachbit
-import bleachbit.General
-import bleachbit.FileUtilities
 
 
 APP_DESCRIPTION = "BleachBit frees space and maintains privacy by quickly wiping files you don't need and didn't know you had."
@@ -54,6 +49,9 @@ elif sys.platform.startswith('openbsd') or sys.platform.startswith('freebsd'):
 
 
 def run_setup(args={}):
+    """Run setup from setuptools"""
+    # pylint: disable=import-outside-toplevel
+    from setuptools import setup
     setup(name='bleachbit',
           version=bleachbit.APP_VERSION,
           description=bleachbit.APP_NAME,
