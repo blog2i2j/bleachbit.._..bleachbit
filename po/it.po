@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
-"PO-Revision-Date: 2026-02-10 20:09+0000\n"
+"PO-Revision-Date: 2026-02-20 00:02+0000\n"
 "Last-Translator: bovirus <roberto.boriotti@canon.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/bleachbit/main/"
 "it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 "X-Launchpad-Export-Date: 2021-06-15 14:24+0000\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
@@ -45,16 +45,12 @@ msgstr "Cookie"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
-#, fuzzy
-#| msgid ""
-#| "Delete cookies, which contain information such as web site preferences, "
-#| "authentication, and tracking identification"
 msgid ""
 "Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
 msgstr ""
-"Elimina i cookie che contengono informazioni come preferenze dei siti web, "
-"credenziali d'accesso e di identificazione"
+"Elimina i cookie che contengono informazioni come preferenze siti web, "
+"credenziali d'accesso e identificazione"
 
 #: ../cleaners/realplayer.xml ../cleaners/bash.xml ../cleaners/elinks.xml
 #: ../cleaners/easytag.xml ../cleaners/safari.xml ../cleaners/chromium.xml
@@ -261,8 +257,6 @@ msgstr "Cronologia moduli"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites and in the Search bar"
 msgid "A history of forms entered in websites and in the Search bar"
 msgstr ""
 "La cronologia dei moduli compilati nei siti web e nella barra di ricerca"
@@ -303,7 +297,7 @@ msgstr "Ripristino sessione"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
 msgid "Restores the previous session when the browser next starts."
-msgstr ""
+msgstr "Ripristina la sessione precedente al successivo avvio del browser."
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -474,15 +468,11 @@ msgid "Places"
 msgstr "Risorse"
 
 #: ../cleaners/epiphany.xml
-#, fuzzy
-#| msgid ""
-#| "A database of URLs including bookmarks, favicons, and a history of "
-#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
 "websites"
 msgstr ""
-"Un database di indirizzi web compresi segnalibri, icone e una cronologia dei "
+"Un database di indirizzi web compresi preferiti, icone e una cronologia dei "
 "siti web visitati"
 
 #: ../cleaners/epiphany.xml
@@ -555,8 +545,6 @@ msgstr "Elimina la sessione attuale"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites"
 msgid "A history of forms entered in websites"
 msgstr "La cronologia dei moduli compilati nei siti web"
 
@@ -605,8 +593,6 @@ msgstr "Sincronizza"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data (including web apps) and sign out of the browser"
 msgstr "Elimina i dati sincronizzati e disconnetti account dal browser"
 
@@ -754,8 +740,6 @@ msgid "Blocklists"
 msgstr "Liste di blocco indirizzi"
 
 #: ../cleaners/transmission.xml
-#, fuzzy
-#| msgid "Blocklists will need update to work."
 msgid "Blocklists will need to be updated to work."
 msgstr "Per funzionare gli elenchi bloccati dovranno essere aggiornati."
 
@@ -1174,10 +1158,8 @@ msgstr ""
 #. can have multiple values. They're a way to make CleanerML
 #. files more concise.
 #: ../bleachbit/Action.py
-#, fuzzy
-#| msgid "Deep scan does not support multi-value variable."
 msgid "Deep scan does not support multi-value variables."
-msgstr "La scansione profonda non supporta le variabili multivalore."
+msgstr "La scansione approfondita non supporta le variabili multivalore."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
 #. mild mistake in the CleanerML file because walk.all is expected to
@@ -1517,10 +1499,8 @@ msgid "Wiping empty space can take a long time."
 msgstr "La pulizia dello spazio vuoto può impiegare molto tempo."
 
 #: ../bleachbit/CLI.py
-#, fuzzy
-#| msgid "No work to do. Specify options."
 msgid "No operations selected. Specify cleaner options."
-msgstr "Nessun attività da effettuare. Specifica le opzioni."
+msgstr "Nessun attività da effettuare. Specifica le opzioni di pulizia."
 
 #: ../bleachbit/CLI.py
 msgid "--overwrite is intended only for use with --clean"
@@ -1840,6 +1820,8 @@ msgid ""
 "Expert mode enables advanced features and relaxes guardrails. Use extra "
 "caution in expert mode."
 msgstr ""
+"La modalità esperto abilita funzionalità avanzate e disabilita molti "
+"controlli. In modalità esperto presta particolare attenzione."
 
 #: ../bleachbit/GuiPreferences.py ../share/app-menu.ui
 msgid "Preferences"
@@ -1862,14 +1844,12 @@ msgid "Keep list"
 msgstr "Elenco mantenuti"
 
 #: ../bleachbit/GuiPreferences.py
-#, fuzzy
-#| msgid "Dark mode"
 msgid "Expert mode"
-msgstr "Modalità scura"
+msgstr "Modalità esperto"
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Some GTK themes do not support both light and dark modes."
-msgstr ""
+msgstr "Alcuni temi GTK non supportano sia la modalità chiara che quella scura."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Warning confirmations reset."
@@ -2008,6 +1988,8 @@ msgstr "Questo percorso esiste già nell'elenco personalizzato."
 #: ../bleachbit/GuiPreferences.py
 msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Questo percorso è protetto. Per disabilitare questa protezione, abilita la "
+"modalità esperto."
 
 #: ../bleachbit/GuiPreferences.py
 msgid "Protected Path"
@@ -2084,6 +2066,8 @@ msgstr "Dimensioni"
 #: ../bleachbit/GuiTreeModels.py
 msgid "This option is protected. To bypass protection, enable expert mode."
 msgstr ""
+"Questa opzione è protetta. Per disabilitare questa protezione, abilita la "
+"modalità esperto."
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -2102,6 +2086,8 @@ msgstr "Reimpostazione del file di configurazione perché rovinato: %s"
 msgid ""
 "%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
 msgstr ""
+"%(cleaner)s - %(option)s non può essere pulito perché la modalità esperto è "
+"disabilitata."
 
 #: ../bleachbit/GuiWindow.py
 msgid "You must select an operation"
@@ -2165,6 +2151,8 @@ msgstr ""
 #: ../bleachbit/GuiWindow.py
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
+"Questa opzione richiede la modalità esperto. Abilita tale modalità nelle "
+"Preferenze."
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
@@ -2180,10 +2168,8 @@ msgstr "Gestisci cookie"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Manage cookies to keep"
 msgid "Manage custom paths"
-msgstr "Gestisci cookie da mantenere"
+msgstr "Gestione percorsi personalizzati"
 
 #: ../bleachbit/GuiWindow.py
 msgid "Preview files in the selected operations (without deleting any files)"
@@ -2518,10 +2504,9 @@ msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
 msgstr "{bytes:,} byte e {inodes:,} inode disponibili al super-utente"
 
 #: ../bleachbit/Wipe.py
-#, fuzzy
-#| msgid "Handled unknown error #0 while truncating file."
 msgid "Encountered unknown error #0 while truncating file."
-msgstr "Gestito errore sconosciuto #0 durante il troncamento del file."
+msgstr ""
+"Durante il troncamento del file si è verificato un errore sconosciuto #0."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
