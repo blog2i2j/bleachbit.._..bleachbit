@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
-"PO-Revision-Date: 2026-02-20 00:02+0000\n"
+"PO-Revision-Date: 2026-02-20 03:48+0000\n"
 "Last-Translator: Maduka Jayalath <madu.rapa@gmail.com>\n"
 "Language-Team: Sinhala <https://hosted.weblate.org/projects/bleachbit/main/"
 "si/>\n"
@@ -44,14 +44,11 @@ msgstr "කුකීස්"
 #: ../cleaners/brave.xml ../cleaners/seamonkey.xml ../cleaners/flash.xml
 #: ../cleaners/google_chrome.xml ../cleaners/internet_explorer.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml ../cleaners/discord.xml
-#, fuzzy
-#| msgid ""
-#| "Delete cookies, which contain information such as web site preferences, "
-#| "authentication, and tracking identification"
 msgid ""
 "Delete cookies, which contain information such as website preferences, "
 "authentication, and tracking identification"
-msgstr "වෙබ් අඩවි මනාප, සත්‍යාපනය සහ ලුහුබැඳීමේ හඳුනාගැනීම් තොරතුරු අඩංගු කුකීස් මකන්න"
+msgstr ""
+"වෙබ් අඩවි මනාපයන්, සත්‍යාපනය සහ ලුහුබැඳීමේ හඳුනාගැනීම වැනි තොරතුරු අඩංගු කුකීස් මකන්න"
 
 #: ../cleaners/realplayer.xml ../cleaners/bash.xml ../cleaners/elinks.xml
 #: ../cleaners/easytag.xml ../cleaners/safari.xml ../cleaners/chromium.xml
@@ -258,10 +255,8 @@ msgstr "පෝරම ඉතිහාසය"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/palemoon.xml ../cleaners/firefox.xml
 #: ../cleaners/internet_explorer.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites and in the Search bar"
 msgid "A history of forms entered in websites and in the Search bar"
-msgstr "වෙබ් අඩවි සහ සෙවුම් තීරුවේ ඇතුළත් කළ පෝරම ඉතිහාසය"
+msgstr "වෙබ් අඩවිවල සහ සෙවුම් තීරුවේ ඇතුළත් කළ පෝරමවල ඉතිහාසයක්"
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/epiphany.xml
 #: ../cleaners/zen.xml ../cleaners/chromium.xml ../cleaners/thunderbird.xml
@@ -297,7 +292,7 @@ msgstr "සැසිය ප්‍රතිෂ්ඨාපනය"
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/thunderbird.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
 msgid "Restores the previous session when the browser next starts."
-msgstr ""
+msgstr "බ්‍රව්සරය ඊළඟට ආරම්භ වන විට පෙර සැසිය ප්‍රතිස්ථාපනය කරයි."
 
 #: ../cleaners/librewolf.xml ../cleaners/waterfox.xml ../cleaners/zen.xml
 #: ../cleaners/chromium.xml ../cleaners/palemoon.xml ../cleaners/firefox.xml
@@ -463,14 +458,11 @@ msgid "Places"
 msgstr "ස්ථාන"
 
 #: ../cleaners/epiphany.xml
-#, fuzzy
-#| msgid ""
-#| "A database of URLs including bookmarks, favicons, and a history of "
-#| "visited web sites"
 msgid ""
 "A database of URLs including bookmarks, favicons, and a history of visited "
 "websites"
-msgstr "බුක්මාර්ක්, ෆැවිකොන්, සහ පිවිසූ වෙබ් අඩවි ඉතිහාසය ඇතුළත් URL දත්ත ගබඩාවක්"
+msgstr ""
+"පිටු සලකුණු, ෆේවිකොන් සහ පිවිසි වෙබ් අඩවි වල ඉතිහාසයක් ඇතුළුව URL වල දත්ත සමුදායක්"
 
 #: ../cleaners/epiphany.xml
 msgid "This option deletes all bookmarks."
@@ -542,10 +534,8 @@ msgstr "වත්මන් සැසිය මකන්න"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml ../cleaners/opera.xml
-#, fuzzy
-#| msgid "A history of forms entered in web sites"
 msgid "A history of forms entered in websites"
-msgstr "වෙබ් අඩවිවල ඇතුළත් කළ පෝරම ඉතිහාසය"
+msgstr "වෙබ් අඩවිවල ඇතුළත් කළ ආකෘතිවල ඉතිහාසයක්"
 
 #: ../cleaners/chromium.xml ../cleaners/slack.xml ../cleaners/brave.xml
 #: ../cleaners/google_chrome.xml ../cleaners/microsoft_edge.xml
@@ -587,10 +577,8 @@ msgstr "සමමුහුර්ත"
 
 #: ../cleaners/chromium.xml ../cleaners/brave.xml ../cleaners/google_chrome.xml
 #: ../cleaners/microsoft_edge.xml
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
 msgid "Delete the sync data (including web apps) and sign out of the browser"
-msgstr "සමමුහුර්ත දත්ත මකා දමා බ්‍රව්සරයෙන් ඉවත් වන්න"
+msgstr "සමමුහුර්ත දත්ත (වෙබ් යෙදුම් ඇතුළුව) මකා දමා බ්‍රව්සරයෙන් ඉවත් වන්න"
 
 #: ../cleaners/windows_explorer.xml ../cleaners/nautilus.xml ../cleaners/mc.xml
 msgid "File manager"
@@ -599,110 +587,111 @@ msgstr "ගොනු කළමනාකරු"
 #: ../cleaners/windows_explorer.xml ../cleaners/gwenview.xml
 #: ../cleaners/gedit.xml ../cleaners/kde.xml ../bleachbit/Cleaner.py
 msgid "Recent documents list"
-msgstr ""
+msgstr "මෑත ලේඛන ලැයිස්තුව"
 
 #: ../cleaners/windows_explorer.xml
 msgid ""
 "This option will reset pinned locations in Quick Access to their defaults."
 msgstr ""
+"මෙම විකල්පය Quick Access හි ඇමිණූ ස්ථාන ඒවායේ පෙරනිමි අගයන් වෙත යළි පිහිටුවනු ඇත."
 
 #: ../cleaners/windows_explorer.xml
 msgid "Shellbags"
-msgstr ""
+msgstr "ෂෙල් බෑග්"
 
 #: ../cleaners/windows_explorer.xml
 msgid "Delete the usage date, window position, and other data for folders"
-msgstr ""
+msgstr "ෆෝල්ඩර සඳහා භාවිත දිනය, කවුළු පිහිටීම සහ අනෙකුත් දත්ත මකන්න"
 
 #: ../cleaners/windows_explorer.xml
 msgid "This will reset the position of desktop icons."
-msgstr ""
+msgstr "මෙය ඩෙස්ක්ටොප් අයිකන වල පිහිටීම නැවත සකසනු ඇත."
 
 #: ../cleaners/windows_explorer.xml
 msgid "This will restart Windows Explorer."
-msgstr ""
+msgstr "මෙය වින්ඩෝස් එක්ස්ප්ලෝරර් නැවත ආරම්භ කරනු ඇත."
 
 #: ../cleaners/windows_defender.xml
 msgid "Anti-virus"
-msgstr ""
+msgstr "ප්‍රති-වයිරස"
 
 #: ../cleaners/windows_defender.xml
 msgid "Quarantine"
-msgstr ""
+msgstr "නිරෝධායනය"
 
 #: ../cleaners/thunderbird.xml
 msgid ""
 "Deleting the index will reset the configuration of columns in the message "
 "list."
-msgstr ""
+msgstr "දර්ශකය මකා දැමීමෙන් පණිවිඩ ලැයිස්තුවේ තීරුවල වින්‍යාසය නැවත සකසනු ඇත."
 
 #: ../cleaners/apt.xml
 msgid "Delete obsolete files"
-msgstr ""
+msgstr "යල් පැන ගිය ගොනු මකන්න"
 
 #: ../cleaners/apt.xml
 msgid "Package lists"
-msgstr ""
+msgstr "පැකේජ ලැයිස්තු"
 
 #: ../cleaners/x11.xml
 msgid "Windowing system"
-msgstr ""
+msgstr "කවුළු පද්ධතිය"
 
 #: ../cleaners/gimp.xml
 msgid "Graphics editor"
-msgstr ""
+msgstr "ග්‍රැෆික් සංස්කාරකය"
 
 #: ../cleaners/snap.xml
 msgid "Disabled"
-msgstr ""
+msgstr "අක්‍රිය කළ"
 
 #: ../cleaners/snap.xml
 msgid "Remove disabled packages"
-msgstr ""
+msgstr "අක්‍රීය පැකේජ ඉවත් කරන්න"
 
 #: ../cleaners/adobe_reader.xml
 msgid "Document viewer"
-msgstr ""
+msgstr "ලේඛන නරඹන්නා"
 
 #: ../cleaners/nautilus.xml
 msgid "Custom folders will be reset."
-msgstr ""
+msgstr "අභිරුචි ෆෝල්ඩර යළි පිහිටුවනු ලැබේ."
 
 #: ../cleaners/deepscan.xml
 msgid "Deep scan"
-msgstr ""
+msgstr "ගැඹුරු ස්කෑන් කිරීම"
 
 #: ../cleaners/deepscan.xml
 msgid "Clean files widely scattered across the disk"
-msgstr ""
+msgstr "තැටිය පුරා විසිරී ඇති ගොනු පිරිසිදු කරන්න"
 
 #: ../cleaners/deepscan.xml
 msgid "Inspect the preview for any files you want to keep."
-msgstr ""
+msgstr "ඔබට තබා ගැනීමට අවශ්‍ය ඕනෑම ගොනුවක් සඳහා පෙරදසුන පරීක්ෂා කරන්න."
 
 #: ../cleaners/deepscan.xml
 msgid "VIM swap files under user profile"
-msgstr ""
+msgstr "පරිශීලක පැතිකඩ යටතේ VIM හුවමාරු ගොනු"
 
 #: ../cleaners/deepscan.xml
 msgid "VIM swap files across system"
-msgstr ""
+msgstr "පද්ධතිය හරහා VIM හුවමාරු ගොනු"
 
 #: ../cleaners/gedit.xml ../cleaners/vim.xml
 msgid "Editor"
-msgstr ""
+msgstr "සංස්කාරකය"
 
 #: ../cleaners/zoom.xml
 msgid "Recordings"
-msgstr ""
+msgstr "පටිගත කිරීම්"
 
 #: ../cleaners/zoom.xml
 msgid "Delete the audio and video recordings"
-msgstr ""
+msgstr "ශ්‍රව්‍ය සහ දෘශ්‍ය පටිගත කිරීම් මකන්න"
 
 #: ../cleaners/recoll.xml
 msgid "Delete the search index, a database of words and the files they contain"
-msgstr ""
+msgstr "සෙවුම් දර්ශකය, වචන දත්ත සමුදායක් සහ ඒවායේ අඩංගු ගොනු මකන්න"
 
 #: ../cleaners/skype.xml
 msgid "Installers"
@@ -1685,10 +1674,8 @@ msgid "Select the cookies to keep when cleaning cookies across browsers."
 msgstr ""
 
 #: ../bleachbit/GuiCookie.py
-#, fuzzy
-#| msgid "Search tool"
 msgid "Search:"
-msgstr "සෙවුම් මෙවලම"
+msgstr "සෙවීම:"
 
 #: ../bleachbit/GuiCookie.py
 msgid "Filter cookies..."
@@ -2033,10 +2020,8 @@ msgstr ""
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
-#, fuzzy
-#| msgid "Cookies"
 msgid "Manage Cookies"
-msgstr "කුකීස්"
+msgstr "කුකීස් කළමනාකරණය කරන්න"
 
 #. TRANSLATORS: this is the context menu
 #: ../bleachbit/GuiWindow.py
