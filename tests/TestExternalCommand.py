@@ -47,11 +47,10 @@ def is_bleachbit_running_process(process_name, cmdline):
         return False
 
     has_bleachbit_entrypoint = any(
-        arg == 'bleachbit.py' or arg.endswith(
-            '\\bleachbit.py') or arg.endswith('/bleachbit.py')
+        'bleachbit.py' in arg
         for arg in normalized_cmdline
     )
-    has_context_arg = '--context-menu' in normalized_cmdline or '--gui' in normalized_cmdline
+    has_context_arg = any('--context-menu' in arg or '--gui' in arg for arg in normalized_cmdline)
     return has_bleachbit_entrypoint and has_context_arg
 
 
@@ -528,6 +527,14 @@ class ExternalCommandTestCase(common.BleachbitTestCase):
                     '--no-delete-confirmation',
                     '--no-first-start',
                     '--context-menu'  # followed by a pathname to delete
+                ]
+             ),
+            # This is the cleaning process as seen on AppVeyor with shell=True where arguments are grouped.
+            (True, 'cmd.exe',
+                [
+                    'C:\\Windows\\system32\\cmd.exe',
+                    '/c',
+                    f'{py_exe} bleachbit.py --no-delete-confirmation --no-first-start --context-menu C:\\Users\\appveyor\\AppData'
                 ]
              ),
             # This is the idle process.
