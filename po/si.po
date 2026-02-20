@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-02-17 23:41-0700\n"
-"PO-Revision-Date: 2025-07-02 00:01+0000\n"
+"PO-Revision-Date: 2026-02-20 00:02+0000\n"
 "Last-Translator: Maduka Jayalath <madu.rapa@gmail.com>\n"
 "Language-Team: Sinhala <https://hosted.weblate.org/projects/bleachbit/main/"
 "si/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: ../cleaners/realplayer.xml ../cleaners/windows_media_player.xml
 #: ../cleaners/audacious.xml ../cleaners/exaile.xml ../cleaners/winamp.xml
@@ -1100,6 +1100,10 @@ msgid ""
 "including any files (such as custom cleaners) that you may have added or "
 "changed."
 msgstr ""
+"පහත ෆෝල්ඩරයෙන් ${prodname} අස්ථාපනය කරනු ලැබේ.\n"
+"අස්ථාපනය ආරම්භ කිරීමට අස්ථාපනය කරන්න ක්ලික් කරන්න.\n"
+"අවවාදයයි: අස්ථාපනය කරන්නා ඔබ එකතු කර ඇති හෝ වෙනස් කර ඇති ඕනෑම ගොනු (අභිරුචි පිරිසිදු කරන්නන් "
+"වැනි) ඇතුළුව ස්ථාපන නාමාවලිය සම්පූර්ණයෙන්ම ඉවත් කරයි."
 
 #. TRANSLATORS: Multi-value variables are explained
 #. in the online documentation. Basically, they are like
@@ -1108,7 +1112,7 @@ msgstr ""
 #. files more concise.
 #: ../bleachbit/Action.py
 msgid "Deep scan does not support multi-value variables."
-msgstr ""
+msgstr "ගැඹුරු ස්කෑන් කිරීම බහු-අගය විචල්‍ය සඳහා සහය නොදක්වයි."
 
 #. TRANSLATORS: This is a lint-style warning that there seems to be a
 #. mild mistake in the CleanerML file because walk.all is expected to
@@ -1117,7 +1121,7 @@ msgstr ""
 #: ../bleachbit/Action.py
 #, python-format
 msgid "search=\"walk.all\" used with regular file path=\"%s\""
-msgstr ""
+msgstr "search=\"walk.all\" සාමාන්‍ය ගොනු මාර්ගය=\"%s\" සමඟ භාවිතා වේ"
 
 #. TRANSLATORS: This is a lint-style warning that the CleanerML file
 #. specified a search for glob, but the path specified didn't have any
@@ -1127,18 +1131,16 @@ msgstr ""
 #: ../bleachbit/Action.py
 #, python-format
 msgid "path=\"%s\" is not a glob pattern"
-msgstr ""
+msgstr "path=\"%s\" යනු ග්ලෝබ් රටාවක් නොවේ"
 
 #. TRANSLATORS: Parts of this file will be deleted
 #: ../bleachbit/Action.py ../bleachbit/Command.py
 msgid "Clean file"
-msgstr ""
+msgstr "ගොනුව පිරිසිදු කරන්න"
 
 #: ../bleachbit/Action.py
-#, fuzzy
-#| msgid "Cookies"
 msgid "Clean cookies"
-msgstr "කුකීස්"
+msgstr "කුකීස් පිරිසිදු කරන්න"
 
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the clean button on the main window.
@@ -1146,16 +1148,16 @@ msgstr "කුකීස්"
 #. altering them.
 #: ../bleachbit/Action.py ../bleachbit/GuiWindow.py
 msgid "Clean"
-msgstr ""
+msgstr "පිරිසිදු කරන්න"
 
 #: ../bleachbit/Action.py
 #, python-format
 msgid "Run external command: %s"
-msgstr ""
+msgstr "බාහිර විධානය ක්‍රියාත්මක කරන්න: %s"
 
 #: ../bleachbit/Action.py
 msgid "Refresh Windows shell"
-msgstr ""
+msgstr "වින්ඩෝස් කවචය නැවුම් කරන්න"
 
 #: ../bleachbit/CleanerML.py
 #, python-brace-format
@@ -1163,16 +1165,18 @@ msgid ""
 "Error in handle_cleaner_option() for cleaner id = {cleaner_id}, option "
 "XML={option_xml}"
 msgstr ""
+"cleaner id = {cleaner_id}, විකල්පය XML={option_xml} සඳහා handle_cleaner_option"
+"() හි දෝෂයකි"
 
 #: ../bleachbit/CleanerML.py
 #, python-format
 msgid "Ignoring cleaner because it is world writable: %s"
-msgstr ""
+msgstr "පිරිසිදු කරන්නා ලොවට ලිවිය හැකි බැවින් එය නොසලකා හරිමින්: %s"
 
 #: ../bleachbit/CleanerML.py
 #, python-format
 msgid "Error reading cleaner: %s"
-msgstr ""
+msgstr "පිරිසිදු කරන්නා කියවීමේ දෝෂයකි: %s"
 
 #. TRANSLATORS: desktop entries are .desktop files in Linux that
 #. make up the application menu (the menu that shows BleachBit,
@@ -1183,7 +1187,7 @@ msgstr ""
 #. http://standards.freedesktop.org/menu-spec/latest/index.html#introduction
 #: ../bleachbit/Cleaner.py
 msgid "Broken desktop files"
-msgstr ""
+msgstr "කැඩුණු ඩෙස්ක්ටොප් ගොනු"
 
 #: ../bleachbit/Cleaner.py
 msgid "Delete broken application menu entries and file associations"
